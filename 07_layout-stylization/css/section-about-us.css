@@ -1,0 +1,13 @@
+.section-about-us {
+  margin-bottom: 50px;
+}
+.container-about-us {
+  max-width: 880px;
+  margin-left: 12px;
+  padding-left: 15px;
+}
+.section-description {
+  padding-left: 40px;
+  margin: 0;
+  line-height: 2;
+}

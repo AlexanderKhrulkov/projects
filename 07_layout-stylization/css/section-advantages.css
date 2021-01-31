@@ -1,0 +1,45 @@
+.section-advantages {
+  margin-bottom: 50px;
+}
+.advantage-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.advantage-cards-item {
+  width: 280px;
+  min-height: 280px;
+  margin: 0 0 20px 0;
+  background-color: #ffffff;
+  border-radius: 15px;
+  background-image: url("../img/bathtub.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 45px 45px;
+}
+.adv-section-description {
+  padding: 125px 45px 40px 45px;
+  margin: 0;
+  line-height: 2;
+}
+.advantage-cards :nth-child(2) .advantage-cards-item {
+  background-image: url("../img/hanger.png");
+}
+.advantage-cards :nth-child(3) .advantage-cards-item {
+  background-image: url("../img/heating.png");
+}
+.advantage-cards :nth-child(4) .advantage-cards-item {
+  background-image: url("../img/hotel-key.png");
+}
+.advantage-cards :nth-child(5) .advantage-cards-item {
+  background-image: url("../img/parking.png");
+}
+.advantage-cards :nth-child(6) .advantage-cards-item {
+  background-image: url("../img/reception.png");
+}
+.advantage-cards :nth-child(7) .advantage-cards-item {
+  background-image: url("../img/security-box.png");
+}
+.advantage-cards :nth-child(8) .advantage-cards-item {
+  background-image: url("../img/swimming-pool.png");
+}

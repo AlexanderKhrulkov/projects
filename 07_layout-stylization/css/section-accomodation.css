@@ -1,0 +1,66 @@
+.accomodation-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.accomodation-cards-item {
+  width: 375px;
+  min-height: 440px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.accomodation-body {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.accomodation-price {
+  display: inline-block;
+  margin-bottom: -16px;
+  color:#8d8a87;
+}
+.bold-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+.accomodation-text {
+  font: inherit;
+}
+.stars {
+  padding: 0 40px 0 60px;
+}
+.grey-text {
+  margin-bottom: 35px;
+  color: #8d8a87;
+}
+.accomodation-link-text {
+  width: 100px;
+  min-height: 42px;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border: #cc9933 solid 1px;
+  border-radius: 15px;
+  color: #cc9933;
+  font-weight: 700;
+}
+.accomodation-cards-see-all {
+  width: 375px;
+  min-height: 440px;
+  padding-top: 370px;
+  padding-left: 40px;
+  background-image: url("../img/9.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.see-all-text {
+  padding-right: 20px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  background-image: url("../img/Прямоугольник\ 2\ копия\ 16.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+}

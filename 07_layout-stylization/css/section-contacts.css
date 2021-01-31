@@ -1,0 +1,47 @@
+.contacts-container {
+  width: 472px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.contacts-table {
+  max-width: 385px;
+  margin: auto;
+  line-height: 24px;
+  border-collapse: collapse;
+}
+.column-left {
+  padding: 35px 40px 0 0;
+  font-size: 22px;
+  text-align: left;
+  vertical-align: top;
+  color: #666666;
+  border-bottom: 1px #8d8a87 solid;
+}
+.column-right {
+  padding: 35px 0 30px 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+.contacts-table p {
+  margin: 0 auto;
+}
+.button-cell {
+  max-width: 385px;
+  padding: 35px 0 30px 0;
+  text-align: left;
+}
+.route {
+  display: inline-block;
+  max-width: 217px;
+  padding: 23px 30px;
+  font-weight: 700;
+  color: #cc9933;
+  background-color: #ffffff;
+  border: #cc9933 solid 1px;
+  border-radius: 15px;
+}
+.yellow-tel {
+  display: block;
+  color: #cc9933;
+}
