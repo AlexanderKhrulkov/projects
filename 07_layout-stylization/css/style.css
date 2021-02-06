@@ -22,6 +22,11 @@ body {
   margin: 0 auto; /*Нулевой маргин сверху и снизу, выравнивание контейнера по горизонтали*/
   padding-right: 15px; /*Паддинг слева*/
   padding-left: 15px; /*Паддинг справа*/
+  margin-bottom: 80px;
+}
+.flex-container {
+  display: flex;
+  align-items: flex-start;
 }
 .list-reset {
   margin: 0;

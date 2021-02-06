@@ -1,6 +1,3 @@
-.section-services {
-  margin-bottom: 50px;
-}
 .service-cards {
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +6,6 @@
 .service-cards-item {
   width: 570px;
   min-height: 330px;
-  margin-bottom: 30px;
   background-color: #ffffff;
   border-radius: 15px;
   background-image: url("../img/10.png");
@@ -23,13 +19,16 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-.service-cards :nth-child(2) .service-header{
+.service-cards .service-list:not(:nth-last-child(-n+2)) {
+  margin-bottom: 30px;
+}
+.service-cards :nth-child(2) .service-header {
   background-image: url("../img/15.png");
 }
-.service-cards :nth-child(3) .service-header{
+.service-cards :nth-child(3) .service-header {
   background-image: url("../img/12.png");
 }
-.service-cards :nth-child(4) .service-header{
+.service-cards :nth-child(4) .service-header {
   background-image: url("../img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.png");
 }
 .service-yellow-link {

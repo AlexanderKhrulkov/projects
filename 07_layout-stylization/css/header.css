@@ -3,9 +3,11 @@
   display: flex;
   align-items: center;
 }
+.logo {
+  margin-right: 25px;
+}
 .tel-link {
   margin-right: auto;
-  margin-left: 25px;
   font-weight: 700;
   font-size: 22px;
   color: #666666;
