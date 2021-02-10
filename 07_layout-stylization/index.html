@@ -77,22 +77,25 @@
       <div class="container flex-container">
         <section class="fast-booking">
           <h2 class="second-header">Быстрая бронь</h2>
-          <input class="fast-booking-input" type="text" placeholder="   Город">
-          <input class="fast-booking-input" type="text" placeholder="   Категория номера">
-          <input class="fast-booking-input" type="text" placeholder="   Дата заселения">
-          <input class="fast-booking-input" type="text" placeholder="   Количество ночей">
-          <input class="fast-booking-input" type="text" placeholder="   Количество гостей">
-          <div class="rooms">
-            <button type="button" class="room-search">
-              Найти номер
-            </button>
-            <p class="p-reset">
-              <span class="yellow-text">
-                9 756
-              </span>
-              Предложений доступно
-            </p>
-          </div>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="fast-booking">
+            <input class="fast-booking-input" required type="text" name="city" placeholder="Город">
+            <input class="fast-booking-input" type="text" name="category" placeholder="Категория номера">
+            <input class="fast-booking-input" type="text" name="date" placeholder="Дата заселения"
+              onfocus="(this.type='date')" onblur="(this.type='text')">
+            <input class="fast-booking-input" type="number" min="1" name="nights" placeholder="Количество ночей">
+            <input class="fast-booking-input" type="number" min="1" name="guests" placeholder="Количество гостей">
+            <div class="rooms">
+              <button type="submit" class="room-search">
+                Найти номер
+              </button>
+              <p class="p-reset">
+                <span class="yellow-text">
+                  9 756
+                </span>
+                Предложений доступно
+              </p>
+            </div>
+          </form>
         </section>
         <section class="special-offer">
           <h2 class="second-header">Спецпредложение</h2>
@@ -472,12 +475,15 @@
         <div class="write-us">
           <div class="write-us-container">
             <h2 class="second-header middle-header">Напишите нам</h2>
-            <input class="write-us-input" type="text" placeholder="Имя">
-            <input class="write-us-input" type="tel" placeholder="+7">
-            <input class="write-us-input write-us-input-message" type="text" placeholder="Сообщение...">
-            <button type="button" class="send">
-              Отправить
-            </button>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="write-us">
+              <input class="write-us-input" type="text" name="name" placeholder="Имя">
+              <input class="write-us-input" required type="tel" name="phone" placeholder="+7">
+              <textarea class="write-us-input write-us-input-message" cols="10" rows="5" type="text" name="message"
+                placeholder="Сообщение..."></textarea>
+              <button type="submit" class="send">
+                Отправить
+              </button>
+            </form>
           </div>
         </div>
       </div>

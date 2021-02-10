@@ -14,6 +14,9 @@
   border-radius: 15px;
   background-color: #ffffff;
 }
+.fast-booking-input::placeholder {
+  padding-left: 20px;
+}
 .rooms {
   display: flex;
   align-items: center;

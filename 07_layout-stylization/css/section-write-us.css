@@ -16,8 +16,14 @@
   border-radius: 15px;
   border: none;
 }
+.write-us-input::placeholder {
+  padding-left: 10px;
+}
 .write-us-input-message {
   min-height: 110px;
+}
+.write-us-input-message::placeholder {
+  padding-top: 20px;
 }
 .middle-header {
   padding: 0 20px;
