@@ -9,30 +9,38 @@
 .contacts-table {
   max-width: 385px;
   margin: auto;
+  padding: 0;
   line-height: 24px;
-  border-collapse: collapse;
+  list-style-type: none;
+}
+.contacts-list:not(:last-child){
+  display: flex;
+  border-bottom: 1px solid #666666;
+}
+.contacts-list:first-child {
+  padding-top: 14px;
+}
+.contacts-list:last-child {
+  padding-bottom: 14px;
 }
 .column-left {
-  padding: 35px 40px 0 0;
   font-size: 22px;
-  text-align: left;
-  vertical-align: top;
   color: #666666;
-  border-bottom: 1px #8d8a87 solid;
+  width: 147px;
+  min-height: 10px;
+  margin: 31px 0 31px 0;
 }
 .column-right {
-  padding: 35px 0 30px 0;
   font-size: inherit;
   font-weight: inherit;
   color: inherit;
+  width: 238px;
 }
-.contacts-table p {
-  margin: 0 auto;
+.e-mails {
+  color: #666666;
 }
 .button-cell {
-  max-width: 385px;
-  padding: 35px 0 30px 0;
-  text-align: left;
+margin: 45px 0 31px 0;
 }
 .route {
   display: inline-block;
@@ -44,7 +52,7 @@
   border: #cc9933 solid 1px;
   border-radius: 15px;
 }
-.yellow-tel {
+.tel-link {
   display: block;
-  color: #cc9933;
+  width: fit-content;
 }

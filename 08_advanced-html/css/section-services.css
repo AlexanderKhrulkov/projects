@@ -31,9 +31,8 @@
 .service-cards :nth-child(4) .service-header {
   background-image: url("../img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.png");
 }
-.service-yellow-link {
+.service-info-link {
   padding: 0 20px 0 40px;
-  color: #cc9933;
   font-weight: 500;
   font-size: 22px;
   background-image: url("../img/Прямоугольник\ 2\ копия\ 10.png");

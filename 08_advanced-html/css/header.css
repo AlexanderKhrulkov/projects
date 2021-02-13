@@ -6,7 +6,7 @@
 .logo {
   margin-right: 25px;
 }
-.tel-link {
+.header-tel-link {
   margin-right: auto;
   font-weight: 700;
   font-size: 22px;
@@ -14,7 +14,6 @@
 }
 .my-account {
   padding-left: 20px;
-  color: #cc9933;
   background-image: url("../img/arrow.png");
   background-repeat: no-repeat;
   background-position: left;
@@ -30,6 +29,9 @@
 }
 .nav-list {
   display: flex;
+}
+.nav-item a {
+  color: #000000;
 }
 .nav-item:not(:last-child) {
   margin-right: 50px;

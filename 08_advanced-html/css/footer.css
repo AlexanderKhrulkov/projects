@@ -12,9 +12,9 @@
 }
 .footer-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   min-height: 386px;
-  padding-top: 48px;
+  padding: 40px 50px 0 50px;
   color: #ffffff;
   background-color: #333333;
   background-image: url(../img/Слой\ 27\ копия.png);
@@ -30,18 +30,20 @@
   margin: 0 auto 44px auto;
 }
 .footer-media {
-  display: flex;
-  flex-direction: column;
+  list-style-type: none;
+}
+.media-list {
+  transform: translateY(4px);
+  margin-bottom: 22px;
+  background-image: url(../img/tripadvisor.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .media-link {
-transform: translateY(4px);
-width: 26px;
-height: 26px;
-margin-bottom: 22px;
-background-image: url(../img/tripadvisor.svg);
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
+  display: block;
+  width: 26px;
+  height: 26px;
 }
 .footer-media :nth-child(2) {
   background-image: url(../img/twitter.svg);

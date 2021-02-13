@@ -20,7 +20,10 @@
   padding-left: 10px;
 }
 .write-us-input-message {
-  min-height: 110px;
+  height: 110px;
+  width: 340px;
+  max-height: 110px;
+  max-width: 340px;
 }
 .write-us-input-message::placeholder {
   padding-top: 20px;
@@ -30,7 +33,7 @@
   text-align: center;
 }
 .send {
-  min-width: 340px;
+  width: 340px;
   padding: 25px;
   color: #ffffff;
   background-color: #cc9933;
