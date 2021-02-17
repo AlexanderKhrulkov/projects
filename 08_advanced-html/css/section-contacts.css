@@ -13,22 +13,21 @@
   line-height: 24px;
   list-style-type: none;
 }
-.contacts-list:not(:last-child){
+.contacts-list {
   display: flex;
   border-bottom: 1px solid #666666;
+  margin-bottom: 31px;
 }
 .contacts-list:first-child {
-  padding-top: 14px;
+  padding-top: 45px;
 }
-.contacts-list:last-child {
-  padding-bottom: 14px;
-}
-.column-left {
+.column-common {
   font-size: 22px;
   color: #666666;
   width: 147px;
   min-height: 10px;
-  margin: 31px 0 31px 0;
+  margin: 0 0 31px 0;
+  font-weight: inherit;
 }
 .column-right {
   font-size: inherit;
@@ -40,7 +39,8 @@
   color: #666666;
 }
 .button-cell {
-margin: 45px 0 31px 0;
+margin-left: 44px;
+padding-bottom: 44px;
 }
 .route {
   display: inline-block;

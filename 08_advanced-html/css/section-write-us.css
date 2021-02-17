@@ -22,8 +22,7 @@
 .write-us-input-message {
   height: 110px;
   width: 340px;
-  max-height: 110px;
-  max-width: 340px;
+  resize: none;
 }
 .write-us-input-message::placeholder {
   padding-top: 20px;
