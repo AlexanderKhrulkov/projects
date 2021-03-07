@@ -12,12 +12,31 @@
   font-size: 22px;
   color: #666666;
 }
+.header-tel-link:hover {
+  transition: color 0.5s;
+  color: #cc9933;
+}
 .my-account {
-  padding-left: 20px;
+  width: 145px;
+  display: inline-block;
   background-image: url("../img/arrow.png");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: contain;
+  background-size:13px;
+  background-position: top left;
+  text-align: right;
+}
+.my-account::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: #cc9933;
+  transition: width 0.5s ease-in-out;
+}
+.my-account:hover::after,
+.my-account:focus::after {
+  width: 100%;
 }
 .lower-header {
   display: flex;
@@ -30,8 +49,12 @@
 .nav-list {
   display: flex;
 }
-.nav-item a {
+.nav-link {
   color: #000000;
+}
+.nav-link:hover {
+  transition: color 0.5s;
+  color: #cc9933;
 }
 .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -59,9 +82,12 @@
 }
 .search-button {
   width: 25px;
-  min-height: 25px;
+  height: 25px;
   background-image: url("../img/search@0\,75x.png");
   background-repeat: no-repeat;
   background-size: contain;
   border: none;
+}
+.search-button:active {
+  transform: scale(0.8, 0.8);
 }

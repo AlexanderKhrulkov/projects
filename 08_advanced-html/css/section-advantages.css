@@ -1,7 +1,6 @@
 .advantage-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .advantage-cards-item {
   width: 280px;
@@ -19,7 +18,12 @@
   line-height: 2;
 }
 .advantage-cards .advantage-list:not(:nth-last-child(-n+4)) {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+}
+.advantage-cards .advantage-list:nth-child(4n+1),
+.advantage-cards .advantage-list:nth-child(4n+2),
+.advantage-cards .advantage-list:nth-child(4n+3) {
+  margin-right: 16px;
 }
 .advantage-cards :nth-child(2) .advantage-cards-item {
   background-image: url("../img/hanger.png");

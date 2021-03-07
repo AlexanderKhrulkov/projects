@@ -52,7 +52,23 @@ padding-bottom: 44px;
   border: #cc9933 solid 1px;
   border-radius: 15px;
 }
+.route:hover {
+  box-shadow: 0 0 5px 1px;
+  transition: 0.5s;
+}
 .tel-link {
   display: block;
   width: fit-content;
+}
+.tel-link::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: #cc9933;
+  transition: width 0.5s ease-in-out;
+}
+.tel-link:hover::after,
+.tel-link:active::after {
+  width: 100%;
 }

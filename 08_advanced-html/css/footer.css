@@ -26,6 +26,22 @@
 .footer-info-left p {
   margin: 0 auto 54px auto;
 }
+.footer-content-link {
+  display: block;
+  width: fit-content;
+}
+.footer-content-link::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: #cc9933;
+  transition: width 0.5s ease-in-out;
+}
+.footer-content-link:hover::after,
+.footer-content-link:active::after {
+  width: 100%;
+}
 .footer-info-center p {
   margin: 0 auto 44px auto;
 }
