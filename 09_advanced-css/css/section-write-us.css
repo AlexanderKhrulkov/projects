@@ -34,11 +34,12 @@
 .send {
   width: 340px;
   padding: 25px;
-  color: #ffffff;
-  background-color: #cc9933;
+  color: var(--white-color);
+  background-color: var(--decor-color);
   border-radius: 15px;
   border: none;
   cursor: pointer;
+  transition: ease 0.5s;
 }
 .send:hover {
   transform: scale(1.1, 1.1);

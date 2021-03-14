@@ -7,14 +7,17 @@
   width: 375px;
   margin: 0;
   min-height: 440px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   border-radius: 15px;
 }
 .accomodation-cards .card-list:not(:nth-last-child(-n+3)) {
   margin-bottom: 25px;
 }
-.accomodation-cards .card-list:nth-child(3n+1), .accomodation-cards .card-list:nth-child(3n+2) {
+.accomodation-cards .card-list {
   margin-right: 22px;
+}
+.accomodation-cards .card-list:nth-child(3n) {
+  margin-right: 0;
 }
 .accomodation-body {
   margin-top: 30px;
@@ -45,15 +48,16 @@
   width: 100px;
   min-height: 42px;
   padding: 15px 20px;
-  background-color: #ffffff;
-  border: #cc9933 solid 1px;
+  background-color: var(--white-color);
+  border: var(--decor-color) solid 1px;
   border-radius: 15px;
-  color: #cc9933;
+  color: var(--decor-color);
   font-weight: 700;
+  transition: ease 0.5s;
 }
 .accomodation-link-text:hover {
   transform: scale(1.1, 1.1);
-  background-color: #cc9933;
+  background-color: var(--decor-color);
   color: #ffffff;
   transition: 0.5s;
 }
@@ -66,6 +70,7 @@
   background-image: url("../img/9.png");
   background-size: contain;
   background-repeat: no-repeat;
+  transition: ease 0.5s;
 }
 .accomodation-cards-see-all:hover {
   transform: scale(1.05, 1.05);
@@ -73,7 +78,7 @@
 }
 .see-all-text {
   padding-right: 20px;
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 22px;
   font-weight: 500;
   background-image: url("../img/Прямоугольник\ 2\ копия\ 16.png");

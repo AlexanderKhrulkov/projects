@@ -1,6 +1,6 @@
 .contacts-container {
   width: 472px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   border-radius: 15px;
 }
 .cutted {
@@ -47,10 +47,11 @@ padding-bottom: 44px;
   max-width: 217px;
   padding: 23px 30px;
   font-weight: 700;
-  color: #cc9933;
-  background-color: #ffffff;
-  border: #cc9933 solid 1px;
+  color: var(--decor-color);
+  background-color: var(--white-color);
+  border: var(--decor-color) solid 1px;
   border-radius: 15px;
+  transition: ease 0.5s;
 }
 .route:hover {
   box-shadow: 0 0 5px 1px;
@@ -65,7 +66,7 @@ padding-bottom: 44px;
   content: "";
   height: 1px;
   width: 0%;
-  background-color: #cc9933;
+  background-color: var(--decor-color);
   transition: width 0.5s ease-in-out;
 }
 .tel-link:hover::after,

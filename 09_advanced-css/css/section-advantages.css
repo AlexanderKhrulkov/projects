@@ -5,7 +5,7 @@
 .advantage-cards-item {
   width: 280px;
   min-height: 280px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   border-radius: 15px;
   background-image: url("../img/bathtub.png");
   background-repeat: no-repeat;
@@ -20,10 +20,11 @@
 .advantage-cards .advantage-list:not(:nth-last-child(-n+4)) {
   margin-bottom: 16px;
 }
-.advantage-cards .advantage-list:nth-child(4n+1),
-.advantage-cards .advantage-list:nth-child(4n+2),
-.advantage-cards .advantage-list:nth-child(4n+3) {
+.advantage-cards .advantage-list {
   margin-right: 16px;
+}
+.advantage-cards .advantage-list:nth-child(4n) {
+  margin-right: 0;
 }
 .advantage-cards :nth-child(2) .advantage-cards-item {
   background-image: url("../img/hanger.png");
