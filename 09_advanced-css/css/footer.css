@@ -63,7 +63,7 @@
 }
 .media-list:hover {
   transform: scale(1.1, 1.1);
-  transition: 0.5s;
+  transition: ease 0.5s;
 }
 .footer-media :nth-child(2) {
   background-image: url(../img/twitter.svg);

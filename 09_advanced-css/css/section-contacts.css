@@ -55,7 +55,7 @@ padding-bottom: 44px;
 }
 .route:hover {
   box-shadow: 0 0 5px 1px;
-  transition: 0.5s;
+  transition: ease 0.5s;
 }
 .tel-link {
   display: block;

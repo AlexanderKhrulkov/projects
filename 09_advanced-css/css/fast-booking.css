@@ -34,7 +34,7 @@
 }
 .room-search:hover {
   transform: scale(1.1, 1.1);
-  transition: 0.5s;
+  transition: ease 0.5s;
 }
 .offers-number {
   color: var(--decor-color);
