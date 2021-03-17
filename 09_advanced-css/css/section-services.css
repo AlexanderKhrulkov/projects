@@ -44,11 +44,11 @@
   background-repeat: no-repeat;
   background-position: right center;
   background-size: auto;
-  transition: ease 0.5s;
+  transition: padding-right ease 0.5s;
 }
 .service-info-link:hover {
   padding-right: 35px;
-  transition: ease 0.5s;
+  transition: padding-right ease 0.5s;
 }
 .service-section-description {
   max-width: 570px;

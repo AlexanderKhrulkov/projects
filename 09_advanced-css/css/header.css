@@ -11,10 +11,10 @@
   font-weight: 700;
   font-size: 22px;
   color: #666666;
-  transition: ease 0.5s;
+  transition: color ease 0.5s;
 }
 .header-tel-link:hover {
-  transition: color 0.5s;
+  transition: color ease 0.5s;
   color: var(--decor-color);
 }
 .my-account {
@@ -52,10 +52,10 @@
 }
 .nav-link {
   color: #000000;
-  transition: ease 0.5s;
+  transition: color ease 0.5s;
 }
 .nav-link:hover {
-  transition: color 0.5s;
+  transition: color ease 0.5s;
   color: var(--decor-color);
 }
 .nav-item:not(:last-child) {

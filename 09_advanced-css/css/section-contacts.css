@@ -51,11 +51,11 @@ padding-bottom: 44px;
   background-color: var(--white-color);
   border: var(--decor-color) solid 1px;
   border-radius: 15px;
-  transition: ease 0.5s;
+  transition: box-shadow ease 0.5s;
 }
 .route:hover {
   box-shadow: 0 0 5px 1px;
-  transition: ease 0.5s;
+  transition: box-shadow ease 0.5s;
 }
 .tel-link {
   display: block;

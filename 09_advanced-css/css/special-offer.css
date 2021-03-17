@@ -41,9 +41,9 @@
   background-size: auto;
   font-weight: 400;
   font-size: 16px;
-  transition: ease 0.5s;
+  transition: width, height ease 0.5s;
 }
 .info-link:hover {
   transform: scale(1.2, 1.2);
-  transition: ease 0.5s;
+  transition: width, height ease 0.5s;
 }

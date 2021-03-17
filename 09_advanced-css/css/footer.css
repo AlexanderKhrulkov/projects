@@ -54,7 +54,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  transition: ease 0.5s;
+  transition: width, height ease 0.5s;
 }
 .media-link {
   display: block;
@@ -63,7 +63,7 @@
 }
 .media-list:hover {
   transform: scale(1.1, 1.1);
-  transition: ease 0.5s;
+  transition: width, height ease 0.5s;
 }
 .footer-media :nth-child(2) {
   background-image: url(../img/twitter.svg);

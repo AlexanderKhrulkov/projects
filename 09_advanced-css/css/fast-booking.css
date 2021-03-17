@@ -30,11 +30,11 @@
   border-radius: 15px;
   border: none;
   cursor: pointer;
-  transition: ease 0.5s;
+  transition: width, height ease 0.5s;
 }
 .room-search:hover {
   transform: scale(1.1, 1.1);
-  transition: ease 0.5s;
+  transition: width, height ease 0.5s;
 }
 .offers-number {
   color: var(--decor-color);
