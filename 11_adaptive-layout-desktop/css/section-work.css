@@ -1,0 +1,89 @@
+.section-work__container {
+  padding: 0;
+  margin-left: 76px;
+}
+.section-work__second-heading {
+  margin-left: -4px;
+  margin-bottom: 50px;
+}
+.section-work__steps {
+  display: flex;
+  margin-bottom: 46px;
+}
+.section-work__step {
+  margin-right: 89px;
+  font-size: 18px;
+  line-height: 21px;
+}
+.section-work__step .section-work__step-item {
+  transition: var(--transition-05);
+}
+.section-work__step:first-child .section-work__step-item {
+  color: var(--orange-color);
+}
+.section-work__step:nth-last-child(2) {
+  margin-right: 90px;
+}
+.section-work__step:last-child {
+  margin-right: 0;
+}
+.section-work__step-item:hover {
+  color: var(--orange-color);
+  transition: var(--transition-05);
+}
+.section-work__step .section-work__step-item:active {
+  color: var(--dark-orange);
+}
+.section-work__content {
+  background-image: url(../img/Rectangle\ 18.jpg);
+  background-repeat: no-repeat;
+  background-size: 870px 465px;
+  background-position: right bottom;
+}
+.section-work__third-heading {
+  margin-bottom: 5px;
+}
+.section-work__paragraph {
+  max-width: 758px;
+  margin: 0 0 62px 0;
+  line-height: 32px;
+}
+.section-work__details-link {
+  display: inline-block;
+  width: 175px;
+  height: 60px;
+  margin-right: 26px;
+  padding: 21px 38px 17px 38px;
+  background-color: var(--orange-color);
+  font-weight: 600;
+  line-height: 19px;
+  color: var(--white-color);
+  transition: var(--transition-05);
+}
+.section-work__details-link:hover {
+  background-color: rgba(255, 153, 0, 0.6);
+  transition: var(--transition-05);
+}
+.section-work__details-link:active {
+  background-color: var(--dark-orange);
+  transition: var(--transition-05);
+}
+.section-work__contract-link {
+  display: inline-block;
+  width: 147px;
+  height: 58px;
+  padding: 20px 39px 20px 37px;
+  border: 1px solid #000000;
+  line-height: 19px;
+  transition: var(--transition-05);
+}
+.section-work__contract-link:hover {
+  background-color: #666666;
+  color: var(--white-color);
+  transition: var(--transition-05);
+}
+.section-work__contract-link:active {
+  background-color: #000000;
+  color: var(--white-color);
+  transition: var(--transition-05);
+}
