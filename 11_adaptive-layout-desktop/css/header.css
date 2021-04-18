@@ -2,15 +2,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 1920px;
-  min-height: 100px;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 14px 75px 13px 75px;
   background-color: var(--white-color);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
 }
 .header__logo {
   display: block;
   width: 224px;
-  height: 72px;
   margin-right: 729px;
 }
 .header__nav-list {
@@ -30,8 +29,11 @@
   font-weight: 600;
   line-height: 21px;
 }
+.header__nav-item:nth-child(3) {
+  margin-right: 86px;
+}
 .header__nav-link {
-  transition: var(--transition-05);
+  transition: color, width, var(--transition-05);
 }
 .header__nav-link::after {
   display: block;
@@ -39,7 +41,7 @@
   width: 0%;
   content: "";
   background-color: var(--orange-color);
-  transition: var(--transition-05);
+  transition: color, width, var(--transition-05);
 }
 .header__nav-link:hover::after,
 .header__nav-link:active::after {
@@ -58,17 +60,17 @@
   display: block;
   width: 32px;
   height: 32px;
-  margin-top: 11px;
+  margin-top: 10px;
   background-image: url(../img/Ellipse\ 1.svg);
   background-size: auto;
   background-repeat: no-repeat;
-  transition: var(--transition-05);
+  transition: background-image, var(--transition-05);
 }
 .header__search-button:hover {
   background-image: url(../img/Search.svg);
   background-size: auto;
   background-repeat: no-repeat;
-  transition: var(--transition-05);
+  transition: background-image, var(--transition-05);
 }
 .header__search-button:active {
   background-image: url(../img/Search1.svg);

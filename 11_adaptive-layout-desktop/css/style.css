@@ -7,7 +7,6 @@ html {
   box-sizing: inherit; /*Задаёт каждому элементу, перед ним и после него наследование бокс сайзинга от его материнского элемента*/
 }
 body {
-  width: 1920px;
   margin: 0; /*Убирает отступы*/
   font-family: "Montserrat", "Arial", sans-serif; /*Задаёт шрифт телу страницы. Если необходимый шрифт по каким-то ричинам не загружается, то вместо него используется тот, который записан после него, и так далее*/
   font-size: 16px; /*Задаёт изначальный размер шрифта. Пишется наиболее часто встречающийся размер на странице. Это нужно, чтобы по 1к раз не писать размер шрифта в CSS*/
@@ -17,11 +16,9 @@ body {
   color:#000000; /*То же, что и font-size, только для цвета шрифта*/
 }
 .container {
-  width: 1770px; /*Максимальная ширина контейнера*/
-  margin: 0 auto; /*Нулевой маргин сверху и снизу, выравнивание контейнера по горизонтали*/
+  margin: 0 75px 100px 75px; /*Нулевой маргин сверху и снизу, выравнивание контейнера по горизонтали*/
   padding-right: 75px; /*Паддинг слева*/
   padding-left: 75px; /*Паддинг справа*/
-  margin-bottom: 100px;
 }
 a {
   text-decoration: none; /*Убирает изначальную декорацию ссылок*/
@@ -35,17 +32,17 @@ ul {
 .second-heading {
   font-weight: 400;
   font-size: 48px;
-  line-height: 58.51px;
+  line-height: 59px;
 }
 .third-heading {
   font-weight: 700;
   font-size: 24px;
-  line-height: 29.26px;
+  line-height: 29px;
 }
 :root {
   --orange-color: #FF9900;
   --white-color: #FFFFFF;
   --caca-color: #CACACA;
   --dark-orange: #E1670E;
-  --transition-05: ease 0.5s;
+  --transition-05: 0.5s ease;
 }

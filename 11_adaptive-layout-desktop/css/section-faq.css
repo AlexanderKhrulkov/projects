@@ -1,6 +1,6 @@
 .section-faq__container {
-  padding: 0 0 0 1px;
-  margin-bottom: 101px;
+  padding: 0 0 0 2px;
+  margin-bottom: 100px;
 }
 .second-heading.section-faq__second-heading {
   margin-bottom: 39px;
@@ -14,21 +14,21 @@
 }
 .section-faq__spoiler-heading {
   display: block;
-  padding-top: 39px;
-  padding-bottom: 38px;
+  padding-top: 38px;
+  padding-bottom: 39px;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
-  border-bottom: 0.5px var(--caca-color) solid;
-  border-top: 0.5px var(--caca-color) solid;
+  border-bottom: 1px var(--caca-color) solid;
+  border-top: 1px var(--caca-color) solid;
   cursor: pointer;
-  transition: var(--transition-05);
+  transition: border-bottom, border-top, color, var(--transition-05);
 }
 .section-faq__spoiler-heading:hover {
-  border-bottom: 0.5px var(--orange-color) solid;
-  border-top: 0.5px var(--orange-color) solid;
+  border-bottom: 1px var(--orange-color) solid;
+  border-top: 1px var(--orange-color) solid;
   color: var(--orange-color);
-  transition: var(--transition-05);
+  transition: border-bottom, border-top, color, var(--transition-05);
 }
 .section-faq__spoiler-heading::marker {
   display: none;

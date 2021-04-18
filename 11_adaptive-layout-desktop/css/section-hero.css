@@ -1,17 +1,18 @@
 .section-hero__container {
-  height: 620px;
   padding-left: 77px;
-  padding-top: 101px;
+  padding-top: 100px;
+  padding-bottom: 91px;
+  margin-bottom: 98px;
   background-image: url(../img/low-angle-photo-of-balconies-2462015\ 1.jpg);
-  background-size: contain;
+  background-size: auto auto;
   background-repeat: no-repeat;
 }
 .section-hero__content {
-  max-width: 841.76px;
+  max-width: 842px;
 }
 .section-hero__first-heading {
   margin: 0;
-  font-size: 70.37px;
+  font-size: 70px;
   font-weight: 800;
   line-height: 86px;
   color: var(--white-color);
@@ -19,7 +20,7 @@
 .section-hero__paragraph {
   margin-bottom: 97px;
   margin-top: 22px;
-  font-size: 23.46px;
+  font-size: 23px;
   line-height: 29px;
   font-weight: 700;
   color: var(--white-color);
@@ -28,19 +29,19 @@
   display: block;
   max-width: 282px;
   margin-left: 2px;
-  padding: 25.83px 38px;
+  padding: 26px 38px;
   background-color: var(--orange-color);
-  font-size: 23.46px;
+  font-size: 23px;
   font-weight: 700;
-  line-height: 28.6px;
+  line-height: 29px;
   color: var(--white-color);
-  transition: var(--transition-05);
+  transition: background-color, var(--transition-05);
 }
 .section-hero__calculation-link:hover {
   background-color: rgb(255, 153, 0, 0.6);
-  transition: var(--transition-05);
+  transition: background-color, var(--transition-05);
 }
 .section-hero__calculation-link:active {
   background-color: var(--dark-orange);
-  transition: var(--transition-05);
+  transition: background-color, var(--transition-05);
 }
