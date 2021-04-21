@@ -33,7 +33,7 @@
   margin-right: 86px;
 }
 .header__nav-link {
-  transition: color, width, var(--transition-05);
+  transition: color var(--transition-05), width var(--transition-05);
 }
 .header__nav-link::after {
   display: block;
@@ -41,7 +41,7 @@
   width: 0%;
   content: "";
   background-color: var(--orange-color);
-  transition: color, width, var(--transition-05);
+  transition: color var(--transition-05), width var(--transition-05);
 }
 .header__nav-link:hover::after,
 .header__nav-link:active::after {
@@ -64,13 +64,13 @@
   background-image: url(../img/Ellipse\ 1.svg);
   background-size: auto;
   background-repeat: no-repeat;
-  transition: background-image, var(--transition-05);
+  transition: background-image var(--transition-05);
 }
 .header__search-button:hover {
   background-image: url(../img/Search.svg);
   background-size: auto;
   background-repeat: no-repeat;
-  transition: background-image, var(--transition-05);
+  transition: background-image var(--transition-05);
 }
 .header__search-button:active {
   background-image: url(../img/Search1.svg);

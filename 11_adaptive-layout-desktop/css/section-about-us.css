@@ -56,16 +56,16 @@
   text-align: center;
   vertical-align: top;
   color: var(--white-color);
-  transition: background-color, border, var(--transition-05);
+  transition: background-color var(--transition-05), border var(--transition-05);
 }
 .section-about-us__column-left-link:hover {
   background-color: var(--orange-color);
-  transition: background-color, var(--transition-05);
+  transition: background-color var(--transition-05);
 }
 .section-about-us__column-left-link:active {
   background-color: var(--dark-orange);
   border: 3px solid var(--dark-orange);
-  transition: background-color, border, var(--transition-05);
+  transition: background-color var(--transition-05), border var(--transition-05);
 }
 .section-about-us__column-right {
   width: 870px;

@@ -35,13 +35,13 @@
   font-weight: 700;
   line-height: 29px;
   color: var(--white-color);
-  transition: background-color, var(--transition-05);
+  transition: background-color var(--transition-05);
 }
 .section-hero__calculation-link:hover {
   background-color: rgb(255, 153, 0, 0.6);
-  transition: background-color, var(--transition-05);
+  transition: background-color var(--transition-05);
 }
 .section-hero__calculation-link:active {
   background-color: var(--dark-orange);
-  transition: background-color, var(--transition-05);
+  transition: background-color var(--transition-05);
 }

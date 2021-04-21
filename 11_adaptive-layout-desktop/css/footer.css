@@ -24,15 +24,15 @@
 }
 .footer__menu-link {
   color: var(--caca-color);
-  transition: color, var(--transition-05);
+  transition: color var(--transition-05);
 }
 .footer__menu-link:hover {
   color: var(--orange-color);
-  transition: color, var(--transition-05);
+  transition: color var(--transition-05);
 }
 .footer__menu-link:active {
   color: var(--dark-orange);
-  transition: color, var(--transition-05);
+  transition: color var(--transition-05);
 }
 .footer__media-item {
   display: inline-block;
@@ -42,23 +42,25 @@
   background-image: url(../img/fb.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  transition: width, height, var(--transition-05);
+  transition: transform var(--transition-05);
 }
 .footer__media-item:hover {
   transform: scale(1.15, 1.15);
-  transition: width, height, var(--transition-05);
-}
-.footer__media :nth-child(2) {
-  background-image: url(../img/vk.svg);
-}
-.footer__media :nth-child(3) {
-  background-image: url(../img/instagram.svg);
-  margin-right: 0;
+  transition: transform var(--transition-05);
 }
 .footer__media-link {
   display: block;
   width: inherit;
   height: inherit;
+}
+.footer__media-item:nth-child(2) {
+  background-image: url(../img/vk.svg);
+  background-repeat: no-repeat;
+}
+.footer__media-item:nth-child(3) {
+  background-image: url(../img/instagram.svg);
+  background-repeat: no-repeat;
+  margin-right: 0;
 }
 .footer__mid-part {
   max-width: 573px;
@@ -106,15 +108,15 @@
   font-family: inherit;
   font-size: inherit;
   color: var(--white-color);
-  transition: background-color, var(--transition-05);
+  transition: background-color var(--transition-05);
 }
 .footer__send:hover {
   background-color: rgba(255, 153, 0, 0.6);
-  transition: background-color, var(--transition-05);
+  transition: background-color var(--transition-05);
 }
 .footer__send:active {
   background-color: var(--dark-orange);
-  transition: background-color, var(--transition-05);
+  transition: background-color var(--transition-05);
 }
 .footer__checkbox {
   width: 14px;
