@@ -16,12 +16,12 @@ body {
   color:#000000; /*То же, что и font-size, только для цвета шрифта*/
 }
 .container {
-  /* max-width: 1800px; */
-  /* padding: 0 15px; */
-  /* margin: 0 auto; */
-  margin: 0 75px 100px 75px;
+  max-width: 1800px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* margin: 0 75px 100px 75px;
   padding-right: 75px;
-  padding-left: 75px;
+  padding-left: 75px; */
 }
 a {
   text-decoration: none; /*Убирает изначальную декорацию ссылок*/
