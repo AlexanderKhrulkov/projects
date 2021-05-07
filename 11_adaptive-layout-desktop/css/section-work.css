@@ -1,6 +1,7 @@
 .section-work__container {
   padding: 0;
   margin-bottom: 100px;
+  margin-left: 1px;
 }
 .section-work__second-heading {
   margin-left: -3px;

@@ -1,9 +1,7 @@
 .footer__container {
   display: flex;
-  padding-top: 48px;
-  padding-left: 75px;
-  padding-bottom: 80px;
-  margin: 0 -67px 0 -67px;
+  padding: 48px 0 80px 66px;
+  margin: 0 -66px 0 -66px;
   background-color: #222222;
 }
 .footer__left-part {
