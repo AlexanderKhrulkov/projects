@@ -23,6 +23,10 @@ body {
   padding-right: 75px;
   padding-left: 75px; */
 }
+.p-reset {
+  display: block;
+  margin: 0;
+}
 a {
   text-decoration: none; /*Убирает изначальную декорацию ссылок*/
   color: #333333; /*Ссылка наследует цвет текста от родительского элемента*/
@@ -33,11 +37,13 @@ ul {
   margin: 0;
 }
 .second-heading {
+  margin: 0;
   font-weight: 400;
   font-size: 48px;
   line-height: 59px;
 }
 .third-heading {
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
