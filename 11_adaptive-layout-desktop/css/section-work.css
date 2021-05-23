@@ -1,13 +1,11 @@
 .section-work__container {
-  padding-left: 1px;
   margin-bottom: 100px;
 }
 .section-work__second-heading {
   margin-bottom: 48px;
-  transform: translate(-2px);
 }
 .section-work__steps-container {
-  padding-left: 2px;
+  padding-left: 3px;
 }
 .section-work__steps {
   display: flex;
@@ -42,14 +40,16 @@
   background-image: url(../img/Rectangle\ 18.jpg);
   background-repeat: no-repeat;
   background-size: auto auto;
-  background-position: 900px 11px;
+  background-position: 902px 11px;
 }
 .section-work__third-heading {
   margin-bottom: 5px;
+  padding-left: 1px;
 }
 .section-work__paragraph {
-  width: 758px;
+  width: 759px;
   margin-bottom: 62px;
+  padding-left: 1px;
   line-height: 32px;
   font-size: 16px;
 }

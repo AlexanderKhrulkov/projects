@@ -1,9 +1,9 @@
 .section-about-us__second-heading {
   margin-bottom: 21px;
-  padding-left: 2px;
+  padding-left: 1px;
 }
 .section-about-us__container {
-  padding: 1px 0 0 0;
+  padding: 1px 0 0 1px;
   margin-bottom: 100px;
 }
 .section-about-us__paragraph {
@@ -13,12 +13,13 @@
 }
 .section-about-us__info-link {
   display: inline-block;
-  width: 16px;
+  width: 21px;
   height: 16px;
-  margin: 0 5px 2px 0;
+  margin: 0 0 2px 0;
   background-image: url(../img/i\ -\ tooltip.svg);
+  background-repeat: no-repeat;
+  background-position: right;
   vertical-align: middle;
-  transform: translate(5px);
 }
 .section-about-us__content {
   display: flex;
@@ -33,7 +34,7 @@
 }
 .section-about-us__column-left-description {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   padding: 38px 68px 42px 54px;
   background-color: rgb(0, 0, 0, 0.5);
 }
@@ -50,13 +51,12 @@
   width: 175px;
   border: 3px solid var(--orange-color);
   padding: 17px 0;
+  margin-bottom: 16px;
   font-weight: 600;
   line-height: 20px;
   text-align: center;
-  vertical-align: top;
   color: var(--white-color);
   transition: background-color var(--transition-05), border var(--transition-05);
-  transform: translate(0, 2px);
 }
 .section-about-us__column-left-link:hover {
   background-color: var(--orange-color);

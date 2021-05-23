@@ -1,3 +1,6 @@
+.footer__footer {
+  background-color: #222222;
+}
 .footer__container {
   display: flex;
   padding: 48px 0 80px 0;
@@ -70,7 +73,6 @@
   font-weight: 400;
   line-height: 58px;
   color: var(--caca-color);
-  transform: translate(-3px);
 }
 .footer__apply-input {
   min-height: 60px;
