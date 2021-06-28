@@ -17,10 +17,13 @@
   line-height: 21px;
 }
 .section-work__step .section-work__step-item {
-  transition: color var(--transition-05);
-}
-.section-work__step:first-child .section-work__step-item {
-  color: var(--orange-color);
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: inherit;
+  line-height: inherit;
+  transition: color var(--transition-05), border var(--transition-05);
 }
 .section-work__step:nth-last-child(2) {
   margin-right: 90px;
@@ -31,6 +34,10 @@
 .section-work__step-item:hover {
   color: var(--orange-color);
   transition: color var(--transition-05);
+}
+.section-work__step-item:focus {
+  border: 1px var(--orange-color) solid;
+  transition: border var(--transition-05);
 }
 .section-work__step .section-work__step-item:active {
   color: var(--dark-orange);
@@ -64,8 +71,8 @@
   color: var(--white-color);
   transition: background-color var(--transition-05);
 }
-.section-work__details-link:hover {
-  background-color: rgba(255, 153, 0, 0.6);
+.section-work__details-link:hover, .section-work__details-link:focus {
+  background-color: var(--light-orange);
   transition: background-color var(--transition-05);
 }
 .section-work__details-link:active {
@@ -76,17 +83,17 @@
   display: inline-block;
   width: 147px;
   padding: 20px 37px 17px 37px;
-  border: 1px solid #000000;
+  border: 1px var(--black-color) solid;
   line-height: 19px;
   transition: background-color var(--transition-05), color var(--transition-05);
 }
-.section-work__contract-link:hover {
+.section-work__contract-link:hover, .section-work__contract-link:focus {
   background-color: #666666;
   color: var(--white-color);
   transition: background-color var(--transition-05), color var(--transition-05);
 }
 .section-work__contract-link:active {
-  background-color: #000000;
+  background-color: var(--black-color);
   color: var(--white-color);
   transition: background-color var(--transition-05), color var(--transition-05);
 }

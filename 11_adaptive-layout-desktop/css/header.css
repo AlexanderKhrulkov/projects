@@ -15,6 +15,7 @@
 }
 .header__nav {
   display: flex;
+  margin-right: 70px;
 }
 .header__nav-list {
   display: flex;
@@ -32,10 +33,11 @@
   margin-right: 86px;
 }
 .header__nav-item:last-child {
-  margin-right: 70px;
+  margin-right: 0;
 }
 .header__nav-link {
-  transition: color var(--transition-05), width var(--transition-05);
+  display: block;
+  transition: color var(--transition-05), width var(--transition-05), border var(--transition-05);
 }
 .header__nav-link::after {
   display: block;
@@ -49,8 +51,14 @@
 .header__nav-link:active::after {
   width: 100%;
 }
+.header__nav-link:focus {
+  background-color: transparent;
+  border: 1px var(--orange-color) solid;
+  transition: border var(--transition-05);
+}
 .header__nav-link:active {
   color: var(--dark-orange);
+  border-bottom: 1px var(--dark-orange) solid;
 }
 .header__nav-link:active::after {
   display: block;
@@ -63,23 +71,27 @@
   width: 26px;
   height: 26px;
   padding: 0;
-  background-image: url(../img/Ellipse\ 1.svg);
+  border: transparent;
   background-color: transparent;
-  background-size: auto;
-  background-repeat: no-repeat;
-  border: none;
-  transition: background-image var(--transition-05);
+  transition: border var(--transition-05);
 }
-.header__search-button:hover {
-  background-image: url(../img/Search.svg);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  transition: background-image var(--transition-05);
+.header__search-button svg rect {
+  fill: var(--black-color);
+  transition: fill var(--transition-05);
 }
-.header__search-button:active {
-  background-image: url(../img/Search1.svg);
-  background-color: transparent;
-  background-size: auto;
-  background-repeat: no-repeat;
+.header__search-button svg circle {
+  stroke: var(--black-color);
+  transition: stroke var(--transition-05);
+}
+.header__search-button:hover svg rect {
+  fill: var(--orange-color);
+  transition: fill var(--transition-05);
+}
+.header__search-button:hover svg circle {
+  stroke: var(--orange-color);
+  transition: stroke var(--transition-05);
+}
+.header__search-button:focus {
+  border: 1px var(--orange-color) solid;
+  transition: border var(--transition-05);
 }

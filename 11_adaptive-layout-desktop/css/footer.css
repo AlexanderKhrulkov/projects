@@ -30,28 +30,40 @@
   color: var(--orange-color);
   transition: color var(--transition-05);
 }
+.footer__menu-link:focus {
+  border: 1px var(--orange-color) solid;
+  transition: color var(--transition-05);
+}
 .footer__menu-link:active {
   color: var(--dark-orange);
   transition: color var(--transition-05);
 }
 .footer__media-item {
   display: inline-block;
-  margin-right: 21px;
-  width: 60px;
-  height: 60px;
-  background-image: url(../img/fb.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: transform var(--transition-05);
-}
-.footer__media-item:hover {
-  transform: scale(1.15, 1.15);
-  transition: transform var(--transition-05);
+  margin-right: 19px;
+  width: 62px;
+  height: 62px;
 }
 .footer__media-link {
   display: block;
   width: inherit;
   height: inherit;
+  transition: fill var(--transition-05), border var(--transition-05);
+}
+.footer__media-link svg path {
+  transition: fill var(--transition-05);
+}
+.footer__media-link:hover svg path {
+  fill: var(--orange-color);
+  transition: fill var(--transition-05);
+}
+.footer__media-link:focus {
+  border: 1px var(--orange-color) solid;
+  transition: border var(--transition-05);
+}
+.footer__media-link:active svg path {
+  fill: var(--dark-orange);
+  transition: fill var(--transition-05);
 }
 .footer__media-item:nth-child(2) {
   background-image: url(../img/vk.svg);
@@ -84,6 +96,14 @@
   font-family: inherit;
   background-color: #414141;
   border: none;
+  transition: background-color var(--transition-05);
+}
+.footer__apply-input:hover, .footer__apply-input:focus, .footer__apply-input:active {
+  background-color: #666666;
+  transition: background-color var(--transition-05);
+}
+.footer__apply-input:active {
+  color: var(--white-color);
 }
 .footer__apply-input-message {
   max-height: 150px;
