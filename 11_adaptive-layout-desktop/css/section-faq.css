@@ -33,13 +33,20 @@
   display: flex;
   width: 50px;
 	height: 50px;
-  padding-top: 9px;
-  padding-left: 9px;
+  padding-top: 24px;
+  padding-left: 8px;
 	background-color: #ECECEC;
 	border-radius: 50px;
 }
-.section-faq__circle-cross svg path {
-  transition: fill var(--transition-05);
+.section-faq__circle-cross:before, .section-faq__circle-cross:after {
+  content: "";
+  position: absolute;
+  width: 31px;
+  height: 1px;
+  background: #666666;
+}
+.section-faq__circle-cross:before {
+  transform: rotate(90deg);
 }
 .section-faq__spoiler:hover, .section-faq__spoiler:focus {
   border-bottom: 1px var(--orange-color) solid;

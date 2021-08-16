@@ -4,15 +4,13 @@
 .section-work__second-heading {
   margin-bottom: 48px;
 }
-.section-work__steps-container {
-  padding-left: 3px;
-}
 .section-work__steps {
   display: flex;
   margin-bottom: 46px;
+  padding-left: 3px;
 }
 .section-work__step {
-  margin-right: 89px;
+  margin-right: 88px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -22,7 +20,7 @@
   border: none;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: inherit;
-  line-height: inherit;
+  line-height: 17px;
   transition: color var(--transition-05), border var(--transition-05);
 }
 .section-work__step:nth-last-child(2) {
