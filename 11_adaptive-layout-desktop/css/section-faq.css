@@ -30,23 +30,26 @@
   cursor: pointer;
 }
 .section-faq__circle-cross {
-  display: flex;
+  position: relative;
   width: 50px;
 	height: 50px;
-  padding-top: 24px;
-  padding-left: 8px;
 	background-color: #ECECEC;
 	border-radius: 50px;
 }
 .section-faq__circle-cross:before, .section-faq__circle-cross:after {
   content: "";
   position: absolute;
+  left: 50%;
+  top: 50%;
   width: 31px;
   height: 1px;
   background: #666666;
 }
 .section-faq__circle-cross:before {
-  transform: rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.section-faq__circle-cross:after {
+  transform: translate(-50%, -50%);
 }
 .section-faq__spoiler:hover, .section-faq__spoiler:focus {
   border-bottom: 1px var(--orange-color) solid;

@@ -37,6 +37,7 @@
 }
 .header__nav-link {
   display: block;
+  padding: 1px;
   transition: color var(--transition-05), width var(--transition-05), border var(--transition-05);
 }
 .header__nav-link::after {
@@ -52,6 +53,7 @@
   width: 100%;
 }
 .header__nav-link:focus {
+  padding: 0;
   background-color: transparent;
   border: 1px var(--orange-color) solid;
   transition: border var(--transition-05);
