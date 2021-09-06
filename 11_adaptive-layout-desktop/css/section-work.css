@@ -10,12 +10,12 @@
   padding-left: 3px;
 }
 .section-work__step {
-  margin-right: 85px;
+  margin-right: 89px;
   font-size: 18px;
   line-height: 21px;
 }
 .section-work__step .section-work__step-item {
-  padding: 1px;
+  padding: 0;
   background-color: transparent;
   border: none;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -24,7 +24,7 @@
   transition: color var(--transition-05), border var(--transition-05);
 }
 .section-work__step:nth-last-child(2), .section-work__step:nth-last-child(3) {
-  margin-right: 88px;
+  margin-right: 89px;
 }
 .section-work__step:last-child {
   margin-right: 0;
@@ -34,9 +34,8 @@
   transition: color var(--transition-05);
 }
 .section-work__step-item:focus {
-  padding: 0;
-  border: 1px var(--orange-color) solid;
-  transition: border var(--transition-05);
+  outline: 1px var(--orange-color) solid;
+  transition: outline var(--transition-05);
 }
 .section-work__step .section-work__step-item:active {
   color: var(--dark-orange);
