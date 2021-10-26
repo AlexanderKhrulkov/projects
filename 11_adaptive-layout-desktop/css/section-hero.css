@@ -41,3 +41,12 @@
   background-color: var(--dark-orange);
   transition: background-color var(--transition-05);
 }
+@media (max-width: 1024px) {
+.section-hero__container {
+  padding: 160px 77px;
+  background-size: cover;
+}
+.section-hero__paragraph {
+  margin-bottom: 60px;
+}
+}
