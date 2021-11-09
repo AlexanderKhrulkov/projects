@@ -158,6 +158,9 @@
   .section-about-us__list {
     padding: 0;
   }
+  .section-about-us__column-left {
+    padding-top: 453px;
+  }
   .section-about-us__column-left-description {
     padding: 34px 40px;
   }
@@ -169,16 +172,20 @@
   }
   .section-about-us__item, .section-about-us__item:last-child {
     padding: 34px 45px 34px 169px;
-    background-size: 114px 99px;
-    background-position: 32px 70px;
+    background-size: 110px 90px;
+    background-position: 44px 63px;
   }
 }
 @media (max-width: 698px) {
+  .section-about-us__container {
+    margin-bottom: 60px;
+  }
   .section-about-us__second-heading {
     font-size: 24px;
-    margin: 0;
+    margin: 0 0 5px 0;
   }
   .section-about-us__paragraph {
+    margin-bottom: 14px;
     font-size: 14px;
     line-height: 28px;
   }
@@ -219,6 +226,9 @@
     background-size: 60px 50px;
     background-position: 0 0;
     border: none;
+  }
+  .section-about-us__item:last-child .section-about-us__third-heading {
+    margin-bottom: 5px;
   }
   .section-about-us__third-heading {
     font-size: 18px;
