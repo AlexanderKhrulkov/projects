@@ -105,6 +105,16 @@
   line-height: 32px;
 }
 @media (max-width: 1235px) {
+  .section-about-us__container {
+    margin-bottom: 80px;
+  }
+  .section-about-us__second-heading {
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  .section-about-us__paragraph {
+    margin-bottom: 63px;
+  }
   .section-about-us__info-link {
     display: none;
   }
@@ -112,20 +122,33 @@
     flex-direction: column;
   }
   .section-about-us__column-left {
-    padding-top: 444px;
+    padding-top: 442px;
     margin: 0 0 32px 0;
   }
   .section-about-us__column-left-description {
     max-width: 1235px;
+    padding: 50px 50px;
+  }
+  .section-about-us__column-left-link {
+    padding: 17px 38px;
   }
   .section-about-us__column-right {
     max-width: 1235px;
   }
   .section-about-us__item {
-    background-position: 62px 54px;
+    padding-left: 315px;
+    padding-top: 63px;
+    background-position: 86px 64px;
+  }
+  .section-about-us__item:last-child {
+    background-size: 190px 170px;
+    background-position: 76px 64px;
   }
   .section-about-us__column-right-paragraph {
-    max-width: 1000px;
+    max-width: 452px;
+  }
+  .section-about-us__third-heading {
+    margin-bottom: 8px;
   }
 }
 @media (max-width: 783px) {

@@ -88,11 +88,22 @@
 }
 */
 @media (max-width: 1039px) {
-  .section-faq__spoiler-heading {
-    font-size: 20px;
+  .section-faq__container {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+  .section-faq__spoiler-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .section-faq__spoiler {
+    margin: 0;
+    padding: 29px 0;
   }
   .section-faq__spoiler-heading {
     max-width: 756px;
+    font-size: 20px;
   }
 }
 @media (max-width: 783px) {

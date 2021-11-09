@@ -44,7 +44,7 @@
 @media (max-width: 1039px) {
 .section-hero__container {
   margin-bottom: 80px;
-  padding: 160px 77px;
+  padding: 158px 77px 160px 77px;
   background-image: url(../img/low-angle-photo-of-balconies-24620152.jpg);
   background-size: cover;
 }
@@ -52,12 +52,16 @@
   max-width: 660px;
   margin-bottom: 60px;
   font-size: 20px;
+  line-height: 24px;
 }
 .section-hero__first-heading {
   font-size: 60px;
+  line-height: 73px;
+  margin-bottom: 17px;
 }
 .section-hero__calculation-link {
-  padding: 24px 36px;
+  max-width: 280px;
+  padding: 25px 36px;
 }
 }
 @media (max-width: 783px) {

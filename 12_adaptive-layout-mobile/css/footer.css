@@ -169,12 +169,31 @@
   color: var(--caca-color);
 }
 @media (max-width: 1408px) {
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+  .footer__menu {
+    margin-bottom: 90px;
+  }
   .footer__right-part {
     display: none;
   }
   .footer__mid-part {
-    padding-left: 0;
+    padding: 0;
     margin: 0 auto;
+  }
+  .footer__input-form {
+    padding-left: 66px;
+  }
+  .footer__mid-second-heading {
+    padding-left: 66px;
+    margin-bottom: 27px;
+  }
+  .footer__apply-input {
+    min-width: 540px;
+  }
+  .footer__send {
+    width: 240px;
   }
 }
 @media (max-width: 1000px) {
@@ -201,6 +220,7 @@
   }
   .footer__mid-second-heading {
     min-width: auto;
+    padding: 0;
     text-align: center;
     font-size: 24px;
   }
@@ -210,6 +230,7 @@
   .footer__input-form {
     display: flex;
     margin: 0 auto;
+    padding: 0;
     flex-direction: column;
     max-width: 290px;
   }
