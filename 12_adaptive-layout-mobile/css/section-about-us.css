@@ -190,7 +190,7 @@
     line-height: 28px;
   }
   .section-about-us__column-left {
-    background-size: contain;
+    background-size: auto 208px;
     background-position: top;
     padding-top: 208px;
   }

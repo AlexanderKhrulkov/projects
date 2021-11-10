@@ -23,7 +23,7 @@
 }
 .section-faq__spoiler-heading {
   display: flex;
-  margin: 0;
+  margin: 0 118px 0 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -109,6 +109,7 @@
 @media (max-width: 783px) {
   .section-faq__spoiler-heading {
     max-width: 570px;
+    margin-right: 48px;
   }
 }
 @media (max-width: 698px) {
@@ -128,6 +129,7 @@
   }
   .section-faq__spoiler-heading {
     max-width: 243px;
+    margin-right: 17px;
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;

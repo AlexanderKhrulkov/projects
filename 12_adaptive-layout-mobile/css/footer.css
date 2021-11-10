@@ -248,7 +248,7 @@
     margin: 0 auto;
     padding: 0;
     flex-direction: column;
-    max-width: 290px;
+    max-width: 100%;
   }
   .footer__submit-group {
     flex-direction: column;
