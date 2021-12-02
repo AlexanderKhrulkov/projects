@@ -226,7 +226,7 @@
   }
   .footer__mid-part {
     max-width: 320px;
-    margin-bottom: 16px;
+    margin: 0 auto 16px auto;
   }
   .footer__mid-second-heading {
     min-width: auto;
