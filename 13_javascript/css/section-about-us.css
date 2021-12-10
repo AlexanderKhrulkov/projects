@@ -1,0 +1,242 @@
+.section-about-us__second-heading {
+  margin-bottom: 21px;
+  padding-left: 1px;
+}
+.section-about-us__container {
+  padding: 1px 0 0 1px;
+  margin-bottom: 100px;
+}
+.section-about-us__paragraph {
+  max-width: 1235px;
+  margin-bottom: 44px;
+  line-height: 32px;
+}
+.section-about-us__info-link {
+  display: inline-block;
+  width: 21px;
+  height: 16px;
+  margin: 0 0 2px 0;
+  background-image: url(../img/i\ -\ tooltip.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  vertical-align: middle;
+}
+.section-about-us__content {
+  display: flex;
+}
+.section-about-us__column-left {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  margin-right: 30px;
+  background-image: url(../img/Rectangle\ 2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-about-us__column-left-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-width: 868px;
+  padding: 38px 50px 42px 50px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.section-about-us__column-left-paragraph {
+  /*display: flex;
+  flex-grow: 1;*/
+  max-width: 454px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--white-color);
+}
+.section-about-us__column-left-link {
+  /*display: flex;
+  flex-grow: 0;*/
+  width: 175px;
+  border: 3px solid var(--orange-color);
+  padding: 20px 38px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  color: var(--white-color);
+  transition: background-color var(--transition-05), border var(--transition-05);
+}
+.section-about-us__column-left-link:hover, .section-about-us__column-left-link:focus {
+  background-color: var(--orange-color);
+  transition: background-color var(--transition-05);
+}
+.section-about-us__column-left-link:active {
+  background-color: var(--dark-orange);
+  border: 3px solid var(--dark-orange);
+  transition: background-color var(--transition-05), border var(--transition-05);
+}
+.section-about-us__column-right {
+  flex-grow: 1;
+  max-width: 870px;
+}
+.section-about-us__list {
+  padding: 2px 1px 0 0;
+}
+.section-about-us__item {
+  display: block;
+  margin-bottom: 30px;
+  padding: 65px 116px 65px 299px;
+  border: 1px solid var(--caca-color);
+  background-image: url(../img/Group\ 25.svg);
+  background-repeat: no-repeat;
+  background-size: 180px 136px;
+  background-position: 62px 70px;
+}
+.section-about-us__item:last-child {
+  margin-bottom: 0;
+  padding-top: 66px;
+  background-image: url(../img/Group\ 24.svg);
+  background-size: 178px 153px;
+  background-position: 62px 54px;
+}
+.section-about-us__third-heading {
+  display: block;
+  max-width: 452px;
+  margin-bottom: 5px;
+}
+.section-about-us__column-right-paragraph {
+  max-width: 452px;
+  line-height: 32px;
+}
+@media (max-width: 1235px) {
+  .section-about-us__container {
+    margin-bottom: 80px;
+  }
+  .section-about-us__second-heading {
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  .section-about-us__paragraph {
+    margin-bottom: 63px;
+  }
+  .section-about-us__info-link {
+    display: none;
+  }
+  .section-about-us__content {
+    flex-direction: column;
+  }
+  .section-about-us__column-left {
+    padding-top: 442px;
+    margin: 0 0 32px 0;
+  }
+  .section-about-us__column-left-description {
+    max-width: 1235px;
+    padding: 50px 50px;
+  }
+  .section-about-us__column-left-link {
+    padding: 17px 38px;
+  }
+  .section-about-us__column-right {
+    max-width: 1235px;
+  }
+  .section-about-us__item {
+    padding-left: 315px;
+    padding-top: 63px;
+    background-position: 86px 64px;
+  }
+  .section-about-us__item:last-child {
+    background-size: 190px 170px;
+    background-position: 76px 64px;
+  }
+  .section-about-us__column-right-paragraph {
+    max-width: 452px;
+  }
+  .section-about-us__third-heading {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 783px) {
+  .section-about-us__container {
+    padding: 0;
+  }
+  .section-about-us__list {
+    padding: 0;
+  }
+  .section-about-us__column-left {
+    padding-top: 453px;
+  }
+  .section-about-us__column-left-description {
+    padding: 34px 40px;
+  }
+  .section-about-us__column-left-paragraph {
+    margin-right: 47px;
+  }
+  .section-about-us__column-left-link {
+    margin-bottom: 0;
+  }
+  .section-about-us__item, .section-about-us__item:last-child {
+    padding: 34px 45px 34px 169px;
+    background-size: 110px 90px;
+    background-position: 44px 63px;
+  }
+}
+@media (max-width: 698px) {
+  .section-about-us__container {
+    margin-bottom: 60px;
+  }
+  .section-about-us__second-heading {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+  }
+  .section-about-us__paragraph {
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .section-about-us__column-left {
+    background-size: auto 208px;
+    background-position: top;
+    padding-top: 208px;
+  }
+  .section-about-us__column-left-description {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    background-color: transparent;
+  }
+  .section-about-us__column-left-paragraph {
+    margin:0 0 10px 0;
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+  }
+  .section-about-us__column-left-link {
+    width: 162px;
+    height: 40px;
+    padding: 11px 15px;
+    color: var(--orange-color);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    border: 2px solid var(--orange-color);
+  }
+  .section-about-us__column-left-link:hover, .section-about-us__column-left-link:focus {
+    color: var(--white-color);
+    transition: color var(--transition-05), background-color var(--transition-05);
+  }
+  .section-about-us__item, .section-about-us__item:last-child {
+    padding: 62px 0 0 0;
+    background-size: 60px 50px;
+    background-position: 0 0;
+    border: none;
+  }
+  .section-about-us__item:last-child .section-about-us__third-heading {
+    margin-bottom: 5px;
+  }
+  .section-about-us__third-heading {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+  .section-about-us__column-right-paragraph {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
