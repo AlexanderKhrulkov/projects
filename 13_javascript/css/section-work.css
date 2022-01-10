@@ -106,16 +106,16 @@
   background-size: cover;
   color: transparent;
 }
-.section-work__content-picture .section-work__picture:first-child {
+.section-work__picture-one {
   background-image: url(../img/Rectangle18.jpg);
 }
-.section-work__content-picture .section-work__picture:nth-child(2) {
+.section-work__picture-two {
   background-image: url(../img/Rectangle19.jpg);
 }
-.section-work__content-picture .section-work__picture:nth-child(3) {
+.section-work__picture-three {
   background-image: url(../img/Rectangle20.jpg);
 }
-.section-work__content-picture .section-work__picture:nth-child(4) {
+.section-work__picture-four {
   background-image: url(../img/Rectangle21.jpg);
 }
 @media (max-width: 1039px) {

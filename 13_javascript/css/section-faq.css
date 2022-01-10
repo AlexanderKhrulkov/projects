@@ -7,8 +7,9 @@
 }
 .section-faq__spoiler, .section-faq__spoiler:active {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-top: -1px;
   padding-top: 30px;
   padding-bottom:30px;
@@ -21,15 +22,43 @@
 .section-faq__spoiler:first-child, .section-faq__spoiler:first-child:active {
   border-top: 1px var(--caca-color) solid;
 }
+.section-faq__spoiler-top {
+  margin: 0 !important;
+  max-width: 1765px;
+}
+.ui-accordion .ui-accordion-header {
+  display: flex !important;
+  justify-content: space-between;
+}
+.ui-icon {
+  display: none !important;
+}
+.ui-widget {
+  font-family: "Montserrat", "Arial", sans-serif !important;
+}
+.ui-state-default {
+  border: none !important;
+  background: none !important;
+  color: var(--black-color);
+}
+.ui-widget-content {
+  border: none !important;
+}
 .section-faq__spoiler-heading {
   display: flex;
   margin: 0 118px 0 0;
+  padding-top: 8px;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
   cursor: pointer;
 }
+.section-faq__spoiler-paragraph {
+  font-size: inherit;
+  line-height: 32px;
+}
 .section-faq__circle-cross {
+  display: flex;
   position: relative;
   min-width: 50px;
 	min-height: 50px;
