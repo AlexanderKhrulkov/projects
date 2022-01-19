@@ -20,6 +20,7 @@
   bottom: 0;
   left: 0;
   width: 400px;
+  height: 260px;
   padding: 40px;
   background-color: var(--white-color);
   transition: var(--transition-05);
