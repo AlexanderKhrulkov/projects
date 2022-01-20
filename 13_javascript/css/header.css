@@ -19,32 +19,41 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 400px;
-  height: 260px;
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 420px;
+  height: 768px;
+  padding: 40px 0 0 50px;
   background-color: var(--white-color);
   transition: var(--transition-05);
   transform: translateX(-201%);
 }
 .header__close {
+  margin-bottom: 100px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
+}
+.header__close:before, .header__close:after {
+  content: "";
+  position: absolute;
+  top: 55px;
+  left: 65px;
+  width: 30px;
+  height: 3px;
+  background-color: #666666;
   transition: var(--transition-05);
 }
-.header__close svg rect {
-  fill: var(--caca-color);
-  transition: fill var(--transition-05);
+.header__close:before {
+  transform: translate(-50%, -50%) rotate(45deg);
 }
-.header__close svg circle {
-  stroke: var(--caca-color);
-  transition: stroke var(--transition-05);
+.header__close:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
-.header__close:hover svg rect {
-  fill: var(--orange-color);
-  transition: fill var(--transition-05);
-}
-.header__close:hover svg circle {
-  stroke: var(--orange-color);
-  transition: stroke var(--transition-05);
+.header__close:hover::before, .header__close:hover::after {
+  background-color: var(--orange-color);
+  transition: background-color var(--transition-05);
 }
 .header__close:focus {
   outline: 1px var(--orange-color) solid;
@@ -65,7 +74,6 @@
 .header__nav-list {
   display: flex;
   flex-grow: 1;
-  justify-content: space-between;
   padding: 4px 2px 0 0;
 }
 .header__nav-item {
@@ -215,19 +223,18 @@
     transition: width var(--transition-05);
   }
   .header__burger-menu.is-active {
-    display: flex;
-    align-items: flex-start;
     transform: none;
   }
-  .header__burger-menu.is-active .header__nav-list {
+  .header__burger-menu .header__nav-list {
     flex-direction: column;
   }
-  .header__burger-menu.is-active .header__nav-list .header__nav-item {
-    padding-bottom: 20px;
+  .header__burger-menu .header__nav-list .header__nav-item {
+    margin-bottom: 60px;
+
   }
-  .header__burger-menu.is-active .header__nav-list .header__nav-item:last-child {
+  .header__burger-menu .header__nav-list .header__nav-item:last-child {
     margin-right: auto;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .header__container {
     padding: 26px 0;
@@ -243,7 +250,14 @@
     padding: 17px 0;
   }
   .header__burger-menu {
-    width: 200px;
+    width: 320px;
+    height: 387px;
+  }
+  .header__close {
+    margin-bottom: 32px;
+  }
+  .header__burger-menu .header__nav-list .header__nav-item {
+    margin-bottom: 32px;
   }
   .header__logo img {
     width: 110px;
