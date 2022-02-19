@@ -186,6 +186,10 @@
   outline: 1px var(--orange-color) solid;
   transition: border var(--transition-05);
 }
+.header__search-close {
+  border: none;
+  background-color: transparent;
+}
 .header__search-close svg rect {
   fill: #999;
   transition: fill var(--transition-05);
