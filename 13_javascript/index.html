@@ -24,7 +24,7 @@
     <div class="container">
       <div class="header__container">
         <div class="header__burger-menu" id="menu">
-          <div class="header__close" id="burgerClose">
+          <button class="header__close" id="burgerClose" aria-label="Закрыть раскрывающееся меню">
             <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
               <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)"
                 fill="#999999" />
@@ -32,7 +32,7 @@
                 fill="#999999" />
               <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2" />
             </svg>-->
-          </div>
+          </button>
           <ul class="header__nav-list">
             <li class="header__nav-item">
               <a class="header__nav-link" href="">О нас</a>
@@ -51,13 +51,13 @@
             </li>
           </ul>
         </div>
-        <div class="header__burger" id="burger">
+        <button class="header__burger" id="burger" aria-label="Раскрывающееся меню">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewbox="0 0 30 23" fill="none">
             <rect width="30" height="3" fill="#333333" />
             <rect y="10" width="30" height="3" fill="#333333" />
             <rect y="20" width="30" height="3" fill="#333333" />
           </svg>
-        </div>
+        </button>
         <div class="header__logo-container">
           <a class="header__logo" href="">
             <img src="./img/Логотип_1.png" alt="Логотип">
@@ -97,7 +97,7 @@
               <circle cx="11.5" cy="11.5" r="10.5" stroke="#000000" stroke-width="2" />
             </svg>
           </button>
-          <div class="header__close" id="searchClose">
+          <button class="header__search-close" id="searchClose" aria-label="Закрыть строку поиска">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
               <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)"
                 fill="#999999" />
@@ -105,7 +105,7 @@
                 fill="#999999" />
               <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2" />
             </svg>
-          </div>
+          </button>
         </div>
       </div>
     </div>
@@ -319,7 +319,7 @@
             задаваемые вопросы</h2>
           <ul class="section-faq__spoiler-list" id="accordion">
             <li class="section-faq__spoiler">
-              <div class="section-faq__spoiler-top">
+              <div class="section-faq__spoiler-top" tabindex="0">
                 <h3 class="section-faq__spoiler-heading">
                   Из чего формируется конечная стоимость проекта?
                 </h3>
@@ -348,7 +348,7 @@
               </div>
             </li>
             <li class="section-faq__spoiler">
-              <div class="section-faq__spoiler-top">
+              <div class="section-faq__spoiler-top" tabindex="0">
                 <h3 class="section-faq__spoiler-heading">
                   У меня есть свой проект. Сможем ли мы его доработать /
                   реализовать?
@@ -378,7 +378,7 @@
               </div>
             </li>
             <li class="section-faq__spoiler">
-              <div class="section-faq__spoiler-top">
+              <div class="section-faq__spoiler-top" tabindex="0">
                 <h3 class="section-faq__spoiler-heading">
                   Я выбираю между разными компаниями. В чём ваше
                   отличие?
@@ -408,7 +408,7 @@
               </div>
             </li>
             <li class="section-faq__spoiler">
-              <div class="section-faq__spoiler-top">
+              <div class="section-faq__spoiler-top" tabindex="0">
                 <h3 class="section-faq__spoiler-heading">
                   Могу ли я делегировать вам работу / согласование с
                   подрядчиком / организацией?
@@ -438,7 +438,7 @@
               </div>
             </li>
             <li class="section-faq__spoiler">
-              <div class="section-faq__spoiler-top">
+              <div class="section-faq__spoiler-top" tabindex="0">
                 <h3 class="section-faq__spoiler-heading">
                   Могу ли я вернуть деньги на каком-либо из этапов
                   работ?
@@ -507,7 +507,7 @@
           </ul>
           <ul class="footer__media">
             <li class="footer__media-item">
-              <a class="footer__media-link" href="">
+              <a class="footer__media-link" href="" aria-label="ссылка на фейсбук">
                 <svg width="61" height="61" viewbox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M30.9166 0.120117C14.4167 0.120117
                           0.916672
@@ -530,11 +530,12 @@
                           37.4865 60.9166 30.3008C60.9166 13.6442
                           47.4166
                           0.120117 30.9166 0.120117Z" fill="#7C7C7C" />
+                  <title>Перейти на страницу в фейсбук</title>
                 </svg>
               </a>
             </li>
             <li class="footer__media-item">
-              <a class="footer__media-link" href="">
+              <a class="footer__media-link" href="" aria-label="ссылка на вконтакте">
                 <svg width="60" height="60" viewbox="0 0 60
                           60" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M30 0C13.432 0 0 13.4314 0 30C0
@@ -614,11 +615,12 @@
                             29.8815C43.8752 31.2994 43.9556 32.0133
                             45.2176
                             33.2446Z" fill="#7C7C7C" />
+                  <title>Перейти на страницу вконтакте </title>
                 </svg>
               </a>
             </li>
             <li class="footer__media-item">
-              <a class="footer__media-link" href="">
+              <a class="footer__media-link" href="" aria-label="ссылка на инстаграм">
                 <svg width="60" height="60" viewbox="0 0 60
                             60" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M24.2578 30C24.2578 33.1714
@@ -769,6 +771,7 @@
                                   30C12.7734
                                   34.6783 12.7931 35.2652 12.8773
                                   37.1022Z" fill="#7C7C7C" />
+                  <title>Перейти на страницу в инстаграм</title>
                 </svg>
               </a>
             </li>
@@ -791,7 +794,7 @@
                 Отправить данные
               </button>
               <label class="footer__data-processing">
-                <input type="checkbox" name="data-processing" class="footer__checkbox">
+                <input type="checkbox" name="data-processing" class="footer__checkbox" aria-checked="false">
                 Согласен на обработку данных
                 <span class="footer__custom-checkbox"></span>
               </label>

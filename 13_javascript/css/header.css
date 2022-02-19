@@ -25,6 +25,7 @@
   width: 420px;
   height: 768px;
   padding: 40px 0 0 50px;
+  visibility: hidden;
   background-color: var(--white-color);
   transition: var(--transition-05);
   transform: translateX(-201%);
@@ -34,6 +35,8 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 .header__close:before, .header__close:after {
   content: "";
@@ -131,6 +134,7 @@
   width: 539px;
   height: 60px;
   padding: 18px;
+  visibility: hidden;
   background-color: var(--white-color);
   transition: var(--transition-05);
   transform: translateY(-201%);
@@ -139,6 +143,7 @@
 }
 .header__search-window.is-active {
   transform: none;
+  visibility: visible;
 }
 .header__search-input {
   flex-grow: 2;
@@ -181,6 +186,22 @@
   outline: 1px var(--orange-color) solid;
   transition: border var(--transition-05);
 }
+.header__search-close svg rect {
+  fill: #999;
+  transition: fill var(--transition-05);
+}
+.header__search-close svg circle {
+  stroke: #999;
+  transition: stroke var(--transition-05);
+}
+.header__search-close:hover svg rect {
+  fill: var(--orange-color);
+  transition: fill var(--transition-05);
+}
+.header__search-close:hover svg circle {
+  stroke: var(--orange-color);
+  transition: stroke var(--transition-05);
+}
 @media (max-width: 1039px) {
   .header__nav {
     display: none;
@@ -196,6 +217,8 @@
   .header__burger {
     display: block;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
     transition: var(--transition-05);
   }
   .header__burger svg rect {
@@ -224,6 +247,7 @@
   }
   .header__burger-menu.is-active {
     transform: none;
+    visibility: visible;
   }
   .header__burger-menu .header__nav-list {
     flex-direction: column;
