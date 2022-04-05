@@ -240,9 +240,6 @@ h2 {
   margin-bottom: 5px;
   font-size: 12px;
 }
-.just-validate-error-field {
-  outline-color: #dc3545;
-}
 .form-container__send {
   width: 192px;
   padding: 19px 0;
