@@ -130,6 +130,11 @@ h2 {
   border-left: 1px solid #666;
   border-bottom: 1px solid #666;
   transform: rotate(-45deg);
+  border-right: none;
+  border-top: none;
+}
+.choices__list--single {
+  padding-top: 7px;
 }
 .choices[data-type*=select-one].is-open::after {
   top: 60%;
@@ -234,7 +239,9 @@ h2 {
   padding-left: 20px;
   margin-bottom: 5px;
   font-size: 12px;
-  color: #FF5C00;
+}
+.just-validate-error-field {
+  outline-color: #dc3545;
 }
 .form-container__send {
   width: 192px;

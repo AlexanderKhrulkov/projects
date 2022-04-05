@@ -151,7 +151,7 @@
   </script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="./js/inputmask.min.js"></script>
-  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="./js/just-validate.production.min.js"></script>
   <script>
     var selector = document.querySelector("input[type='tel']");
 
@@ -159,7 +159,14 @@
     im.mask(selector);
   </script>
   <script>
-    const validation = new JustValidate('#form');
+    const validation = new JustValidate('#form', {
+      errorFieldCssClass: 'just-validate-error-field',
+      errorLabelStyle: {
+        color: '#FF5C00',
+      },
+      focusInvalidField: true,
+      lockForm: true,
+    });
 
     validation
       .addField('#name', [
