@@ -1,0 +1,65 @@
+.teachers .container-fluid {
+  padding-top: 75px;
+  padding-bottom: 72px;
+  background-color: var(--dark-blue);
+}
+.teachers__container {
+  justify-content: center;
+}
+.teachers__second-heading {
+  margin-bottom: 23px;
+  font-size: 40px;
+  line-height: 40px;
+  color: var(--white-color);
+  font-weight: var(--bold-weight);
+}
+.teachers__cards {
+  padding: 0;
+}
+.teachers__card-picture {
+  display: block;
+  margin-bottom: 27px;
+}
+.teachers__card-picture img {
+  width: 100%;
+}
+.teachers__third-heading {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--white-color);
+}
+.teachers__paragraph {
+  color: var(--gray-blue);
+  line-height: 24px;
+}
+
+@media (max-width: 1439px) {
+  .teachers .container-fluid {
+    padding-top: 74px;
+    padding-bottom: 26px;
+  }
+  .teachers__second-heading {
+    margin-bottom: 23px;
+  }
+  .teachers__card-item {
+    padding-bottom: 23px;
+  }
+}
+@media (max-width: 767px) {
+  .teachers .container-fluid {
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .teachers .container-fluid {
+    padding-top: 47px;
+    padding-bottom: 24px;
+  }
+  .teachers__second-heading {
+    margin-bottom: 27px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
