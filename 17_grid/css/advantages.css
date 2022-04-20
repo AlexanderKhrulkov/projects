@@ -1,4 +1,4 @@
-.advantages .container-fluid {
+.advantages .container {
   padding-top: 80px;
   padding-bottom: 77px;
   background-color: var(--white-color);
@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 1439px) {
-  .advantages .container-fluid {
+  .advantages .container {
     padding-top: 81px;
     padding-bottom: 75px;
   }
@@ -55,7 +55,7 @@
   }
 }
 @media (max-width: 767px) {
-  .advantages .container-fluid {
+  .advantages .container {
     padding-bottom: 36px;
   }
   .advantages__top-picture {
@@ -63,7 +63,7 @@
   }
 }
 @media (max-width: 575px) {
-  .advantages .container-fluid {
+  .advantages .container {
     padding-top: 50px;
     padding-bottom: 19px;
   }

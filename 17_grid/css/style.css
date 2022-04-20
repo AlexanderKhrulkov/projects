@@ -16,8 +16,9 @@ body {
   background-color: #FFFFFF; /*Цвет фона*/
   color:#000000; /*То же, что и font-size, только для цвета шрифта*/
 }
-.container-fluid {
+.container {
   padding: 0 165px;
+  margin: 0;
 }
 .ul-reset {
   margin: 0;
@@ -48,23 +49,43 @@ body {
   --transition-05: 0.5s ease;
 }
 @media (max-width: 1439px) {
-  .container-fluid {
+  .container {
     padding: 0 150px;
   }
 }
 @media (max-width: 1199px) {
-  .container-fluid {
+  .container {
     padding: 0 39px;
   }
 }
 @media (max-width: 767px) {
-  .container-fluid {
+  .container {
     padding: 0 33px;
   }
 }
 @media (max-width: 575px) {
-  .container-fluid {
+  .container {
     padding: 0 15px;
   }
 }
 
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 768px;
+  }
+}
+@media (min-width: 768px) {
+  .container, .container-md, .container-sm {
+    max-width: 992px;
+  }
+}
+@media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1440px;
+  }
+}
