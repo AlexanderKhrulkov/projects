@@ -33,6 +33,7 @@
   font-size: 13px;
 }
 .footer__trademark {
+  background-color: var(--white-color);
   transition: outline var(--transition-05);
 }
 .footer__trademark:focus {

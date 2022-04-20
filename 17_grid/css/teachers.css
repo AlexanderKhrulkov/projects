@@ -1,7 +1,9 @@
+.teachers {
+  background-color: var(--dark-blue);
+}
 .teachers .container {
   padding-top: 75px;
   padding-bottom: 72px;
-  background-color: var(--dark-blue);
 }
 .teachers__container {
   justify-content: center;

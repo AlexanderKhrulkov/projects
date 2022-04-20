@@ -1,7 +1,9 @@
+.advantages {
+  background-color: var(--white-color);
+}
 .advantages .container {
   padding-top: 80px;
   padding-bottom: 77px;
-  background-color: var(--white-color);
 }
 .advantages__top-picture {
   padding-top: 22px;

@@ -1,3 +1,6 @@
+.courses {
+  background-color: var(--white-color);
+}
 .courses .container {
   padding-top: 75px;
   padding-bottom: 50px;

@@ -1,8 +1,5 @@
-.hero .container {
-  background-image: url(../img/Rectangle\ 6.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.hero {
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, var(--dark-blue) 100%);
 }
 .hero__content {
   padding-top: 131px;
