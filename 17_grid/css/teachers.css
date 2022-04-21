@@ -32,6 +32,7 @@
   color: var(--white-color);
 }
 .teachers__paragraph {
+  padding-right: 1px;
   color: var(--gray-blue);
   line-height: 24px;
 }
@@ -39,29 +40,39 @@
 @media (max-width: 1439px) {
   .teachers .container {
     padding-top: 74px;
-    padding-bottom: 26px;
+    padding-bottom: 50px;
   }
   .teachers__second-heading {
     margin-bottom: 23px;
   }
   .teachers__card-item {
-    padding-bottom: 23px;
+    padding-right: 13px;
+    padding-bottom: 22px;
+  }
+  .teachers__paragraph {
+    padding-right: 0;
   }
 }
 @media (max-width: 767px) {
   .teachers .container {
     padding-top: 75px;
-    padding-bottom: 50px;
+    padding-bottom: 52px;
+  }
+  .teachers__card-item {
+    padding-right: 15px;
   }
 }
 @media (max-width: 575px) {
   .teachers .container {
     padding-top: 47px;
-    padding-bottom: 24px;
+    padding-bottom: 23px;
   }
   .teachers__second-heading {
     margin-bottom: 27px;
     font-size: 20px;
     line-height: 20px;
+  }
+  .teachers__card-item {
+    padding-bottom: 23px;
   }
 }

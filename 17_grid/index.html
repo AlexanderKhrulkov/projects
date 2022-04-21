@@ -26,7 +26,7 @@
             <img src=".//img/Vector.svg" alt="Логотип">
           </a>
         </div>
-        <div class="header__burger-menu" id="menu">
+        <!-- <div class="header__burger-menu" id="menu">
           <button class="header__close" id="burgerClose" aria-label="Закрыть раскрывающееся меню"></button>
           <ul class="header__list ul-reset">
             <li class="header__list-unit">
@@ -42,7 +42,7 @@
               <a href="" class="header__list-link link-reset">Курсы</a>
             </li>
           </ul>
-        </div>
+        </div> -->
         <div class="header__burger-container col-3">
           <button class="header__burger" id="burger" aria-label="Раскрывающееся меню">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewbox="0 0 20 23" fill="none">
@@ -52,7 +52,8 @@
             </svg>
           </button>
         </div>
-        <nav class="header__nav col-xl-6 col-md-9 col-sm-12 col-2">
+        <nav class="header__nav col-xl-6 col-md-9 col-sm-12" id="menu">
+          <button class="header__close" id="burgerClose" aria-label="Закрыть раскрывающееся меню"></button>
           <ul class="header__list ul-reset">
             <li class="header__list-unit">
               <a href="" class="header__list-link link-reset">Главная</a>
@@ -108,40 +109,42 @@
             исключительно в разрезе маркетинговых предпосылок.
           </p>
         </div>
-        <div class="advantages__bottom-content col-12 row">
-          <div class="advantages__bottom-card col-xl-4 col-md-4 col-sm-4 col-12">
-            <div class="advantages__card-row row">
-              <div class="advantages__card-picture col-xl-4 col-lg-12 col-md-12 col-sm-12 col-4">
-                <img src="./img/eye-circle.svg" alt="" aria-hidden="true">
-              </div>
-              <div class="advantages__card-text col-xl-8 col-lg-12 col-md-12 col-sm-12 col-8">
-                <p class="advantages__bottom-paragraph text-reset">
-                  Результат вашего обучения является самым важным для нас приоритетом
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="advantages__bottom-card col-xl-4 col-md-4 col-sm-4 col-12">
-            <div class="advantages__card-row row">
-              <div class="advantages__card-picture col-xl-4 col-lg-12 col-md-12 col-sm-12 col-4">
-                <img src="./img/fingers.svg" alt="" aria-hidden="true">
-              </div>
-              <div class="advantages__card-text col-xl-8 col-lg-12 col-md-12 col-sm-12 col-8">
-                <p class="advantages__bottom-paragraph text-reset">
-                  Лично познакомитесь с одним из своих будущих преподавателей
-                </p>
+        <div class="advantages__bottom-content col-12">
+          <div class="row">
+            <div class="advantages__bottom-card col-xl-4 col-md-4 col-sm-4 col-12">
+              <div class="advantages__card-row row">
+                <div class="advantages__card-picture col-xl-4 col-lg-12 col-md-12 col-sm-12 col-4">
+                  <img src="./img/eye-circle.svg" alt="" aria-hidden="true">
+                </div>
+                <div class="advantages__card-text col-xl-8 col-lg-12 col-md-12 col-sm-12 col-8">
+                  <p class="advantages__bottom-paragraph text-reset">
+                    Результат вашего обучения является самым важным для нас приоритетом
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="advantages__bottom-card col-xl-4 col-md-4 col-sm-4 col-12">
-            <div class="advantages__card-row row">
-              <div class="advantages__card-picture col-xl-4 col-lg-12 col-md-12 col-sm-12 col-4">
-                <img src="./img/bullhorn-circle.svg" alt="" aria-hidden="true">
+            <div class="advantages__bottom-card col-xl-4 col-md-4 col-sm-4 col-12">
+              <div class="advantages__card-row row">
+                <div class="advantages__card-picture col-xl-4 col-lg-12 col-md-12 col-sm-12 col-4">
+                  <img src="./img/fingers.svg" alt="" aria-hidden="true">
+                </div>
+                <div class="advantages__card-text col-xl-8 col-lg-12 col-md-12 col-sm-12 col-8">
+                  <p class="advantages__bottom-paragraph text-reset">
+                    Лично познакомитесь с одним из своих будущих преподавателей
+                  </p>
+                </div>
               </div>
-              <div class="advantages__card-text col-xl-8 col-lg-12 col-md-12 col-sm-12 col-8">
-                <p class="advantages__bottom-paragraph text-reset">
-                  Значимость этих проблем очевидна, поэтому стоит всегда быть внимательным
-                </p>
+            </div>
+            <div class="advantages__bottom-card col-xl-4 col-md-4 col-sm-4 col-12">
+              <div class="advantages__card-row row">
+                <div class="advantages__card-picture col-xl-4 col-lg-12 col-md-12 col-sm-12 col-4">
+                  <img src="./img/bullhorn-circle.svg" alt="" aria-hidden="true">
+                </div>
+                <div class="advantages__card-text col-xl-8 col-lg-12 col-md-12 col-sm-12 col-8">
+                  <p class="advantages__bottom-paragraph text-reset">
+                    Значимость этих проблем очевидна, поэтому стоит всегда быть внимательным
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -280,7 +283,7 @@
                 <h3 class="courses__third-heading text-reset">
                   Blender: продвинутый уровень
                 </h3>
-                <p class="courses__paragraph text-reset style320-2">
+                <p class="courses__paragraph text-reset">
                   Но убеждённость некоторых оппонентов в значительной степени обусловливает важность форм воздействия.
                   Внезапно, тщательные исследования конкурентов представлены.
                 </p>
@@ -305,10 +308,10 @@
                 </span>
               </div>
               <div class="courses__text">
-                <h3 class="courses__third-heading text-reset padding320">
+                <h3 class="courses__third-heading text-reset">
                   Визуализация в 3ds Max
                 </h3>
-                <p class="courses__paragraph text-reset style320-3">
+                <p class="courses__paragraph text-reset">
                   Повседневная практика показывает, что сложившаяся структура организации обеспечивает актуальность
                   кластеризации усилий.
                 </p>
@@ -336,7 +339,7 @@
                 <h3 class="courses__third-heading text-reset">
                   Скульптинг в ZBrush
                 </h3>
-                <p class="courses__paragraph text-reset style320-4">
+                <p class="courses__paragraph text-reset">
                   Разнообразный и богатый опыт говорит нам, что граница обучения кадров требует определения и уточнения
                   прогресса профессионального сообщества! В частности, постоянный количественный рост и сфера нашей
                   активности.

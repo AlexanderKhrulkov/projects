@@ -13,13 +13,28 @@
 .header__logo-link.focus-visible {
   outline: 1px solid var(--white-color);
 }
+.header__nav.is-active {
+  width: 100%;
+  visibility: visible;
+  transition: width var(--transition-05);
+}
+.header__nav.is-active .header__list {
+  display: flex;
+}
+.header__nav.is-active .header__list-unit {
+  margin-right: auto;
+  margin-bottom: 58px;
+}
+.header__nav.is-active .header__close {
+  display: flex;
+}
 .header__burger {
   display: none;
 }
 .header__burger-container {
   display: none;
 }
-.header__burger-menu {
+/* .header__burger-menu {
   position: absolute;
   z-index: 10;
   top: 0;
@@ -58,12 +73,12 @@
 .header__burger-menu.is-active .header__list-unit {
   margin-right: auto;
   margin-bottom: 58px;
-}
+} */
 .header__close {
   display: none;
   position: relative;
   top: 25px;
-  left: 285px;
+  left: 86%;
   padding: 0;
   margin-bottom: 30px;
   width: 30px;
@@ -104,9 +119,9 @@
   background-color: var(--blue-color);
   transition: background-color var(--transition-05);
 }
-.header__burger-menu.is-active .header__close {
+/* .header__burger-menu.is-active .header__close {
   display: flex;
-}
+} */
 .header__list {
   display: flex;
   justify-content: flex-end;
@@ -165,7 +180,7 @@
 
 @media (max-width: 1199px) {
   .header__logo-container, .header__list {
-    padding-top: 33px;
+    padding-top: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -206,7 +221,33 @@
     justify-content: flex-end;
   }
   .header__nav {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 0;
+    height: 433px;
+    padding: 0;
+    visibility: hidden;
+    background-color: var(--blackcurrant);
+    transition: width var(--transition-05);
+    will-change: width;
+  }
+  .header__nav .header__list {
     display: none;
+    flex-direction: column;
+    padding-top: 18px;
+    padding-left: 15px;
+  }
+  .header__nav .header__list-unit {
+    margin-bottom: 59px;
+  }
+  .header__nav .header__list-link {
+    color: var(--white-color);
   }
   .header__logo-container {
     padding-top: 32px;
