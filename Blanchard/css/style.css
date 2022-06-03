@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+*:focus {
+  outline: none;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: var(--regular-weight);
+  line-height: 1;
+  background-color: #FFFFFF;
+  color:#000000;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+button, input {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+p, h1, h2, h3, h4, sub {
+  margin: 0;
+}
+.body-fixed {
+  position: fixed;
+}
+.swiper-container {
+  position: relative;
+}
+.container {
+  padding: 0 50px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  max-width: 1700px;
+}
+.flex {
+  display: flex;
+}
+.hover-common {
+  position: relative;
+  transition: color var(--transition-05);
+  z-index: 5;
+}
+.hover-common::before, .events__details-link::before {
+  position: absolute;
+  content: '';
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-color: var(--royal-purple);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity var(--transition-05);
+}
+.hover-common:hover {
+  color: var(--bright-lavender);
+  transition: color var(--transition-05);
+}
+.hover-common:focus, .events__details-link:focus {
+  outline: none;
+}
+.hover-common.focus-visible::before, .events__details-link.focus-visible::before {
+  opacity: 1;
+  transition: opacity var(--transition-05);
+}
+.hover-common:active {
+  color: var(--royal-purple);
+  transition: color var(--transition-05);
+}
+.header-2 {
+  margin-bottom: 16px;
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: 400;
+}
+.header-3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.text {
+  line-height: 32px;
+}
+.underline-animated::after {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 0;
+  background-color: var(--amethyst);
+  transition: width var(--transition-05);
+}
+.underline-animated:hover::after {
+  width: 100%;
+  transition: width var(--transition-05);
+}
+.underline-animated:focus {
+  outline: none;
+}
+.underline-animated.focus-visible {
+  background-color: var(--royal-purple);
+  color: var(--white-color);
+  transition: background-color var(--transition-05), color var(--transition-05);
+}
+.round-arrow {
+  background-color: transparent;
+  border: none;
+}
+.round-arrow::before {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--carrara);
+  transition: background-color var(--transition-05);
+}
+/* .round-arrow:hover::before {
+  background-color: var(--bright-ube);
+  transition: background-color var(--transition-05);
+} */
+.round-arrow::after {
+  position: absolute;
+  top: 33%;
+  left: 38%;
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-top: 1px solid var(--black-color);
+  border-left: 1px solid var(--black-color);
+  transform: rotate(-135deg);
+}
+.arrow-prev::after {
+  transform: rotate(-45deg);
+  top: 40%;
+  left: 43%;
+}
+.arrow-next::after {
+  top: 40%;
+  transform: rotate(135deg);
+}
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.close-button::before, .close-button::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  top: -20%;
+  left: 50%;
+  background-color: var(--black-color);
+}
+.close-button::before {
+  transform: rotate(45deg);
+}
+.close-button::after {
+  transform: rotate(-45deg);
+}
+:root {
+  --white-color: #FFF;
+  --black-color: #000;
+  --amethyst: #9D5CD0;
+  --jet: #333;
+  --spanish-gray: #999;
+  --royal-purple: #7943A4;
+  --lime-green: #30BF39;
+  --bright-cerulean: #2AABEE;
+  --gris-de-perle: #CACACA;
+  --bright-lavender: #C283F3;
+  --bright-ube: #D1A9F0;
+  --carrara: #ECECEC;
+  --gray-nurse: #EAEAEA;
+  --granite-gray: #666;
+  --purpureus: #9643A4;
+  --regular-weight: 400;
+  --medium-weight: 600;
+  --bold-weight: 700;
+  --transition-05: 0.5s ease;
+  --transition-01: .1s ease;
+}
+
+@media (max-width: 544px) {
+  .container {
+    padding: 0 15px;
+  }
+  .header-2 {
+    margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .header-3 {
+    font-size: 18px;
+  }
+  .round-arrow::before {
+    width: 30px;
+    height: 30px;
+  }
+  .round-arrow::after {
+    width: 7px;
+    height: 7px;
+  }
+}

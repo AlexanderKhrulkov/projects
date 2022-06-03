@@ -1,0 +1,16 @@
+.about-us__paragraph, .about-us__second-header {
+  display: block;
+  max-width: 1080px;
+}
+.about-us__container {
+  margin-bottom: 70px;
+}
+@media (max-width: 544px) {
+  .about-us__container {
+    margin-bottom: 41px;
+  }
+  .about-us__paragraph {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

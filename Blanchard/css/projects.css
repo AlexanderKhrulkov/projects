@@ -1,0 +1,262 @@
+.projects__container {
+  margin-bottom: 80px;
+}
+.projects__paragraph {
+  margin-bottom: 19px;
+  max-width: 1060px;
+}
+.projects__nbsp-1024, .projects__nbsp-768, .projects__invisible-320 {
+  display: none;
+}
+.projects__tooltip {
+  position: relative;
+  display: inline;
+  border: none;
+  background-color: transparent;
+}
+.projects__tooltip-pic {
+  top: 2px;
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--amethyst);
+  transition: background-color var(--transition-05);
+  transform: translate(-1px, 3px);
+}
+.projects__tooltip-pic::before {
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 2px;
+  height: 2px;
+  content: '';
+  border-radius: 50%;
+  background-color: var(--black-color);
+}
+/* Каскад для задания стилей дочернему эл-ту с применением псевдокласса у родителя */
+.projects__tooltip:hover .projects__tooltip-pic, .projects__tooltip.focus-visible .projects__tooltip-pic {
+  background-color: var(--bright-ube);
+  transition: background-color var(--transition-05);
+}
+/* Каскад для задания стилей дочернему эл-ту с применением псевдокласса у родителя */
+.projects__tooltip:active .projects__tooltip-pic {
+  background-color: var(--amethyst);
+  transition: background-color var(--transition-01);
+}
+/* Каскад для задания стилей дочернему эл-ту с применением псевдокласса у родителя */
+.projects__tooltip:active .projects__tooltip-pic::before, .projects__tooltip:active .projects__tooltip-pic::after {
+  background-color: var(--white-color);
+  transition: background-color var(--transition-01);
+}
+.projects__tooltip-pic::after {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 2px;
+  height: 7px;
+  content: '';
+  background-color: var(--black-color);
+}
+.projects__tooltip-popup {
+  position: absolute;
+  bottom: calc(100% + 15px);
+  left: calc(100% - 12px);
+  max-width: 167px;
+  width: max-content;
+  padding: 5px 15px;
+  background-color: #666;
+  color: #FFF;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity var(--transition-05);
+  z-index: -1;
+}
+.projects__tooltip-popup::before {
+  border: 6px solid transparent;
+	border-top-color: #666;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+  transform: translateX(-50%);
+	content: '';
+}
+.projects__tooltip-popup.popup-active {
+  opacity: 1;
+  transition: opacity var(--transition-05);
+  z-index: 5;
+}
+.projects__link {
+  display: inline-block;
+  color: var(--amethyst);
+  transition: color var(--transition-01);
+}
+.projects__link:active {
+  color: var(--royal-purple);
+  transition: color var(--transition-01);
+}
+.projects__link:active::after {
+  background-color: var(--royal-purple);
+  transition: background-color var(--transition-01);
+}
+.projects__third-header {
+  margin-bottom: 23px;
+}
+.projects__swiper-container {
+  position: relative;
+}
+.projects__swiper {
+  width: calc(1450 / 1600 * 100%);
+  height: 150px;
+  padding: 1px 4px 2px 1px;
+}
+.projects__swiper-slide {
+  display: block;
+  outline: 1px solid var(--gris-de-perle);
+}
+.projects__swiper-slide.focus-visible, .projects__swiper-slide:active {
+  outline: 1px solid var(--amethyst);
+  transition: outline var(--transition-01);
+}
+.projects__partner-pic {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(100%);
+  transition: filter var(--transition-05);
+}
+/* Каскад для задания стилей дочернему эл-ту с применением псевдокласса у родителя */
+.projects__swiper-slide:hover .projects__partner-pic, .projects__swiper-slide:active .projects__partner-pic {
+  filter: grayscale(0);
+  transition: filter var(--transition-05);
+}
+.projects__partner-img {
+  width: 50%;
+}
+.freelands {
+  width: 55%;
+}
+.institute {
+  width: 74%;
+}
+.workhouse {
+  width: 52%;
+}
+.wine, .hiscox, .watts {
+  width: 30%;
+}
+.projects__swiper-button-prev, .projects__swiper-button-next {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+}
+.projects__swiper-button-prev::after, .projects__swiper-button-next::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+}
+.projects__swiper-button-prev::before, .projects__swiper-button-next::before {
+  width: 30px;
+  height: 30px;
+  top: 7px;
+}
+.projects__swiper-button-prev:hover::before, .projects__swiper-button-next:hover::before {
+  background-color: var(--bright-ube);
+  transition: background-color var(--transition-05);
+}
+.projects__swiper-button-prev.focus-visible::before, .projects__swiper-button-next.focus-visible::before {
+  outline: 2px solid var(--amethyst);
+  transition: outline var(--transition-01);
+}
+.projects__swiper-button-prev:active::before, .projects__swiper-button-next:active::before {
+  border: 2px solid var(--amethyst);
+  background-color: var(--bright-ube);
+  transition: border var(--transition-01), background-color var(--transition-01);
+}
+
+@media (max-width: 1249px) {
+  .projects__swiper {
+    width: calc(818 / 924 * 100%);
+    height: 128px;
+  }
+  .projects__nbsp-1024 {
+    display: inline;
+  }
+}
+@media (max-width: 896px) {
+  .projects__container {
+    margin-bottom: 59px;
+  }
+  .projects__paragraph {
+    padding-right: 12px;
+    margin-bottom: 26px;
+  }
+  .projects__nbsp-768 {
+    display: inline;
+  }
+  .projects__nbsp-1920 {
+    display: none;
+  }
+  .projects__invisible-part {
+    display: none;
+  }
+  .projects__third-header {
+    margin-bottom: 28px;
+  }
+  .projects__swiper {
+    width: calc(778 / 924 * 100%);
+  }
+  .projects__swiper-slide {
+    height: 104px;
+  }
+  .freelands, .workhouse, .stassen, .esad {
+    width: 79%;
+  }
+  .wine, .hiscox, .watts {
+    width: 50%;
+  }
+  .institute {
+    width: 83%;
+  }
+}
+@media (max-width: 544px) {
+  .projects__container {
+    margin-bottom: 46px;
+  }
+  .projects__swiper {
+    padding: 0;
+    width: calc(195 / 291 * 100%);
+    height: 65px;
+  }
+  .projects__paragraph {
+    padding-right: 0;
+    margin-bottom: 9px;
+  }
+  .projects__invisible-part, .projects__invisible-320 {
+    display: inline;
+  }
+  .projects__third-header {
+    margin-bottom: 10px;
+  }
+  .projects__swiper-slide {
+    height: auto;
+  }
+  .freelands, .workhouse, .stassen, .esad {
+    width: 54%;
+  }
+  .wine, .hiscox, .watts {
+    width: 37%;
+  }
+  .institute {
+    width: 69%;
+  }
+  .projects__swiper-button-next {
+    right: 1px;
+  }
+  .projects__swiper-button-prev {
+    left: 1px;
+  }
+}

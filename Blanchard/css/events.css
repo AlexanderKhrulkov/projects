@@ -1,0 +1,200 @@
+.events__container {
+  margin-bottom: 38px;
+}
+.events__picture {
+  display: block;
+}
+.events__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.events__swiper-container {
+  position: relative;
+}
+.events__swiper {
+  position: relative;
+  padding-bottom: 40px;
+}
+.events__content {
+  display: flex;
+  min-height: 343px;
+  flex-direction: column;
+  padding: 11px 72px 43px 48px;
+  max-width: 500px;
+  border: 2px solid var(--carrara);
+  border-top: none;
+}
+/* Каскад для задания стилей дочернему эл-ту с применением псевдокласса у родителя */
+.events__article:nth-child(2) .events__third-header, .events__article:nth-child(3) .events__third-header {
+  margin-bottom: 11px;
+}
+/* Каскад для задания стилей дочернему эл-ту с применением псевдокласса у родителя */
+.events__article:nth-child(3) .events__content {
+  padding-right: 50px ;
+}
+.events__swiper-button-next {
+  transform: translateX(88%);
+  top: 47%;
+}
+.events__swiper-button-next::before, .events__swiper-button-prev::before {
+  top: -4px;
+  left: -12px;
+}
+.events__swiper-button-prev {
+  transform: translateX(-88%);
+  top: 47%;
+}
+.events__swiper-button-next::after, .events__swiper-button-prev::after {
+  content: '';
+  transform: rotate(135deg);
+  top: 14px;
+  left: 4px;
+}
+.events__swiper-button-prev::after {
+  left: 9px;
+  transform: rotate(-45deg);
+}
+.events__swiper-button-next:hover::before, .events__swiper-button-prev:hover::before {
+  background-color: var(--bright-ube);
+  transition: background-color var(--transition-05);
+}
+.events__swiper-button-next.focus-visible::before, .events__swiper-button-prev.focus-visible::before {
+  background-color: var(--carrara);
+  outline: 2px solid var(--amethyst);
+  transition: background-color var(--transition-01), outline var(--transition-01);
+}
+.events__swiper-button-next:active::before, .events__swiper-button-prev:active::before {
+  background-color: var(--bright-ube);
+  border: 2px solid var(--amethyst);
+  transition: background-color var(--transition-01), border var(--transition-01);
+}
+/* Каскад для переопределения библиотечных стилей слайдера */
+.events .swiper-button-disabled {
+  display: none;
+}
+.events__address {
+  display: block;
+  margin-bottom: 13px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: var(--spanish-gray);
+}
+.events__third-header {
+  margin-bottom: 4px;
+}
+.events__paragraph {
+  margin-bottom: auto;
+}
+.events__details-link {
+  position: relative;
+  display: block;
+  padding-bottom: 4px;
+  margin-right: auto;
+  color: var(--amethyst);
+  border-bottom: 1px solid var(--amethyst);
+}
+.events__details-link:hover {
+  color: var(--royal-purple);
+  border-bottom: 1px solid var(--royal-purple);
+  transition: color var(--transition-05), border-bottom var(--transition-05);
+}
+.events__details-link.focus-visible {
+  color: var(--white-color);
+  transition: color var(--transition-05), border-color var(--transition-05);
+  border-color: var(--white-color);
+}
+.events__details-link:active {
+  color: var(--black-color);
+  border-color: var(--black-color);
+  transition: color var(--transition-05), background-color var(--transition-05);
+}
+/* Каскад для переопределения библиотечных стилей слайдера */
+.events .events__swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--granite-gray);
+}
+@media (max-width: 1472px) {
+  .events__swiper-container {
+    padding-bottom: 40px;
+  }
+  .events__swiper {
+    padding-bottom: 42px;
+  }
+  /* Каскад для задания стилей дочернему эл-ту с применением псевдокласса у родителя */
+  .events__content, .events__article:nth-child(3) .events__content {
+    padding: 14px 31px 49px 32px;
+    min-height: 417px;
+  }
+  .events__address {
+    margin-bottom: 4px;
+    text-align: end;
+  }
+  .events__third-header {
+    margin-bottom: 10px;
+  }
+  /* Каскад для задания стилей дочернему эл-ту с применением псевдокласса у родителя */
+  .events__article:nth-child(2) .events__third-header, .events__article:nth-child(3) .events__third-header {
+    margin-bottom: 7px;
+  }
+  .events__swiper-button-next, .events__swiper-button-prev {
+    display: none;
+  }
+  .events .events__swiper-pagination {
+    display: block;
+  }
+  /* Каскад для переопределения библиотечных стилей слайдера */
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 8px 0 7px;
+  }
+}
+@media (max-width: 896px) {
+  .events__content {
+    padding: 14px 16px 49px 35px;
+  }
+  .events__third-header {
+    margin-bottom: 6px;
+  }
+  /* Каскад для задания стилей дочернему эл-ту с применением псевдокласса у родителя */
+  .events__article:nth-child(2) .events__third-header {
+    padding-right: 34px;
+  }
+  /* Каскад для задания стилей дочернему эл-ту с применением псевдокласса у родителя */
+  .events__article:nth-child(2) .events__paragraph {
+    padding-right: 1px;
+  }
+}
+@media (max-width: 544px) {
+  .events__container {
+    margin-bottom: 48px;
+  }
+  .events__swiper {
+    padding-bottom: 31px;
+  }
+  .events__content {
+    padding: 17px 15px 49px 21px;
+    min-height: 413px;
+  }
+  .events__third-header {
+    font-size: 24px;
+  }
+  .events__address {
+    margin-bottom: 9px;
+  }
+  .events__paragraph {
+    padding-right: 12px;
+  }
+  .events__details-link {
+    transform: translateX(6px);
+  }
+  .events__swiper-container {
+    padding-bottom: 0;
+  }
+}
