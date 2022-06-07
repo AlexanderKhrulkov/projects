@@ -151,6 +151,7 @@
   font-family: inherit;
   cursor: pointer;
   transition: color var(--transition-05);
+  line-height: 1.3;
 }
 .catalogue__artist-button:hover {
   color: var(--amethyst);

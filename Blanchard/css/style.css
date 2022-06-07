@@ -28,6 +28,7 @@ button, input {
 }
 a {
   text-decoration: none;
+  color: var(--black-color);
 }
 p, h1, h2, h3, h4, sub {
   margin: 0;

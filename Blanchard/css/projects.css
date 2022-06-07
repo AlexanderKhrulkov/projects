@@ -5,7 +5,7 @@
   margin-bottom: 19px;
   max-width: 1060px;
 }
-.projects__nbsp-1024, .projects__nbsp-768, .projects__invisible-320 {
+.projects__space-320, .projects__invisible-320 {
   display: none;
 }
 .projects__tooltip {
@@ -182,9 +182,6 @@
     width: calc(818 / 924 * 100%);
     height: 128px;
   }
-  .projects__nbsp-1024 {
-    display: inline;
-  }
 }
 @media (max-width: 896px) {
   .projects__container {
@@ -193,12 +190,6 @@
   .projects__paragraph {
     padding-right: 12px;
     margin-bottom: 26px;
-  }
-  .projects__nbsp-768 {
-    display: inline;
-  }
-  .projects__nbsp-1920 {
-    display: none;
   }
   .projects__invisible-part {
     display: none;
@@ -234,6 +225,12 @@
   .projects__paragraph {
     padding-right: 0;
     margin-bottom: 9px;
+  }
+  .projects__space-320 {
+    display: inline;
+  }
+  .projects__nbsp-uni {
+    display: none;
   }
   .projects__invisible-part, .projects__invisible-320 {
     display: inline;

@@ -120,6 +120,9 @@
   background-color: var(--granite-gray);
 }
 @media (max-width: 1472px) {
+  .events__container {
+    margin-bottom: 36px;
+  }
   .events__swiper-container {
     padding-bottom: 40px;
   }

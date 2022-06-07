@@ -97,8 +97,8 @@ const projectsSwiper = new Swiper('.projects__swiper', {
   slidesPerView: 3,
   spaceBetween: 43,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.projects__swiper-button-next',
+    prevEl: '.projects__swiper-button-prev',
   },
   breakpoints: {
     1250: {
