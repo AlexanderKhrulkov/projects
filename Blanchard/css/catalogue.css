@@ -35,6 +35,11 @@
 /* Каскад для переопределения библиотечных стилей аккордеона */
 .catalogue__to-gallery-link, .ui-widget-content .catalogue__to-gallery-link {
   color: var(--amethyst);
+  transition: color var(--transition-05);
+}
+.catalogue__to-gallery-link, .ui-widget-content .catalogue__to-gallery-link:hover, .catalogue__to-gallery-link, .ui-widget-content .catalogue__to-gallery-link:active {
+  color: var(--royal-purple);
+  transition: color var(--transition-05);
 }
 .catalogue__century-list {
   width: 50%;
@@ -198,6 +203,9 @@
   .catalogue__painter-info {
     width: 50%;
   }
+  .catalogue__date {
+    margin-bottom: 6px;
+  }
 }
 @media (max-width: 896px) {
   .catalogue__container {
@@ -283,6 +291,6 @@
     line-height: 32px;
   }
   .catalogue__date {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
   }
 }

@@ -159,6 +159,9 @@
   }
 }
 @media (max-width: 896px) {
+  .events__container {
+    margin-bottom: 38px;
+  }
   .events__content {
     padding: 14px 16px 49px 35px;
   }

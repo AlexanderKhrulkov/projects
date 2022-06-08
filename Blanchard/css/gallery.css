@@ -31,6 +31,7 @@
 }
 .choices[data-type*=select-one]::after {
   top: 43%;
+  right: 4%;
   width: 8px;
   height: 8px;
   border-top: 1px solid var(--white-color);
@@ -45,8 +46,11 @@
   transform: rotate(45deg);
 }
 .choices__inner {
+  padding: 7px 11px;
+  min-height: 40px;
   background-color: transparent;
   border-radius: 6px;
+  font-size: 16px;
   z-index: 5;
 }
 .choices__list--dropdown, .choices__list[aria-expanded] {
@@ -73,6 +77,8 @@
 /* Каскад для переопределения библиотечных стилей селекта */
 .choices .choices__list--dropdown .choices__item--selectable {
   padding-left: 15px;
+  min-height: 40px;
+  font-size: 16px;
   transition: background-color var(--transition-05);
 }
 /* Каскад для переопределения библиотечных стилей селекта */
@@ -348,7 +354,7 @@ margin-bottom: 16px;
     margin-bottom: 18px;
   }
   .choices {
-    margin-bottom: 44px;
+    margin-bottom: 47px;
   }
   .choices .choices__list--dropdown {
     background-color: var(--black-color);
@@ -370,7 +376,7 @@ margin-bottom: 16px;
     margin-bottom: 13px;
   }
   .choices {
-    margin-bottom: 34px;
+    margin-bottom: 37px;
   }
   .gallery__right {
     position: relative;

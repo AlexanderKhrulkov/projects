@@ -163,6 +163,18 @@
   height: 30px;
   top: 7px;
 }
+.projects__swiper-button-next::before {
+  left: 7px;
+}
+.projects__swiper-button-next::after {
+  left: 18px;
+}
+.projects__swiper-button-prev::before {
+  left: -10px;
+}
+.projects__swiper-button-prev::after {
+  left: 1px;
+}
 .projects__swiper-button-prev:hover::before, .projects__swiper-button-next:hover::before {
   background-color: var(--bright-ube);
   transition: background-color var(--transition-05);
@@ -189,7 +201,7 @@
   }
   .projects__paragraph {
     padding-right: 12px;
-    margin-bottom: 26px;
+    margin-bottom: 27px;
   }
   .projects__invisible-part {
     display: none;
@@ -202,6 +214,20 @@
   }
   .projects__swiper-slide {
     height: 104px;
+  }
+  .projects__swiper-button-prev::before {
+    top: -3px;
+  }
+  .projects__swiper-button-prev::after {
+    top: 8px;
+    left: 2px;
+  }
+  .projects__swiper-button-next::before {
+    top: -3px;
+  }
+  .projects__swiper-button-next::after {
+    top: 8px;
+    left: 18px;
   }
   .freelands, .workhouse, .stassen, .esad {
     width: 79%;
