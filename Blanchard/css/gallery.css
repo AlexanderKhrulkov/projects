@@ -53,17 +53,17 @@
   font-size: 16px;
   z-index: 5;
 }
-.choices__list--dropdown, .choices__list[aria-expanded] {
+/* .choices__list--dropdown, .choices__list[aria-expanded] {
   opacity: 0;
   transform: translateY(-100%);
   transition: transform var(--transition-05), opacity var(--transition-05);
-}
+} */
 .is-active.choices__list--dropdown, .is-active.choices__list[aria-expanded] {
   background-color: var(--black-color);
   border-radius: 6px;
-  opacity: 1;
+  /* opacity: 1;
   transform: none;
-  transition: transform var(--transition-05), opacity var(--transition-05);
+  transition: transform var(--transition-05), opacity var(--transition-05); */
 }
 /* Каскад для переопределения библиотечных стилей селекта */
 .choices:hover, .choices.focus-visible, .choices .choices__list--dropdown .choices__item--selectable.is-highlighted {
