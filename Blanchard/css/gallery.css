@@ -114,6 +114,9 @@
   z-index: 10;
   opacity: 0;
 }
+.gallery__checkbox-text {
+  transition: color var(--transition-05);
+}
 .gallery__custom-checkbox {
   position: relative;
   content: '';
@@ -360,7 +363,7 @@ margin-bottom: 16px;
     background-color: var(--black-color);
   }
 }
-@media (max-width: 544px) {
+@media (max-width: 652px) {
   .gallery__container {
     padding-top: 56px;
     padding-bottom: 49px;

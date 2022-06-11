@@ -22,115 +22,29 @@ body {
   color: #000000;
 }
 
-/* ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-} */
-.header__nav-list,
-.header__list,
-.header__select,
-.gallery__list,
-.catalogue__century-list,
-.catalogue__artist-list,
-.footer__list,
-.footer__bottom-list {
+.ul-reset {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* button,
-input {
-  padding: 0;
-} */
-
-.header__mobile-search-button,
-.searchpanel-button,
-.header__mobile-search-close,
-.close-button,
-.header__burger-button,
-.header__close-button,
-.header__button,
-.hover-common,
-.header__search-button,
-.swiper-button-prev,
-.gallery__swiper-button-prev,
-.swiper-button-next,
-.gallery__swiper-button-next,
-.gallery__modal-close,
-.catalogue__arrow-icon,
-.round-arrow,
-.events__swiper-button-prev,
-.events__swiper-button-next,
-.projects__tooltip,
-.projects__swiper-button-prev,
-.projects__swiper-button-next,
-.footer__callback-button,
-.header__mobile-search-input,
-.header__search-input,
-.search-input,
-.gallery__checkbox,
-.footer__input {
+.button-input-reset {
   padding: 0;
 }
 
-/* a {
-  text-decoration: none;
-  color: var(--black-color);
-} */
-
-.header__logo-link,
-.header__nav-link,
-.header__login-link,
-.header__option,
-.hero__subscribe-link,
-.swiper-slide,
-.gallery__swiper-slide,
-.catalogue__to-gallery-link,
-.catalogue__artist-button,
-.events__details-link,
-.projects__link,
-.projects__swiper-slide,
-.footer__link,
-.footer__logo-link,
-.footer__bottom-link
- {
+.a-reset {
   text-decoration: none;
   color: var(--black-color);
 }
 
-/* p,
-h1,
-h2,
-h3,
-h4,
-sub {
+.text-reset {
   margin: 0;
-} */
+}
 
-.hero__paragraph,
-.about-us__paragraph,
-.gallery__paragraph,
-.gallery__modal-paragraph,
-.catalogue__paragraph,
-.catalogue__painter-paragraph,
-.events__paragraph,
-.footer__paragraph,
-.hero__first-header,
-.about-us__second-header,
-.gallery__second-header,
-.catalogue__second-header,
-.events__second-header,
-.projects__second-header,
-.gallery__modal-header,
-.catalogue__third-header,
-.events__third-header,
-.projects__third-header,
-.footer__third-header,
-.footer__media-third-header,
-.gallery__modal-subheader {
-  margin: 0;
+.invisible-header {
+  position: absolute;
+  font-size: 1px;
+  visibility: hidden;
 }
 
 .body-fixed {
@@ -253,10 +167,6 @@ sub {
   transition: background-color var(--transition-05);
 }
 
-/* .round-arrow:hover::before {
-  background-color: var(--bright-ube);
-  transition: background-color var(--transition-05);
-} */
 .round-arrow::after {
   position: absolute;
   top: 33%;
@@ -333,7 +243,7 @@ sub {
   --transition-01: .1s ease;
 }
 
-@media (max-width: 544px) {
+@media (max-width: 652px) {
   .container {
     padding: 0 15px;
   }

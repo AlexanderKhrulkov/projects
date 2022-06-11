@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelectorAll('.catalogue__painter-info').forEach(function (info) {
         info.classList.remove('is-active')
       })
+      document.querySelectorAll('.catalogue__artist-button').forEach(function (removeActive) {
+        removeActive.classList.remove('catalogue__artist-button-active')
+      })
+      this.classList.toggle('catalogue__artist-button-active')
       document.querySelector(`[data-target="${path}"]`).classList.add('is-active')
     })
 

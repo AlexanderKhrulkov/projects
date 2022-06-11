@@ -53,15 +53,14 @@
 .catalogue__item-top {
   position: relative;
   border: none;
-  border-top: 1px solid transparent;
+  border-top: 1px solid var(--gris-de-perle);
   border-bottom: 1px solid var(--gris-de-perle);
-  transition: border-bottom var(--transition-05), border-top var(--transition-05);
+  transition: border-bottom var(--transition-05), border-top var(--transition-05), border-color var(--transition-05);
   z-index: 20;
 }
 .catalogue__item-top:hover {
-  border-bottom: 1px solid var(--amethyst);
-  border-top: 1px solid var(--amethyst);
-  transition: border-bottom var(--transition-05), border-top var(--transition-05);
+  border-color: var(--amethyst);
+  transition: border-color var(--transition-05);
   z-index: 30;
 }
 /* Каскад для задания стилей дочернему элементу при ховере родителя */
@@ -160,6 +159,13 @@
 }
 .catalogue__artist-button:hover {
   color: var(--amethyst);
+  transition: color var(--transition-05);
+} .catalogue__artist-button:active, .catalogue .catalogue__artist-button-active {
+  color: var(--royal-purple);
+  transition: color var(--transition-05);
+}
+.catalogue__artist-button:active::after {
+  background-color: transparent;
 }
 .catalogue__no-era {
   display: flex;
@@ -244,7 +250,7 @@
     height: 288px;
   }
 }
-@media (max-width: 544px) {
+@media (max-width: 652px) {
   .catalogue__container {
     margin-bottom: 51px;
   }
@@ -274,6 +280,9 @@
   }
   .catalogue__third-header {
     line-height: 30px;
+  }
+  .catalogue__painter-info {
+    margin-right: 0;
   }
   .catalogue__artist-list {
     column-count: 1;

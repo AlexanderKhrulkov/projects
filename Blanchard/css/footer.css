@@ -43,6 +43,9 @@
   background-color: var(--gray-nurse);
   transition: background-color var(--transition-05);
 }
+.footer__input-active:hover, .footer__input-active.focus-visible {
+  background-color: transparent;
+}
 .just-validate-error-field {
   border-color: #FF0000;
 }
@@ -179,6 +182,7 @@
   }
   .footer__callback-button {
     max-width: 340px;
+    padding: 10px 0;
   }
   .footer__third-header {
     margin-bottom: 10px;
@@ -201,6 +205,9 @@
   }
 }
 @media (max-width: 896px) {
+  .footer {
+    padding-top: 41px;
+  }
   .footer__top-container {
     margin-bottom: 34px;
   }
@@ -233,7 +240,7 @@
   }
 
 }
-@media (max-width: 544px) {
+@media (max-width: 652px) {
   .footer {
     padding-top: 0;
   }

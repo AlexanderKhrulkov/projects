@@ -35,7 +35,7 @@
   max-width: 597px;
 }
 .hero__first-header {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   color: var(--white-color);
   font-size: 72px;
   font-weight: 700;
@@ -65,13 +65,13 @@
   -o-transition: outline var(--transition-05);
   transition: outline var(--transition-05);
 }
-.hero__subscribe-link::after, .hero__subscribe-link:hover::after {
+.hero__subscribe-link::after, .hero__subscribe-link:hover::after, .hero__subscribe-link:active::after {
   position: absolute;
   content: '';
-  top: -3px;
-  right: -4px;
-  bottom: -4px;
-  left: -3px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   border: 3px solid var(--bright-ube);
   border-radius: 100px;
   opacity: 0;
@@ -83,7 +83,7 @@
   -webkit-transition: outline .1s ease;
   -o-transition: outline .1s ease;
 } */
-.hero__subscribe-link:hover::after {
+.hero__subscribe-link:hover::after, .hero__subscribe-link:active::after {
   opacity: 1;
   transition: opacity var(--transition-05);
 }
@@ -100,10 +100,10 @@
   transition: opacity var(--transition-01);
 }
 .hero__subscribe-link:active {
-  outline: 3px solid var(--bright-ube);
   background-color: var(--royal-purple);
-  transition: outline .1s ease, background-color var(--transition-05);
+  transition: background-color var(--transition-05);
 }
+
 @media (max-width: 1249px) {
   .hero-container {
     padding-top: 113px;
@@ -139,7 +139,7 @@
     background-image: url(../img/Banner3_768.jpg);
   }
 }
-@media (max-width: 544px) {
+@media (max-width: 652px) {
   .hero-container {
     padding-bottom: 45px;
     padding-top: 33px;

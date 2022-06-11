@@ -46,7 +46,7 @@ document.querySelectorAll('.header__button').forEach(dropdownsItem => {
         el.classList.remove('is-active');
       }
     })
-    // btn.classList.toggle('is-active')
+    btn.classList.toggle('header__button-active')
     dropdown.classList.toggle('is-active')
   })
 })

@@ -8,7 +8,7 @@
 }
 
 .header__container-top {
-  padding: 29px 50px 29px 50px;
+  padding: 29px 50px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -27,6 +27,7 @@
 
 .header__nav {
   display: flex;
+  padding-bottom: 2px;
   flex-grow: 3;
   justify-content: space-between;
 }
@@ -54,9 +55,10 @@
 
 .header__nav-link {
   position: relative;
-  padding: 0 5px;
+  padding: 0 4px;
   color: var(--white-color);
   font-size: 18px;
+  font-weight: 600;
 }
 
 .header__login {
@@ -139,12 +141,32 @@
   border-top: 1px solid var(--white-color);
   border-left: 1px solid var(--white-color);
   transform: rotate(-135deg);
-  transition: border-color var(--transition-05);
+  transition: border-color var(--transition-05), transform var(--transition-05);
+  animation-name: back-rotation;
+  animation-duration: .2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 
 .header__button:hover::after {
   border-color: var(--bright-lavender);
   transition: border-color var(--transition-05);
+}
+.header__button-active::after {
+  transform: rotate(45deg);
+  transition: transform var(--transition-05);
+  animation-name: rotation;
+  animation-duration: .2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes rotation {
+  0% {transform: rotate(-135deg);}
+  100% {transform: rotate(-315deg);}
+}
+@keyframes back-rotation {
+  0% {transform: rotate(-315deg);}
+  100% {transform: rotate(-135deg);}
 }
 
 .header__select-container {
@@ -187,8 +209,9 @@
 .header__option {
   position: relative;
   display: block;
-  padding: 9px 0 12px 14px;
-  margin-bottom: 23px;
+  padding: 12px 0 13px 14px;
+  margin-bottom: 21px;
+  font-size: 14px;
   color: var(--white-color);
   background-color: var(--black-color);
 }
@@ -631,6 +654,9 @@
     justify-content: space-between;
     z-index: 30;
   }
+  .searchpanel-button {
+    margin-right: 30px;
+  }
 
   .header__mobile-searchpanel-active {
     /* transform: translateX(-88%); */
@@ -649,7 +675,7 @@
   }
 }
 
-@media (max-width: 544px) {
+@media (max-width: 652px) {
   .header__container-top {
     padding: 12px 15px 9px 15px;
   }
