@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="./css/events.css">
   <link rel="stylesheet" href="./css/projects.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <script defer src="./js/core@2.js"></script>
+  <script defer src="./js/tippy.js@6.js"></script>
+  <script defer src="./js/tippy.js"></script>
   <script defer src="./js/header-bottom-list.js"></script>
   <script defer src="./libs/simplebar.min.js"></script>
   <script defer src="./libs/swiper-bundle.min.js"></script>
@@ -30,7 +33,7 @@
   <script defer src="./libs/jquery.js"></script>
   <script defer src="./libs/jquery-ui.js"></script>
   <script defer src="./libs/focus-visible.js"></script>
-  <script defer src="./js/tooltip-buttons.js"></script>
+  <!-- <script defer src="./js/tooltip-buttons.js"></script> -->
   <script defer src="./libs/inputmask.min.js"></script>
   <script defer src="./libs/just-validate.production.min.js"></script>
   <script defer src="./js/inputmask.js"></script>
@@ -48,9 +51,9 @@
 
 <body>
   <!-- <div class="swiper-container"> -->
-    <h1 class="invisible-header" aria-hidden="true" tabindex="-1">
-      Blanchard — художественная галерея
-    </h1>
+  <h1 class="invisible-header" aria-hidden="true" tabindex="-1">
+    Blanchard — художественная галерея
+  </h1>
   <header class="header">
     <div class="header__top">
       <div class="container header__container-top">
@@ -66,15 +69,15 @@
         <div class="header__logo-container">
           <a href="" class="header__logo-link a-reset" aria-label="Главная страница">
             <picture class="header__logo-picture">
-              <source srcset="./img/logo_320.svg" media="(max-width: 544px)">
+              <source srcset="./img/logo_320.svg" media="(max-width: 672px)">
               <source srcset="./img/logo_1024-768.svg" media="(max-width: 1249px)">
               <img src="./img/logo.svg" alt="Логотип">
             </picture>
           </a>
         </div>
         <!-- <div class="header__burger-container"> -->
-          <button class="header__burger-button button-input-reset" aria-label="Меню">
-          </button>
+        <button class="header__burger-button button-input-reset" aria-label="Меню">
+        </button>
         <!-- </div> -->
         <nav class="header__nav">
           <button class="header__close-button button-input-reset close-button" aria-label="Закрыть"></button>
@@ -167,7 +170,8 @@
             </div>
           </li>
           <li class="header__item">
-            <button class="header__button button-input-reset hover-common" aria-label="Импрессионизм">Импрессионизм</button>
+            <button class="header__button button-input-reset hover-common"
+              aria-label="Импрессионизм">Импрессионизм</button>
             <div class="header__select-container">
               <ul class="header__select ul-reset" data-simplebar>
                 <li class="header__select-item">
@@ -204,7 +208,8 @@
             </div>
           </li>
           <li class="header__item">
-            <button class="header__button button-input-reset hover-common" aria-label="Постимпрессионизм">Постимпрессионизм</button>
+            <button class="header__button button-input-reset hover-common"
+              aria-label="Постимпрессионизм">Постимпрессионизм</button>
             <div class="header__select-container">
               <ul class="header__select ul-reset" data-simplebar>
                 <li class="header__select-item">
@@ -340,7 +345,7 @@
         </div>
       </div>
       <div class="swiper hero__swiper">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper hero__swiper-wrapper">
           <div class="swiper-slide swiper-one"></div>
           <div class="swiper-slide swiper-two"></div>
           <div class="swiper-slide swiper-three"></div>
@@ -407,15 +412,17 @@
         </div>
         <div class="gallery__right">
           <div class="gallery__swiper-nav">
-            <button class="swiper-button-prev gallery__swiper-button-prev button-input-reset" aria-label="Назад"></button>
+            <button class="swiper-button-prev gallery__swiper-button-prev button-input-reset"
+              aria-label="Назад"></button>
             <div class="swiper-pagination gallery__pagination"></div>
-            <button class="swiper-button-next gallery__swiper-button-next button-input-reset" aria-label="Далее"></button>
+            <button class="swiper-button-next gallery__swiper-button-next button-input-reset"
+              aria-label="Далее"></button>
           </div>
           <div class="swiper gallery__swiper">
             <div class="swiper-wrapper gallery__swiper-wrapper">
               <a class="swiper-slide gallery__swiper-slide a-reset" data-path="modal-1" aria-label="Картина 1">
                 <picture class="gallery__swiper-picture">
-                  <source srcset="./img/gallery1_320.png" media="(max-width: 544px)">
+                  <source srcset="./img/gallery1_320.png" media="(max-width: 652px)">
                   <source srcset="./img/gallery1_768.png" media="(max-width: 896px)">
                   <source srcset="./img/gallery1_1024.png" media="(max-width: 1249px)">
                   <source srcset="./img/gallery1_2x.png 2x">
@@ -424,7 +431,7 @@
               </a>
               <a class="swiper-slide gallery__swiper-slide a-reset" data-path="modal-1" aria-label="Картина 2">
                 <picture class="gallery__swiper-picture">
-                  <source srcset="./img/gallery2_320.png" media="(max-width: 544px)">
+                  <source srcset="./img/gallery2_320.png" media="(max-width: 652px)">
                   <source srcset="./img/gallery2_768.png" media="(max-width: 896px)">
                   <source srcset="./img/gallery2_1024.png" media="(max-width: 1249px)">
                   <source srcset="./img/gallery2_2x.png 2x">
@@ -433,7 +440,7 @@
               </a>
               <a class="swiper-slide gallery__swiper-slide a-reset" data-path="modal-1" aria-label="Картина 3">
                 <picture class="gallery__swiper-picture">
-                  <source srcset="./img/gallery3_320.png" media="(max-width: 544px)">
+                  <source srcset="./img/gallery3_320.png" media="(max-width: 652px)">
                   <source srcset="./img/gallery3_768.png" media="(max-width: 896px)">
                   <source srcset="./img/gallery3_1024.png" media="(max-width: 1249px)">
                   <source srcset="./img/gallery3_2x.png 2x">
@@ -442,7 +449,7 @@
               </a>
               <a class="swiper-slide gallery__swiper-slide a-reset" data-path="modal-1" aria-label="Картина 4">
                 <picture class="gallery__swiper-picture">
-                  <source srcset="./img/gallery4_320.png" media="(max-width: 544px)">
+                  <source srcset="./img/gallery4_320.png" media="(max-width: 652px)">
                   <source srcset="./img/gallery4_768.png" media="(max-width: 896px)">
                   <source srcset="./img/gallery4_1024.png" media="(max-width: 1249px)">
                   <source srcset="./img/gallery4_2x.png 2x">
@@ -451,7 +458,7 @@
               </a>
               <a class="swiper-slide gallery__swiper-slide a-reset" data-path="modal-1" aria-label="Картина 5">
                 <picture class="gallery__swiper-picture">
-                  <source srcset="./img/gallery5_320.png" media="(max-width: 544px)">
+                  <source srcset="./img/gallery5_320.png" media="(max-width: 652px)">
                   <source srcset="./img/gallery5_768.png" media="(max-width: 896px)">
                   <source srcset="./img/gallery5_1024.png" media="(max-width: 1249px)">
                   <source srcset="./img/gallery5_2x.png 2x">
@@ -475,7 +482,7 @@
           <div class="gallery__modal-container">
             <button class="gallery__modal-close close-button button-input-reset" aria-label="Закрыть"></button>
             <picture class="gallery__modal-picture-set">
-              <source srcset="./img/modal_320.png" media="(max-width: 544px)">
+              <source srcset="./img/modal_320.png" media="(max-width: 652px)">
               <source srcset="./img/modal_768.png" media="(max-width: 896px)">
               <source srcset="./img/modal_1024.png" media="(max-width: 1249px)">
               <source srcset="./img/modal_2x.png 2x">
@@ -485,7 +492,8 @@
               <h3 class="gallery__modal-header text-reset">Казимир Малевич</h3>
               <h4 class="gallery__modal-subheader text-reset">“Женщина с граблями”</h4>
               <span class="gallery__modal-dates">1931-1932</span>
-              <p class="gallery__modal-paragraph text-reset">Картина из второй серии крестьянского цикла работ Казимира Малевича.
+              <p class="gallery__modal-paragraph text-reset">Картина из второй серии крестьянского цикла работ Казимира
+                Малевича.
                 Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после
                 Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
@@ -638,14 +646,14 @@
                     </a>
                   </li>
                   <li class="catalogue__artist-item">
-                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset" aria-label="Брамантино"
-                      data-path="art-no">
+                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset"
+                      aria-label="Брамантино" data-path="art-no">
                       Брамантино
                     </a>
                   </li>
                   <li class="catalogue__artist-item">
-                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset" aria-label="Бреа, Людовико"
-                      data-path="art-no">
+                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset"
+                      aria-label="Бреа, Людовико" data-path="art-no">
                       Бреа, Людовико
                     </a>
                   </li>
@@ -656,8 +664,8 @@
                     </a>
                   </li>
                   <li class="catalogue__artist-item">
-                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset" aria-label="Веккьетта"
-                      data-path="art-no">
+                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset"
+                      aria-label="Веккьетта" data-path="art-no">
                       Веккьетта
                     </a>
                   </li>
@@ -668,7 +676,8 @@
                     </a>
                   </li>
                   <li class="catalogue__artist-item">
-                    <a href="#girlandaio" class="catalogue__artist-button catalogue__artist-button-active underline-animated a-reset"
+                    <a href="#girlandaio"
+                      class="catalogue__artist-button catalogue__artist-button-active underline-animated a-reset"
                       aria-label="Доменико Гирландайо" data-path="art-1">
                       Доменико Гирландайо
                     </a>
@@ -704,8 +713,8 @@
                     </a>
                   </li>
                   <li class="catalogue__artist-item">
-                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset" aria-label="Джорджоне"
-                      data-path="art-no">
+                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset"
+                      aria-label="Джорджоне" data-path="art-no">
                       Джорджоне
                     </a>
                   </li>
@@ -716,8 +725,8 @@
                     </a>
                   </li>
                   <li class="catalogue__artist-item">
-                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset" aria-label="Пезеллино"
-                      data-path="art-no">
+                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset"
+                      aria-label="Пезеллино" data-path="art-no">
                       Пезеллино
                     </a>
                   </li>
@@ -734,14 +743,14 @@
                     </a>
                   </li>
                   <li class="catalogue__artist-item">
-                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset" aria-label="Пизанелло"
-                      data-path="art-no">
+                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset"
+                      aria-label="Пизанелло" data-path="art-no">
                       Пизанелло
                     </a>
                   </li>
                   <li class="catalogue__artist-item">
-                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset" aria-label="Пинтуриккьо"
-                      data-path="art-no">
+                    <a href="#no-artist" class="catalogue__artist-button underline-animated a-reset"
+                      aria-label="Пинтуриккьо" data-path="art-no">
                       Пинтуриккьо
                     </a>
                   </li>
@@ -906,7 +915,7 @@
             <ul class="swiper-wrapper events__swiper-wrapper ul-reset">
               <li class="swiper-slide events__article">
                 <picture class="events__picture">
-                  <source srcset="./img/events1_1024.png" media="(max-width: 544px)">
+                  <source srcset="./img/events1_1024.png" media="(max-width: 652px)">
                   <source srcset="./img/events1_768.png" media="(max-width: 896px)">
                   <source srcset="./img/events1_1024.png" media="(max-width: 1249px)">
                   <source srcset="./img/events1_2x.png 2x">
@@ -929,7 +938,7 @@
               </li>
               <li class="swiper-slide events__article">
                 <picture class="events__picture">
-                  <source srcset="./img/events2_1024.png" media="(max-width: 544px)">
+                  <source srcset="./img/events2_1024.png" media="(max-width: 652px)">
                   <source srcset="./img/events2_768.png" media="(max-width: 896px)">
                   <source srcset="./img/events2_1024.png" media="(max-width: 1249px)">
                   <source srcset="./img/events2_2x.png 2x">
@@ -952,7 +961,7 @@
               </li>
               <li class="swiper-slide events__article">
                 <picture class="events__picture">
-                  <source srcset="./img/events3_1024.png" media="(max-width: 544px)">
+                  <source srcset="./img/events3_1024.png" media="(max-width: 652px)">
                   <source srcset="./img/events3_768.png" media="(max-width: 896px)">
                   <source srcset="./img/events3_1024.png" media="(max-width: 1249px)">
                   <source srcset="./img/events3_2x.png 2x">
@@ -975,7 +984,7 @@
               </li>
               <li class="swiper-slide events__article">
                 <picture class="events__picture">
-                  <source srcset="./img/events4_1024.png" media="(max-width: 544px)">
+                  <source srcset="./img/events4_1024.png" media="(max-width: 652px)">
                   <source srcset="./img/events4_768.png" media="(max-width: 896px)">
                   <source srcset="./img/events4_1024.png" media="(max-width: 1249px)">
                   <source srcset="./img/events4_2x.png 2x">
@@ -997,7 +1006,7 @@
               </li>
               <li class="swiper-slide events__article">
                 <picture class="events__picture">
-                  <source srcset="./img/events5_1024.png" media="(max-width: 544px)">
+                  <source srcset="./img/events5_1024.png" media="(max-width: 652px)">
                   <source srcset="./img/events5_768.png" media="(max-width: 896px)">
                   <source srcset="./img/events5_1024.png" media="(max-width: 1249px)">
                   <source srcset="./img/events5_2x.png 2x">
@@ -1019,8 +1028,10 @@
             </ul>
             <div class="swiper-pagination events__swiper-pagination"></div>
           </div>
-          <button class="swiper-button-prev events__swiper-button-prev round-arrow button-input-reset" aria-label="Назад"></button>
-          <button class="swiper-button-next events__swiper-button-next round-arrow button-input-reset" aria-label="Далее"></button>
+          <button class="swiper-button-prev events__swiper-button-prev round-arrow button-input-reset"
+            aria-label="Назад"></button>
+          <button class="swiper-button-next events__swiper-button-next round-arrow button-input-reset"
+            aria-label="Далее"></button>
         </div>
       </div>
     </section>
@@ -1035,30 +1046,32 @@
           уникальными данными до<span class="projects__nbsp-uni">&nbsp;</span><span class="projects__space-320">
           </span>степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего,
           постоянное информационно-пропагандистское
-          <button class="projects__tooltip button-input-reset" aria-label="Подсказка 1">
+          <button class="projects__tooltip button-input-reset"
+            data-tippy-content="Пример современных тенденций - современная методология разработки"
+            aria-label="Подсказка 1">
             <span class="projects__tooltip-pic"></span>
-            <span class="projects__tooltip-popup">
+            <!-- <span class="projects__tooltip-popup">
               Подсказака Подсказака Подсказака Подсказака Подсказака Подсказака Подсказака
-            </span>
+            </span> -->
           </button>
           обеспечение нашей деятельности однозначно фиксирует
           необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей
           оппозиции могут
           быть рассмотрены
-          <button class="projects__tooltip button-input-reset" aria-label="Подсказка 2">
+          <button class="projects__tooltip button-input-reset" aria-label="Подсказка 2" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции">
             <span class="projects__tooltip-pic"></span>
-            <span class="projects__tooltip-popup">
+            <!-- <span class="projects__tooltip-popup">
               Подсказака
-            </span>
+            </span> -->
           </button>
           исключительно в<span class="projects__nbsp-uni">&nbsp;</span><span class="projects__space-320"> </span>разрезе
           маркетинговых и<span class="projects__nbsp-uni">&nbsp;</span><span class="projects__space-320">
           </span>финансовых
-          <button class="projects__tooltip button-input-reset" aria-label="Подсказка 3">
+          <button class="projects__tooltip button-input-reset" aria-label="Подсказка 3" data-tippy-content="В стремлении повысить качество">
             <span class="projects__tooltip-pic"></span>
-            <span class="projects__tooltip-popup">
+            <!-- <span class="projects__tooltip-popup">
               Подсказака
-            </span>
+            </span> -->
           </button>
           предпосылок. Банальные, но неопровержимые
           выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в
@@ -1215,7 +1228,7 @@
         <div class="footer__logo">
           <a href="" class="footer__logo-link a-reset" aria-label="Главная страница">
             <picture class="footer__logo-picture">
-              <source srcset="./img/logo_320.svg" media="(max-width: 544px)">
+              <source srcset="./img/logo_320.svg" media="(max-width: 652px)">
               <source srcset="./img/logo_1024-768.svg" media="(max-width: 1249px)">
               <img src="./img/logo.svg" alt="Логотип">
             </picture>

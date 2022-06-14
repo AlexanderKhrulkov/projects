@@ -1,5 +1,7 @@
 const swiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 1,
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -42,7 +44,7 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
       slidesPerGroup: 3,
       spaceBetween: 50,
     },
-    544: {
+    652: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 34,
@@ -82,7 +84,7 @@ const eventsSwiper = new Swiper('.events__swiper', {
       slidesPerGroup: 3,
       spaceBetween: 27,
     },
-    700: {
+    652: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 34,
@@ -113,7 +115,7 @@ const projectsSwiper = new Swiper('.projects__swiper', {
       slidesPerGroup: 2,
       spaceBetween: 50,
     },
-    700: {
+    652: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 34,

@@ -58,7 +58,7 @@
   padding: 0 4px;
   color: var(--white-color);
   font-size: 18px;
-  font-weight: 600;
+  font-weight: var(--medium-weight);
 }
 
 .header__login {
