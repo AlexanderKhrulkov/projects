@@ -1,0 +1,33 @@
+.about-us__container {
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.about-us__pic {
+  display: block;
+  background-image: url(../img/goods.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 541px;
+}
+.about-us__content {
+  padding-left: 97px;
+}
+.about-us__header-2 {
+  margin-bottom: 58px;
+}
+.about-us__paragraph {
+font-size: 18px;
+font-weight: var(--light-weight);
+line-height: 26px;
+}
+@media (max-width: 767px) {
+  .about-us__pic {
+    display: none;
+  }
+  .about-us__content {
+    padding-left: 15px;
+  }
+  .about-us__paragraph {
+    font-size: 16px;
+  }
+}
