@@ -1,0 +1,55 @@
+<div class="swiper-slide">
+    <div class="card d-fex flex-column justify-content-between">
+        <div class="card__header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="product-label">
+                    @@if(hit == true) {
+                        <span class="product-labels labels-hit">Хит</span>
+                    }
+                    @@if(hit != true) {
+                        <span class="product-labels labels-new">Новинка</span>
+                    }
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div class="card__icon-wrap">
+                        <svg width="20" height="20" fill="#E31F23">
+                            <use xlink:href="/assets/img/icons/icons.svg#favourites">
+                        </svg>
+                    </div>
+                    <div class="card__icon-wrap card__icon-compare">
+                        <div class="card__icon-tooltip">
+                            <div class="card__tooltip-text">Товар добавлен к сравнению</div>
+                            <a href="#" class="card__tooltip-link">Перейти к сравнению</a>
+                        </div>
+                        <svg width="20" height="20" fill="#E31F23">
+                            <use xlink:href="/assets/img/icons/icons.svg#comparison">
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="card__image-wrap">
+                <a href="#">
+                    <img src="@@image" alt="">
+                </a>
+            </div>
+            <a href="#" class="card__subtitle">@@subtitle</a>
+            <a href="#" class="card__title">@@title</a>
+            <div class="card__advantages">
+                @@for(var i = 0; i < advantages.length; i++) {
+                    <div class="row justify-content-between">
+                        <div class="card__advantages-name">`+advantages[i].name+`</div>
+                        <div class="card__advantages-value">`+advantages[i].value+`</div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="card__footer d-flex align-items-center justify-content-between">
+            <div class="card__prices">
+                <div class="card__price">@@price<span> р.</span></div>
+            </div>
+            <a href="#" class="btn btn--red">В корзину</a>
+
+        </div>
+    </div>
+</div>

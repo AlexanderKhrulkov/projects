@@ -1,0 +1,118 @@
+<div class="product-items d-flex flex-wrap">
+    <div class="product-items__images">
+        <div class="product-label">
+            @@if(hit == true) {
+                <span class="product-labels labels-hit">ХИТ</span>
+            }
+            @@if(hit != true) {
+                <span class="product-labels labels-new">Новинка</span>
+            }
+            <a href="#">
+                <svg class="product-video__icons" width="47" height="31">
+                    <use xlink:href="/assets/img/icons/icons.svg#play"></use>
+                </svg>
+            </a>
+        </div>
+        <a href="#"><img src="https://imgholder.ru/900x800/8493a8/adb9ca&text=800x800" alt=""></a>
+    </div>
+    <div class="product-items__info">
+        <a href="#" class="product-name">Дрель-шуруповерт ударная ДА 18УБЛ2 (Е2201.002.00)</a>
+        <div class="product-sku d-flex align-items-center">
+            <div class="product-sku__label">Артикул:</div>
+            <div class="product-sku__value">EL123456</div>
+        </div>
+
+
+        <div class="product-reviews d-flex align-items-center flex-wrap">
+            <div class="reviews d-flex align-items-center">
+                <div class="review active">
+                    <svg class="review__icons" width="20" height="20"><use xlink:href="/assets/img/icons/icons.svg#star"></use></svg>
+                </div>
+                <div class="review active">
+                    <svg class="review__icons" width="20" height="20"><use xlink:href="/assets/img/icons/icons.svg#star"></use></svg>
+                </div>
+                <div class="review active">
+                    <svg class="review__icons" width="20" height="20"><use xlink:href="/assets/img/icons/icons.svg#star"></use></svg>
+                </div>
+                <div class="review active">
+                    <svg class="review__icons" width="20" height="20"><use xlink:href="/assets/img/icons/icons.svg#star"></use></svg>
+                </div>
+                <div class="review">
+                    <svg class="review__icons" width="20" height="20"><use xlink:href="/assets/img/icons/icons.svg#star"></use></svg>
+                </div>
+            </div>
+            <div class="reviews__count">27 отзывов</div>
+        </div>
+
+        <div class="product-specifications">
+            <div class="specifications__item">
+                <div class="specifications__name">Напряжение аккумулятора</div>
+                <div class="specifications__value">18  В</div>
+            </div>
+            <div class="specifications__item">
+                <div class="specifications__name">Напряжение аккумулятора</div>
+                <div class="specifications__value">18 В</div>
+            </div>
+            <div class="specifications__item">
+                <div class="specifications__name">Емкость аккумулятора</div>
+                <div class="specifications__value">- Ач</div>
+            </div>
+            <div class="specifications__item">
+                <div class="specifications__name">Тип аккумулятора</div>
+                <div class="specifications__value">Li-Ion</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-items__carts">
+
+        <div class="product-info__price">
+            <div class="product-price d-flex align-items-end">
+                <div class="product-price__value">9 000 р.</div>
+                <strike class="product-price__strike">9 400 р.</strike>
+            </div>
+            <div class="product__btns d-flex">
+            
+                <div class="product__btns-item">
+                    <button class="product__btns-link d-flex">
+                        <div class="product__btns-icon">
+                          <svg fill="#828282" width="20" height="20">
+                            <use xlink:href="/assets/img/icons/icons.svg#favorites"></use>
+                          </svg>
+                        </div>
+                        <span class="product__btns-text">В избранное</span>
+                    </button>
+                </div>
+    
+                <div class="product__btns-item">
+                    <button class="product__btns-link d-flex">
+                        <div class="product__btns-icon">
+                          <svg fill="#828282" width="20" height="20">
+                            <use xlink:href="/assets/img/icons/icons.svg#comparison"></use>
+                          </svg>
+                        </div>
+                        <span class="product__btns-text">Сравнить</span>
+                    </button>
+                </div>
+    
+            </div>
+            <div class="product-cart">
+                <button class="btn btn--red product-cart__link d-block w-100">В корзину</button>
+            </div>
+        </div>
+
+
+        <div class="product-items__availability">
+            <ul>
+                <li>В вашем городе: 3 шт.</li>
+                <li>На складе: 62 шт.</li>
+                <li>Курьером: завтра, от 100р.</li>
+                <li>Самовывоз: сегодня, из 1 магазина</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="product-advantages d-flex flex-wrap">
+        @@loop('./product-advantages-item.html', [{'icon': '/assets/img/svg/product-icon1.svg'}, {'icon': '/assets/img/svg/product-icon2.svg'}, {'icon': '/assets/img/svg/product-icon3.svg'}, {'icon': '/assets/img/svg/product-icon4.svg'}, {'icon': '/assets/img/svg/product-icon5.svg'}, {'icon': '/assets/img/svg/product-icon6.svg'}, {'icon': '/assets/img/svg/product-icon7.svg'}, {'icon': '/assets/img/svg/product-icon8.svg'}, {'icon': '/assets/img/svg/product-icon9.svg'}, {'icon': '/assets/img/svg/product-icon10.svg'}, {'icon': '/assets/img/svg/product-icon11.svg'}, {'icon': '/assets/img/svg/product-icon9.svg'}, {'icon': '/assets/img/svg/product-icon10.svg'}, {'icon': '/assets/img/svg/product-icon11.svg'}])
+    </div>
+</div>

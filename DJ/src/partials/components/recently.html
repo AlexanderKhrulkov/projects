@@ -1,0 +1,28 @@
+<section class="section recently__section">
+    <div class="section__header my-0">
+        <h1 class="section__header-title">Недавно просмотренные товары</h1>
+    </div>
+    <div class="recently__slider-wrapper">
+        <div class="recently__slider swiper">
+            <div class="swiper-wrapper">
+                @@loop('./card.html', [
+                    {'hit': false,'image':'./assets/img/product-1.png', 'subtitle': 'Дрель-шуруповерт ударная', 'title': 'ДА 18УБЛ2 (Е2201.002.01)', 'advantages': [{'name': 'Вых. мощность', 'value': '2/12 кВт'}, {'name': 'Класс защиты', 'value': 'IP20'}, {'name': 'Потребляемый ток', 'value': '9 А'}], 'price': '9000'},
+                    {'hit': false,'image':'./assets/img/product-1.png', 'subtitle': 'Дрель-шуруповерт ударная', 'title': 'ДА 18УБЛ2 (Е2201.002.01)', 'advantages': [{'name': 'Вых. мощность', 'value': '2/12 кВт'}, {'name': 'Класс защиты', 'value': 'IP20'}, {'name': 'Потребляемый ток', 'value': '9 А'}], 'price': '9000'},
+                    {'hit': true,'image':'./assets/img/product-1.png', 'subtitle': 'Дрель-шуруповерт ударная', 'title': 'ДА 18УБЛ2 (Е2201.002.01)', 'advantages': [{'name': 'Вых. мощность', 'value': '2/12 кВт'}, {'name': 'Класс защиты', 'value': 'IP20'}, {'name': 'Потребляемый ток', 'value': '9 А'}], 'price': '9000'},
+                    {'hit': true,'image':'./assets/img/product-1.png', 'subtitle': 'Дрель-шуруповерт ударная', 'title': 'ДА 18УБЛ2 (Е2201.002.01)', 'advantages': [{'name': 'Вых. мощность', 'value': '2/12 кВт'}, {'name': 'Класс защиты', 'value': 'IP20'}, {'name': 'Потребляемый ток', 'value': '9 А'}, {'name': 'Потребляемый ток', 'value': '9 А'}], 'price': '9000'}
+                ])
+            </div>
+        </div>
+        <div class="slider__arrow recently__slider-next">
+            <svg width="65%" height="22">
+                <use xlink:href="./assets/img/svg/arrow-card.svg#arrow">
+            </svg>
+        </div>
+        <div class="slider__arrow recently__slider-prev">
+            <svg width="65%" height="22">
+                <use xlink:href="./assets/img/svg/arrow-card.svg#arrow">
+            </svg>
+        </div>
+        <div class="swiper-pagination recently__pagination d-flex justify-content-center align-items-center"></div>
+    </div>
+</section>

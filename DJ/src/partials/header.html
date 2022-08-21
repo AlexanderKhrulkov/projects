@@ -1,0 +1,264 @@
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="d-flex justify-content-between flex-wrap">
+        <ul class="header-nav d-flex align-items-center">
+          <li class="header-nav__item"><a href="#" class="header-nav__link">О бренде</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Сервис</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Где купить</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Новинки</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
+        </ul>
+  
+        <a href="#" class="location_link">Москва</a>
+      </div>
+      
+    </div>
+  </div>
+  <!-- /.header__top -->
+  <div class="header__center">
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex align-items-center">
+          <a href="#">Сотрудничество</a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="logo">
+            <a href="" class="logo__link">
+              <span>купи</span>
+              <svg class="logo__images" width="150" height="84">
+                <use xlink:href="/assets/img/icons/icons.svg#logo"></use>
+              </svg>
+              <span>здесь</span>
+            </a>
+          </div>
+        </div>
+        <div class="col justify-content-between d-flex flex-column align-items-end">
+          <ul class="nav d-flex align-items-center header-user">
+            <li class="header-user__item"><a href="#" class="header-user__link">Вход</a></li>
+            <li class="header-user__item"><a href="#" class="header-user__link">Регистрация</a></li>
+          </ul>
+    
+          <a href="#">Гарантийный талон</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.header__center -->
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3">
+          @@include('menu.html')
+        </div>
+
+
+        <div class="col d-flex align-items-center justify-content-between">
+          <a href="#" class="header__sale">
+            <svg fill="#E31F23" class="header__sale-icons" width="20" height="20">
+              <use xlink:href="/assets/img/icons/icons.svg#sale"></use>
+            </svg>
+            <span>Акции</span>
+          </a>
+
+          <form action="#" class="header-search search">
+            <div class="search__wrapper">
+    
+              <input autocomplete="off" type="text" name="text" placeholder="Поиск" class="search__input">
+    
+              <button type="submit" class="search__btn">
+                <svg class="search__btn-icons" width="19" height="19">
+                  <use xlink:href="/assets/img/icons/icons.svg#search"></use>
+                </svg>
+              </button>
+    
+              <div class="search__list" id="search_list_scrol"></div>
+            </div>
+          </form>
+
+          <div class="d-flex align-items-center position-relative">
+            <div class="header-personal-btn__item header__compare">
+              <a href="#" class="compare__link header-personal-btn__link d-flex">
+                <div class="header-personal-btn__icons compare__icons">
+                  <svg class="" fill="#E31F23" width="20" height="20">
+                    <use xlink:href="/assets/img/icons/icons.svg#comparison"></use>
+                  </svg>
+                  <span class="header-personal-btn__count compare__count">0</span>
+                </div>
+                <span class="header-personal-btn__label compare__label">Сравнение</span>
+              </a>
+              <div class="popup__compare popup hide" style="height: 0; opacity: 0; box-shadow: 0;">
+                <ul class="popup__list">
+                  <li class="popup__list-item">
+                    <a href="#" class="popup__list-link">
+                      <div class="popup__item-left">
+                        <img src="https://imgholder.ru/90x160/8493a8/adb9ca&amp;text=50x50" alt="">
+                      </div>
+                      <div class="popup__item-right">
+                        <div class="popup__item-text">Дрель-шуруповерт ударная ДА 18УБЛ2 (Е2201.002.00)</div>
+                        <div class="popup__item-price">8 000<span>р.</span></div>
+                      </div>
+                    </a>
+                    <div class="popup__item-close"><span></span><span></span></div>
+                  </li>
+                </ul>
+                <a class="popup__link">Перейти к сравнению</a>
+              </div>
+            </div>
+            <!-- /.header__compare -->
+    
+            <div class="header-personal-btn__item header__favorites">
+              <a href="#" class="favorites__link header-personal-btn__link d-flex">
+                <div class="header-personal-btn__icons favorites__icons">
+                  <svg class="" fill="#E31F23" width="20" height="20">
+                    <use xlink:href="/assets/img/icons/icons.svg#favorites"></use>
+                  </svg>
+                  <span class="header-personal-btn__count favorites__count">0</span>
+                </div>
+                <span class="header-personal-btn__label favorites__label">Избранное</span>
+              </a>
+              <!-- <div class="popup__favorites popup hide" style="height: 0; opacity: 0; box-shadow: 0;">
+                <ul class="popup__list">
+                  <li class="popup__list-item">
+                    <a href="#" class="popup__list-link">
+                      <div class="popup__item-left">
+                        <img src="https://imgholder.ru/90x160/8493a8/adb9ca&amp;text=50x50" alt="">
+                      </div>
+                      <div class="popup__item-right">
+                        <div class="popup__item-text">Дрель-шуруповерт ударная ДА 18УБЛ2 (Е2201.002.00)</div>
+                        <div class="popup__item-price">8 000<span>р.</span></div>
+                      </div>
+                    </a>
+                    <div class="popup__item-close"><span></span><span></span></div>
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+            <!-- /.header__favorites -->
+    
+            <div class="header-personal-btn__item header__cart">
+              <a href="#" class="cart__link header-personal-btn__link d-flex">
+                <div class="header-personal-btn__icons cart__icons">
+                  <svg class="" fill="#E31F23" width="20" height="20">
+                    <use xlink:href="/assets/img/icons/icons.svg#cart"></use>
+                  </svg>
+                  <span class="header-personal-btn__count cart__count">0</span>
+                </div>
+                <span class="header-personal-btn__label cart__label">Корзина</span>
+              </a>
+
+              <div class="basket-dropdown">
+                <div class="dropdown position-relative">
+                  <div class="basket_wrap">
+                    <div class="basket_wrap-inner">
+                      <div class="cart__item d-flex" data-item="{&quot;ID&quot;:&quot;1431&quot;}">
+                        <div class="cart__item-image">
+                          <a href="#">
+                            <img src="https://dummyimage.com/100x100/99cccc.gif&text=100x100" alt="">
+                          </a>
+                        </div>
+
+                        <div class="cart__item-info d-flex flex-column">
+                          <div class="cart__item-info-top d-flex justify-content-between">
+                            <div class="cart__item-title">
+                              <a href="#" class="dark_link">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, amet?</a>
+                            </div>
+                            <div class="cart__item-remove remove stroke-theme-parent-all" title="Удалить">
+                              <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4H11" stroke="#B8B8B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 4L9.5586 11.0624C9.52566 11.5894 9.08861 12 8.56055 12H3.43945C2.91139 12 2.47434 11.5894 2.4414 11.0624L2 4" stroke="#B8B8B8" stroke-width="2"></path><path d="M8 4V2C8 1.44772 7.55228 1 7 1H5C4.44772 1 4 1.44772 4 2V4" stroke="#B8B8B8" stroke-width="2"></path></svg>
+                            </div>
+                          </div>
+
+                          <div class="cart__item-prices d-flex justify-content-between">
+                            <div class="cart__item-cost d-flex">
+                              <div class="price  price--inline">
+                                <div class="price__new">
+                                  <span class="price__new-val">220 <span class="rub">₽</span> </span>
+                                </div>
+                              </div>
+                              <span class="cart__item-counter">x <span class="counter__count-wrapper">1</span></span>
+                            </div>
+    
+                            <div class="cart__item-summ">
+                              <span class="price_val">220</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>  
+                      
+                      <div class="cart__item d-flex" data-item="{&quot;ID&quot;:&quot;1431&quot;}">
+                        <div class="cart__item-image">
+                          <a href="#">
+                            <img src="https://dummyimage.com/100x100/99cccc.gif&text=100x100" alt="">
+                          </a>
+                        </div>
+
+                        <div class="cart__item-info d-flex flex-column">
+                          <div class="cart__item-info-top d-flex justify-content-between">
+                            <div class="cart__item-title">
+                              <a href="#" class="dark_link">Lorem ipsum dolor sit</a>
+                            </div>
+                            <div class="cart__item-remove remove stroke-theme-parent-all" title="Удалить">
+                              <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4H11" stroke="#B8B8B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 4L9.5586 11.0624C9.52566 11.5894 9.08861 12 8.56055 12H3.43945C2.91139 12 2.47434 11.5894 2.4414 11.0624L2 4" stroke="#B8B8B8" stroke-width="2"></path><path d="M8 4V2C8 1.44772 7.55228 1 7 1H5C4.44772 1 4 1.44772 4 2V4" stroke="#B8B8B8" stroke-width="2"></path></svg>
+                            </div>
+                          </div>
+
+                          <div class="cart__item-prices d-flex justify-content-between">
+                            <div class="cart__item-cost d-flex">
+                              <div class="price  price--inline">
+                                <div class="price__new">
+                                  <span class="price__new-val">220 <span class="rub">₽</span> </span>
+                                </div>
+                              </div>
+                              <span class="cart__item-counter">x <span class="counter__count-wrapper">1</span></span>
+                            </div>
+    
+                            <div class="cart__item-summ">
+                              <span class="price_val">220</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                       
+                    </div>
+
+                    <div class="cart__footer d-flex justify-content-between align-items-center">
+
+                      <div class="cart__footer-price">
+                        Итого: <span class="font_18 font_bold">145 220</span>
+                      </div>
+
+                      <div class="cart__footer-btn">
+                        <a class="btn btn-default btn-wide  to-order has-ripple" href="/cart/order/"> Оформить заказ </a>
+                      </div>
+
+                    </div>
+                  </div>
+              
+                  <div class="basket_empty height-100" style="display:none">
+                    <div class="basket_empty-wrapper d-flex flex-column align-items-center">
+                      <svg width="55" height="50" viewBox="0 0 55 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="stroke-theme-svg" d="M6.22761 2.72932C6.36295 1.73855 7.20924 1 8.20921 1H37.8079C38.8082 1 39.6546 1.73903 39.7896 2.73019L44.691 38.7302C44.8544 39.9309 43.9211 41 42.7092 41H3.29176C2.07961 41 1.14611 39.9303 1.31017 38.7293L6.22761 2.72932Z" stroke="#E31E24" stroke-width="2"></path>
+                        <path class="fill-theme-svg" opacity="0.1" d="M18.8536 14.7274C18.9898 13.7375 19.8357 13 20.8349 13H48.1809C49.1805 13 50.0266 13.738 50.1624 14.7282L54.6884 47.7282C54.8532 48.9296 53.9196 50 52.707 50H16.2941C15.0811 50 14.1474 48.929 14.3127 47.7274L18.8536 14.7274Z" fill="#E31E24"></path>
+                        <path class="stroke-theme-svg" d="M30 11V17C30 20.866 26.866 24 23 24V24C19.134 24 16 20.866 16 17V11" stroke="#E31E24" stroke-width="2" stroke-linecap="round"></path>
+                      </svg>
+                      
+                      <div class="basket_empty-title">Ваша корзина пуста</div>
+                      <div class="basket_empty-text">Исправить это просто: выберите в каталоге интересующий товар и нажмите кнопку «В корзину»</div>
+                      <div class="button">
+                        <a class="btn btn--red" href="/catalog/"> Перейти в каталог </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- /.header__cart -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.header__bottom -->
+</header>
