@@ -1,0 +1,44 @@
+.recently {
+    &__slider-wrapper {
+        position: relative;
+        padding-bottom: rem(30);
+    }
+
+    &__slider {
+        padding-top: rem(47);
+
+        &-next {
+            transform: rotate(-90deg);
+            right: -3.8%;
+
+            @media screen and (max-width: $break1200) {
+                right: -4.8%;
+            }
+        
+            @media screen and (max-width: $tablet) {
+                right: -6.5%;
+            }
+        
+            @media screen and (max-width: $mobile) {
+                right: -7.8%;
+            }
+        }
+
+        &-prev {
+            transform: rotate(90deg);
+            left: -3.8%;
+
+            @media screen and (max-width: $break1200) {
+                left: -4.8%;
+            }
+        
+            @media screen and (max-width: $tablet) {
+                left: -6.5%;
+            }
+        
+            @media screen and (max-width: $mobile) {
+                left: -7.7%;
+            }
+        }
+    }
+}

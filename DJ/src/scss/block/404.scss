@@ -1,0 +1,37 @@
+// .page_error_block
+
+.page_error_block{
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .page_not_found{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .description{
+    margin-top: 20px;
+    text-align: center;
+
+    .subtitle404{
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .descr_text404{
+      margin-bottom: 20px;
+    }
+  }
+  .image{
+    margin-bottom: 20px;
+    svg{
+      fill: #949494;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+// .company
+.company{
+    //.company__content
+
+    &__content{
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+
+    }
+
+    //.company__img
+    &__img{
+        max-height: 380px;
+    }
+}

@@ -1,0 +1,37 @@
+.stock {
+
+    // .stock__container
+
+    &__container {
+        border-bottom: 1px solid $card_border_color;
+    }
+
+    // .stock__showmore
+
+    &__showmore {
+        margin: rem(60) 0;
+        
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // .stock__showmore-btn
+
+    &__showmore-btn {
+        outline: none;
+        border: 0;
+        background-color: transparent;
+
+        font-size: rem(16);
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: $red;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,166 @@
+.modal {
+  max-width: 500px;
+  height: auto;
+  position: relative;
+
+  // .modal__inner
+  &__inner {
+    
+  }
+
+  // .modal__title
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .carousel__button.is-close{
+    top: 0px;
+    right: 0px;
+
+    background-color: $red;
+    border-radius: 0px;
+
+    svg{
+      filter:none
+    }
+  }
+}
+
+
+.form {
+
+  // .form__body
+
+  &__body {
+  }
+
+  // .form__block
+
+  &__block {
+  }
+
+  // .form__row
+
+  &__row {
+    margin-bottom: 20px;
+  }
+
+  // .form__group
+
+  &__group {
+
+
+  }
+
+  // .form__input
+
+  &__input {
+  }
+
+  // .form__control
+
+  &__control {
+  }
+
+  // .form__label
+
+  &__label {
+  }
+
+  // .form__checkboxes
+
+  &__checkboxes {
+  }
+
+  // .form__checkbox
+
+  &__checkbox {
+    label{
+      font-size: 14px;
+    }
+  }
+
+  // .form__buttons
+
+  &__buttons {
+  }
+
+  // .form__group--buttons
+
+  &__group--buttons {
+  }
+
+  // .form__btn
+
+  &__btn {
+
+  }
+}
+.flex-column {
+}
+.fast-order {
+
+  // .fast-order__counter-title
+
+  &__counter-title {
+  }
+}
+.table-goods {
+
+  // .table-goods__amount
+
+  &__amount {
+  }
+}
+.input-counter {
+
+  // .input-counter__minus
+
+  &__minus {
+  }
+
+  // .input-counter__plus
+
+  &__plus {
+  }
+}
+.fast-order-counter {
+}
+.justify-content-start {
+}
+.mt-20px {
+}
+.link {
+}
+.error {
+
+  // .error__
+
+  &__ {
+
+    // .error___p
+
+    &_p {
+    }
+  }
+}
+.btn {
+}
+.btn--secondary {
+}
+.dealerQuickOrderButton {
+}
+.to {
+
+  // .to__
+
+  &__ {
+
+    // .to___process
+
+    &_process {
+    }
+  }
+}

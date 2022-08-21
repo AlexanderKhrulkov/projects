@@ -1,0 +1,12 @@
+.where {
+    &__content {
+        p {
+            margin-bottom: rem(25);
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.4;
+            color: $black;
+        }
+    }
+}
