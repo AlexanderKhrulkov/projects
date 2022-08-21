@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('partials/head.html',{
+		"title" : "Регистрация",
+		csslink: ['personal']
+	})
+	<body>
+		<link rel="stylesheet" href="/assets/css/cart.css">
+		<link rel="stylesheet" href="/assets/css/personal.css">
+		@@include('./partials/header.html')
+
+
+		<main>
+			<section class="section">
+				<div class="container">
+
+					<div class="section__header">
+						<h1 class="block__title">Регистрация</h1>
+					</div>
+
+					<div class="block__wrapper block__register">					
+						<form onsubmit="return false" method="post" class="form registerForm">
+
+							<p class="error__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, enim voluptas. Omnis fugit similique iusto itaque sit ducimus quo sunt.</p>
+							<div class="account-form__block">
+					
+								<h4 class="account-form__title">Информация о&nbsp;покупателе</h4>
+								
+								<div class="account-form__wrapper">
+									<div class="account-form__field">
+										<span>Имя *</span>
+										<input type="text" name="NAME">
+									</div>
+					
+									<div class="account-form__field">
+										<span>Фамилия *</span>
+										<input type="text" name="LAST_NAME">
+									</div>
+					
+									<div class="account-form__field">
+										<span>Эл. почта *</span>
+										<input type="EMAIL" name="EMAIL">
+									</div>
+								</div>
+							</div>
+							
+							<div class="account-form__block">
+					
+								<h4 class="account-form__title">Пароль</h4>
+								
+								<div class="account-form__wrapper">
+					
+									
+									<div class="account-form__field">
+										<span>Пароль *</span>
+										<input type="password" name="PASSWORD">
+									</div>
+
+									<div class="account-form__field">
+										<span>Подтвердить пароль *</span>
+										<input type="password" name="CONFIRM_PASSWORD">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="account-form__field">
+								<div class="account-form__checkbox">
+									<input type="checkbox" id="reg_confid" name="confid" value="Y"  class="custom-checkbox">
+									<label for="reg_confid">Я&nbsp;прочитал и&nbsp;принял условия конфиденциальности данных (<a href="#" target="_blank">КНАУФ ГИПС</a> и <a href="#" target="_blank">КНАУФ Инсулейшн</a>) и&nbsp;даю согласие на&nbsp;обработку своих персональных данных *</label>
+								</div>
+							</div>
+			
+							<div class="account-form__field  account-form__field--w100">
+								<div class="account-form__checkbox">
+									<input type="checkbox" id="reg_agree" name="agree" value="Y" class="custom-checkbox">
+									<label for="reg_agree">Я принимаю условия <a href="#" target="_blank">Пользовательского соглашения</a> *</label>
+								</div>
+							</div>
+			
+							<div class="account-form__field  account-form__field--w100">
+								<div class="account-form__checkbox">
+									<input type="checkbox" id="reg_subscribe" name="subscribe" value="Y"  class="custom-checkbox">
+									<label for="reg_subscribe">Да, я&nbsp;хотел&nbsp;бы получать информационные материалы, в&nbsp;личном кабинете вы&nbsp;сможете настроить подписку</label>
+								</div>
+							</div>
+
+							<div class="account-form__regBtn d-flex align-items-center justify-content-between">
+								<a class="btn btn--red account-form__button registerButton to___process">Зарегистрироваться</a>
+								<span class="account-form__note">Все поля отмеченные * обязательны для заполнения<br>Дополнительные данные вы&nbsp;можете внести в&nbsp;личном кабинете после регистрации</span>
+							</div>
+
+						</form>
+						<div class="block__textBlock registerTitleBlock">
+							<p class="block__text">Уже зарегистрированы? <a href="/auth/" class="block__link">Авторизуйтесь</a></p>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+		</main>
+		
+		
+		@@include('./partials/footer.html')
+		<script src="./assets/js/vendor.js"></script>
+		<script src="./assets/js/filter.js"></script>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>

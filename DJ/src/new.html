@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('partials/head.html',{
+		"title" : "Главная",
+		csslink: ['card', 'product']
+	})
+	<body>
+		@@include('./partials/header.html')
+
+
+		<main>
+			<div class="container">
+				@@include('./partials/components/breadcrumb.html')
+
+				<h1 class="page__title">Новинки</h1>
+				<p>Наша компания гарантирует безопасность, высокую эффективность и производительность, разумные цены, качественную работу при максимальных нагрузках. В наше время особо пользуется спросом современная техника, которая обладает высокой надежностью и имеет стильный дизайн. Оборудование Elitech, это эффективность, достойная цена, безупречный внешний вид и высокая производительность.</p>
+
+				<div class="card__grid-new card__grid">
+					@@loop('./partials/components/card-only.html', [
+						{'hit': true,'image':'./assets/img/product-1.png', 'subtitle': 'Дрель-шуруповерт ударная', 'title': 'ДА 18УБЛ2 (Е2201.002.01)', 'advantages': [{'name': 'Вых. мощность', 'value': '2/12 кВт'}, {'name': 'Класс защиты', 'value': 'IP20'}, {'name': 'Потребляемый ток', 'value': '9 А'}], 'price': '9000'},
+						{'hit': false,'image':'./assets/img/product-1.png', 'subtitle': 'Дрель-шуруповерт ударная', 'title': 'ДА 18УБЛ2 (Е2201.002.01)', 'advantages': [{'name': 'Вых. мощность', 'value': '2/12 кВт'}, {'name': 'Класс защиты', 'value': 'IP20'}, {'name': 'Потребляемый ток', 'value': '9 А'}], 'price': '9000'},
+						{'hit': false,'image':'./assets/img/product-1.png', 'subtitle': 'Дрель-шуруповерт ударная', 'title': 'ДА 18УБЛ2 (Е2201.002.01)', 'advantages': [{'name': 'Вых. мощность', 'value': '2/12 кВт'}, {'name': 'Класс защиты', 'value': 'IP20'}, {'name': 'Потребляемый ток', 'value': '9 А'}], 'price': '9000'},
+						{'hit': false,'image':'./assets/img/product-1.png', 'subtitle': 'Дрель-шуруповерт ударная', 'title': 'ДА 18УБЛ2 (Е2201.002.01)', 'advantages': [{'name': 'Вых. мощность', 'value': '2/12 кВт'}, {'name': 'Класс защиты', 'value': 'IP20'}, {'name': 'Потребляемый ток', 'value': '9 А'}, {'name': 'Потребляемый ток', 'value': '9 А'}], 'price': '9000'},
+						{'hit': true,'image':'./assets/img/product-1.png', 'subtitle': 'Дрель-шуруповерт ударная', 'title': 'ДА 18УБЛ2 (Е2201.002.01)', 'advantages': [{'name': 'Вых. мощность', 'value': '2/12 кВт'}, {'name': 'Класс защиты', 'value': 'IP20'}, {'name': 'Потребляемый ток', 'value': '9 А'}], 'price': '9000'},
+						{'hit': false,'image':'./assets/img/product-1.png', 'subtitle': 'Дрель-шуруповерт ударная', 'title': 'ДА 18УБЛ2 (Е2201.002.01)', 'advantages': [{'name': 'Вых. мощность', 'value': '2/12 кВт'}, {'name': 'Класс защиты', 'value': 'IP20'}, {'name': 'Потребляемый ток', 'value': '9 А'}], 'price': '9000'},
+						{'hit': false,'image':'./assets/img/product-1.png', 'subtitle': 'Дрель-шуруповерт ударная', 'title': 'ДА 18УБЛ2 (Е2201.002.01)', 'advantages': [{'name': 'Вых. мощность', 'value': '2/12 кВт'}, {'name': 'Класс защиты', 'value': 'IP20'}, {'name': 'Потребляемый ток', 'value': '9 А'}], 'price': '9000'},
+						{'hit': false,'image':'./assets/img/product-1.png', 'subtitle': 'Дрель-шуруповерт ударная', 'title': 'ДА 18УБЛ2 (Е2201.002.01)', 'advantages': [{'name': 'Вых. мощность', 'value': '2/12 кВт'}, {'name': 'Класс защиты', 'value': 'IP20'}, {'name': 'Потребляемый ток', 'value': '9 А'}, {'name': 'Потребляемый ток', 'value': '9 А'}], 'price': '9000'}
+					])
+				</div>
+			
+			</div>
+		</main>
+		
+		
+		@@include('./partials/footer.html')
+		<script src="./assets/js/vendor.js"></script>
+		<script src="./assets/js/filter.js"></script>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>

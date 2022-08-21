@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('partials/head.html',{
+		"title" : "Корзина",
+		csslink: ['card', 'product']
+	})
+	<body>
+		@@include('./partials/header.html')
+		<link rel="stylesheet" href="/assets/css/cart.css">
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=d445e85d-4beb-4074-b64f-a2a423ea0340" type="text/javascript"></script>
+		
+		<main>
+			<div class="container">
+				@@include('./partials/components/breadcrumb.html')
+
+				<h1 class="page__title">Корзина</h1>
+				
+
+				<div class="basket">
+					<form action="#" method="post" class="basketForm">
+						<div class="cart__list">
+							<div class="cart__items">
+								<div class="cart__images">
+									<a href="#">
+										<img src="https://dummyimage.com/100x100/99cccc.gif&text=100x100" alt="">
+									</a>
+								</div>
+
+								<div class="cart__name">
+									<a href="#">МД 1200 Д 80 Г ПРОФ</a>
+								</div>
+
+								<div class="cart__count">
+									<div class="cart__count-size">
+										<span>2 шт</span>
+									</div>
+									<div class="cart__count-counter">
+										<button type="button" class="cart__count-counterBtn cartMinus">-</button>
+										<input type="text" name="quantity" class="cart__count-counterInput" value="1" data-min="1" data-max="9999">
+										<button type="button" class="cart__count-counterBtn cartPlus">+</button>
+									</div>
+								</div>
+
+								<div class="cart__goodsTable-price">
+									<span class="cart__goodsTable-priceNumber">
+										 1 676,56
+										<span class="rub">₽</span>
+									</span>
+								</div>
+								
+								<button type="button" class="cart__dell">
+									<svg width="20" height="20">
+										<use xlink:href="./assets/img/icons/icons.svg#delete"></use>
+									</svg>
+								</button>
+								
+
+
+								<!-- /.cart__images -->
+							</div>
+							<!-- /.cart__items -->
+
+							<div class="cart__items">
+								<div class="cart__images">
+									<a href="#">
+										<img src="https://dummyimage.com/100x100/99cccc.gif&text=100x100" alt="">
+									</a>
+								</div>
+
+								<div class="cart__name">
+									<a href="#">МД 1200 Д 80 Г ПРОФ</a>
+								</div>
+
+								<div class="cart__count">
+									<div class="cart__count-size">
+										<span>2 шт</span>
+									</div>
+									<div class="cart__count-counter">
+										<button type="button" class="cart__count-counterBtn cartMinus">-</button>
+										<input type="text" name="quantity" class="cart__count-counterInput" value="1" data-min="1" data-max="9999">
+										<button type="button" class="cart__count-counterBtn cartPlus">+</button>
+									</div>
+								</div>
+
+								<div class="cart__goodsTable-price">
+									<span class="cart__goodsTable-priceNumber">
+										 1 676,56
+										<span class="rub">₽</span>
+									</span>
+								</div>
+								
+								<button type="button" class="cart__dell">
+									<svg width="20" height="20">
+										<use xlink:href="./assets/img/icons/icons.svg#delete"></use>
+									</svg>
+								</button>
+							</div>
+							<!-- /.cart__items -->
+
+							<div class="cart__items">
+								<div class="cart__images">
+									<a href="#">
+										<img src="https://dummyimage.com/100x100/99cccc.gif&text=100x100" alt="">
+									</a>
+								</div>
+
+								<div class="cart__name">
+									<a href="#">МД 1200 Д 80 Г ПРОФ</a>
+								</div>
+
+								<div class="cart__count">
+									<div class="cart__count-size">
+										<span>2 шт</span>
+									</div>
+									<div class="cart__count-counter">
+										<button type="button" class="cart__count-counterBtn cartMinus">-</button>
+										<input type="text" name="quantity" class="cart__count-counterInput" value="1" data-min="1" data-max="9999">
+										<button type="button" class="cart__count-counterBtn cartPlus">+</button>
+									</div>
+								</div>
+
+								<div class="cart__goodsTable-price">
+									<span class="cart__goodsTable-priceNumber">
+										 1 676,56
+										<span class="rub">₽</span>
+									</span>
+								</div>
+								
+								<button type="button" class="cart__dell">
+									<svg width="20" height="20">
+										<use xlink:href="./assets/img/icons/icons.svg#delete"></use>
+									</svg>
+								</button>
+							</div>
+							<!-- /.cart__items -->
+
+							<div class="cart__items">
+								<div class="cart__images">
+									<a href="#">
+										<img src="https://dummyimage.com/100x100/99cccc.gif&text=100x100" alt="">
+									</a>
+								</div>
+
+								<div class="cart__name">
+									<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus qui distinctio dolorem voluptas saepe hic odio quisquam tempore animi dolore fugiat sit iure sapiente consequuntur molestiae, optio porro aperiam est.</a>
+								</div>
+
+								<div class="cart__count">
+									<div class="cart__count-size">
+										<span>2 шт</span>
+									</div>
+									<div class="cart__count-counter">
+										<button type="button" class="cart__count-counterBtn cartMinus">-</button>
+										<input type="text" name="quantity" class="cart__count-counterInput" value="1" data-min="1" data-max="9999">
+										<button type="button" class="cart__count-counterBtn cartPlus">+</button>
+									</div>
+								</div>
+
+								<div class="cart__goodsTable-price">
+									<span class="cart__goodsTable-priceNumber">
+										 1 676,56
+										<span class="rub">₽</span>
+									</span>
+								</div>
+								
+								<button type="button" class="cart__dell">
+									<svg width="20" height="20">
+										<use xlink:href="./assets/img/icons/icons.svg#delete"></use>
+									</svg>
+								</button>
+							</div>
+							<!-- /.cart__items -->
+
+							
+
+							
+						</div>
+						<div class="cart__total">
+
+							<div class="cart__total-weight">
+								Общий вес: <span class="cart__total-weight-value">55 кг</span>
+							</div>
+							<div class="cart__total-btn">
+								<a href="#" class="btn basketRecalcButton" style="display: none;">Пересчитать</a>
+								<a href="#" class="btn btn--red">Очистить</a>
+							</div>
+
+							<div class="cart__total-price">
+								<div class="cart__total-priceText">Сумма заказа:</div>
+								<div class="cart__total-value"> 710,28 <span class="rub">₽</span></div>
+							</div>
+						</div>
+
+
+						<div class="cart-form__block">
+							<div class="cart-form__wrapper">
+								<h4 class="cart-form__title">Тип доставки</h4>
+								<div class="account-form__row">
+									<div class="account-form__field">
+										<div class="account-form__checkboxes">
+						
+											<div class="account-form__checkbox">
+												<input class="custom-radio" name="ds" type="radio" id="ds_2" value="green">
+												<label for="ds_2">Самовывоз</label>
+											</div>
+						
+											<div class="account-form__checkbox">
+												<input class="custom-radio" name="ds" type="radio" id="ds_3" value="green">
+												<label for="ds_3">Доставка</label>
+											</div>
+						
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="cart-form__block  cart-form__block--pickup" style="display: none;">
+							<div class="cart-form__wrapper">
+						
+								<div class="account-form__row">
+									<h4 class="cart-form__title ">Населённый пункт: &nbsp; Москва (Россия)</h4>
+								</div>
+						
+								<input type="hidden" name="loc_id" value="84">
+								<input type="hidden" name="basketCity" value="Москва (Россия)">
+						
+								<div class="account-form__row">
+									<!-- <div class="account-form__field  account-form__field--w318" style="width:100%; display: block;">
+										<h4 class="cart-form__title">Ваш адрес</h4>
+										<input class="cityName account-form__suggestInput locator-icons icons" id="address" type="text" process="N" name="address" addressname="" value="" autocomplete="off">
+										<input type="hidden" name="address_coords" value="">
+									</div> -->
+
+									<div class="account-form__maps">
+										<!-- <div class="account-form__maps-list">
+											<div class="account-form__maps-inner">
+												Москва г, Бутырская ул д.86 корп.Б
+											</div>
+										</div> -->
+										<div id="maps"></div>
+									</div>
+									
+								</div>
+						
+								
+						
+								<input type="hidden" name="deliv_dop_block_show" value="N">
+						
+							</div>
+						</div>
+
+						<div class="cart-form__block  cart-form__block--delivery" >
+							<div class="cart-form__wrapper">
+
+								<div class="account-form__row">
+									<h4 class="cart-form__title ">Населённый пункт: &nbsp; Москва (Россия)</h4>
+								</div>
+						
+								<input type="hidden" name="loc_id" value="84">
+								<input type="hidden" name="basketCity" value="Москва (Россия)">
+						
+								<div class="account-form__row">
+									<div class="account-form__field  account-form__field--w318" style="width:100%; display: block;">
+										<h4 class="cart-form__title">Ваш адрес</h4>
+										<input class="cityName account-form__suggestInput locator-icons icons" id="address" type="text" process="N" name="address" addressname="" value="" autocomplete="off">
+										<input type="hidden" name="address_coords" value="">
+									</div>
+
+									<div class="accordion deliv_dop_block" id="accordionExample">
+										<div class="accordion-item">
+											<div class="accordion-header" id="headingOne">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													Дополнительные параметры - полный адрес, разгрузка, подъем, перенос
+												</button>
+											</div>
+											<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													<div class="account-form__row account-form__row--dblock ">
+						
+														<div class="account-form__fields flex-column">
+															<div class="account-form__field">
+																<span>Подъезд</span>
+																<input type="text" name="podyezd" value="">
+															</div>
+															<div class="account-form__field">
+																<span>Этаж</span>
+																<input type="text" name="floor" value="">
+															</div>
+															<div class="account-form__field">
+																<span>кв/офис</span>
+																<input type="text" name="kvartira" value="">
+															</div>
+														</div>
+											
+														<div class="account-form__field flex-column">
+																<div class="account-form__checkbox  account-form__checkbox--mr35">
+																	<input class="custom-radio" name="lift" type="radio" id="lift_Y" value="лифт есть" lift_enum_id="4">
+																	<label for="lift_Y">лифт есть</label>
+																</div>
+
+																<div class="account-form__checkbox  account-form__checkbox--mr35">
+																	<input class="custom-radio" name="lift" type="radio" id="lift_N" value="лифта нет" lift_enum_id="4">
+																	<label for="lift_N">лифта нет</label>
+																</div>
+											
+																<div class="account-form__checkbox  account-form__checkbox--mr35">
+																	<input class="custom-radio" name="lift" type="radio" id="lift_G" value="грузовой лифт" lift_enum_id="4">
+																	<label for="lift_G">грузовой лифт</label>
+																</div>
+														</div>
+											
+														<div class="account-form__field flex-column">
+															<div class="account-form__checkboxes">
+																<div class="account-form__checkbox  account-form__checkbox--mr35">
+																	<input class="custom-checkbox" type="checkbox" id="razgruzkaCheckbox" name="needRazgruzka" value="Да">
+																	<label for="razgruzkaCheckbox">Требуется разгрузка</label>
+																</div>
+															</div>
+
+															<div class="account-form__checkboxes ">
+																<div class="account-form__checkbox  account-form__checkbox--mr35">
+																	<input class="custom-checkbox" type="checkbox" id="needPerenosCheckbox" name="needPerenos" value="Да">
+																	<label for="needPerenosCheckbox">Требуется перенос</label>
+																</div>
+															</div>
+															<div class="account-form__field" style="display:none;">
+																<span>Расстояние переноса, м.</span>
+																<input type="text" name="perenosDistance" value="">
+															</div>
+														</div>
+											
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+
+							
+							<div class="cart-form__wrapper">
+								<div class="account-form__row d-flex ">
+						
+									<div class="account-form__field ">
+										<span class="cart-form__subtitle">Дата доставки</span>
+										<input autocomplete="off" type="text" name="deliveryDate" value="" id="datepicker">
+									</div>
+						
+									<div class="account-form__field">
+										<span class="cart-form__subtitle">Время доставки</span>
+										<div class="styledSelect">
+											
+											<select id="deliveryTime" name="deliveryTime" class="form-select">
+												<option value="empty">--- Выбор времени ---</option>
+												<option value="с 00:00 до 03:00">с 00:00 до 03:00</option>
+												<option value="с 03:00 до 06:00">с 03:00 до 06:00</option>
+												<option value="с 06:00 до 09:00">с 06:00 до 09:00</option>
+												<option value="с 09:00 до 12:00">с 09:00 до 12:00</option>
+												<option value="с 12:00 до 15:00">с 12:00 до 15:00</option>
+												<option value="с 15:00 до 18:00">с 15:00 до 18:00</option>
+												<option value="с 18:00 до 21:00">с 18:00 до 21:00</option>
+												<option value="с 21:00 до 00:00">с 21:00 до 00:00</option>
+											</select>
+										</div>
+									</div>
+						
+								</div>
+							</div>
+							
+						</div>
+
+
+						<div class="cart-form__block " style="display: none;">
+							<div class="cart-form__wrapper">
+						
+								<h4 class="cart-form__title">Вариант оплаты</h4>
+						
+								<div class="account-form__row  account-form__row--mb36">
+									<div class="account-form__field  account-form__field--w760">
+										<div class="account-form__checkboxes">
+						
+											<div class="account-form__checkbox  account-form__checkbox--w228">
+												<input class="custom-radio" type="radio" id="ps_2" name="ps" checked="" value="cash">
+												<label for="ps_2">Наличный расчет</label>
+											</div>
+						
+											<div class="account-form__checkbox  account-form__checkbox--w228">
+												<input class="custom-radio" type="radio" id="ps_4" name="ps" value="bank_card">
+												<label for="ps_4">Банковская карта</label>
+											</div>
+						
+											<div class="account-form__checkbox  account-form__checkbox--w228">
+												<input class="custom-radio" type="radio" id="ps_3" name="ps" value="electronic_money">
+												<label for="ps_3">Электронные деньги</label>
+											</div>
+						
+											<div class="account-form__checkbox  account-form__checkbox--w228">
+												<input class="custom-radio" type="radio" id="ps_5" name="ps" value="invoice">
+												<label for="ps_5">Оплата по счёту</label>
+											</div>
+						
+						
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- <div class="cart-form__block" style="display: none;">
+							<div class="cart-form__wrapper">
+						
+								<h4 class="cart-form__title">Тип оплаты</h4>
+						
+								<div class="account-form__row ">
+									<div class="account-form__field  account-form__field--w760">
+										<div class="account-form__checkboxes">
+						
+											<div class="account-form__checkbox  account-form__checkbox--w228">
+												<input class="custom-radio" type="radio" id="pay_type_pre" name="pay_type" value="pre">
+												<label for="pay_type_pre">Оплатить сразу</label>
+											</div>
+						
+											<div class="account-form__checkbox  account-form__checkbox--w228">
+												<input class="custom-radio" type="radio" id="pay_type_post" name="pay_type" value="post">
+												<label for="pay_type_post">Оплата при получении</label>
+											</div>
+						
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+
+					</form>
+				</div>
+
+				<section class="goods___block">
+					<div class="cart-offer__wrapper  cart-offer__wrapper--price">
+						<span class="cart-offer__quantity">Найдено предложений: 1</span>
+						<h2 class="cart-offer__title">Предложения дилеров (Москва)</h2>
+						<div class="cart-offer__best-wrapper">
+							<div class="cart-offer__best-items">
+				
+								<div class="cart-offer__best-item basketOfferItem cart-offer__best-item--optimal" dealer_id="104" dealer_name="Стройхолдинг-Трейд">
+									
+				
+									<div class="cart-offer">
+										<div class="cart-offer__left">
+				
+											<div class="cart-offer__name">Стройхолдинг-Трейд</div>
+											
+											<div class="reviews d-flex align-items-center">
+												<div class="review active">
+														<svg class="review__icons" width="20" height="20"><use xlink:href="/assets/img/icons/icons.svg#star"></use></svg>
+												</div>
+												<div class="review active">
+														<svg class="review__icons" width="20" height="20"><use xlink:href="/assets/img/icons/icons.svg#star"></use></svg>
+												</div>
+												<div class="review active">
+														<svg class="review__icons" width="20" height="20"><use xlink:href="/assets/img/icons/icons.svg#star"></use></svg>
+												</div>
+												<div class="review active">
+														<svg class="review__icons" width="20" height="20"><use xlink:href="/assets/img/icons/icons.svg#star"></use></svg>
+												</div>
+												<div class="review">
+														<svg class="review__icons" width="20" height="20"><use xlink:href="/assets/img/icons/icons.svg#star"></use></svg>
+												</div>
+											</div>
+
+											<span class="cart-offer__label">Бесплатная доставка</span>
+											<div class="cart-offer__addres">
+												Адрес для самовывоза: <span>2-й Иртышский проезд, д.2А стр.3</span>
+											</div>
+
+
+										</div>
+										<div class="cart-offer__right">
+				
+											<div class="cart-offer__product-list">
+												<div class="cart-offer__product-inner">
+													<div class="cart-offer__product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, facere!</div>
+													<div class="cart-offer__product-count">1 шт</div>
+													<div class="cart-offer__product-price">347,57 <span class="rub">₽</span></div>
+													<div class="cart-offer__product-totalprice">347,57 <span class="rub">₽</span></div>
+												</div>
+				
+												<div class="cart-offer__product-inner">
+													<div class="cart-offer__product-name">КНАУФ-ХП Старт 25 кг</div>
+													<div class="cart-offer__product-count">1 шт</div>
+													<div class="cart-offer__product-price">347,57 <span class="rub">₽</span></div>
+													<div class="cart-offer__product-totalprice">347,57 <span class="rub">₽</span></div>
+												</div>
+				
+												<div class="cart-offer__product-inner">
+													<div class="cart-offer__product-name">КНАУФ-ХП Старт 25 кг</div>
+													<div class="cart-offer__product-count">1 шт</div>
+													<div class="cart-offer__product-price">347,57 <span class="rub">₽</span></div>
+													<div class="cart-offer__product-totalprice">347,57 <span class="rub">₽</span></div>
+												</div>
+											</div>
+				
+										</div>
+				
+										<div class="cart-offer__bottom">
+											<div class="cart-offer__total">
+												<span class="cart-offer__totalText">Итого</span>
+												<span class="cart-offer__totalPrice">756,57&nbsp;<span class="rub">₽</span></span>
+											</div>
+											<a class="cart-offer__button btn btn--red">Оформить заказ</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+									
+			
+			</div>
+		</main>
+		
+		
+		@@include('./partials/footer.html')
+
+    
+    
+		<script src="./assets/js/vendor.js"></script>
+		<script src="./assets/js/filter.js"></script>
+		<script src="./assets/js/main.js"></script>
+
+		<script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+
+
+
+		<script>
+			$(document).ready(function(){
+				$('#datep').datepicker();
+			});
+
+
+		var myMap;
+			ymaps.ready(function () {
+				myMap = new ymaps.Map("maps", {
+					center: [55.755819, 37.617644],
+					zoom: 7
+				});
+				// myMap.behaviors.disable('scrollZoom');
+			});
+			ymaps.ready(function () {
+				myMap.geoObjects.add(
+					new ymaps.Placemark(
+						[parseFloat('56.012768'), parseFloat('37.8517')], {
+							type: 'Point',
+							iconCaption: 'ООО «ГазобетонСнаб»',
+							balloonContent: `
+									<b>Название дилера 2</b><br>
+									Адрес: Пушкино, 1-ый некрасовский проезд, 6<br>														
+									Статус: в наличии<br>
+									<button class="btn btn--red maps-btn">Забрать от сюда</button>
+									`
+						}, {
+							iconLayout: 'default#image',
+							iconImageHref: './assets/img/svg/marker-maps.svg',
+							iconImageSize: [32, 32],
+							iconImageOffset: [-16, -16],
+						}
+					)
+				);
+
+				myMap.geoObjects.add(
+					new ymaps.Placemark(
+						[parseFloat('55.012768'), parseFloat('37.8517')], {
+							type: 'Point',
+							iconCaption: 'ООО «ГазобетонСнаб»',
+							balloonContent: `
+								<b>Название дилера 1</b><br>
+								Адрес: Пушкино, 1-ый некрасовский проезд, 6<br>														
+								Статус: под заказ<br>
+								<button class="btn btn--red maps-btn">Забрать от сюда</button>
+							`
+						}, {
+							iconLayout: 'default#image',
+							iconImageHref: './assets/img/svg/marker-under-order.svg',
+							iconImageSize: [32, 32],
+							iconImageOffset: [-16, -16],
+						}
+					)
+				);
+		
+			});
+		</script>
+
+		
+	</body>
+</html>

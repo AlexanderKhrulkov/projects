@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('partials/head.html',{
+		"title" : "Главная",
+		csslink: ['sub-category', 'search-tag', 'filter', 'product', 'reviews']
+	})
+	<body>
+		@@include('./partials/header.html')
+
+
+		<main>
+			<div class="container">
+				@@include('./partials/components/breadcrumb.html')
+
+				<h1 class="page__title">Электроинструмент</h1>
+
+				@@include('./partials/components/sub-category.html')
+				@@include('./partials/components/search-tag.html', {
+					'title': true,
+					'items': ['3.6 В', '7.2 В', '9.6 В', '10.8 В', '12 В', '14.4 В', '16.8 В', '18 В', '36 В', 'с литиевой батареей (li-ion)'],
+				})
+
+				<div class="search__result d-flex justify-content-between align-items-center flex-wrap">
+					<div class="find d-flex">
+						<strong>Найдено:</strong>
+						<strong class="count">27</strong>
+						товаров
+					</div>
+					<div class="sorting align-items-center">
+						<div class="sorting__title">Сортировать:</div>
+						<ul class="sorting__types align-items-center">
+							<li>По популярности</li>
+							<li>По новизне</li>
+							<li class="dropdown">По алфавиту
+								<ul>
+									<li>A-Я</li>
+									<li>Я-А</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="watch d-flex align-items-center">
+						<div class="watch__block d-flex align-items-center">
+							<div class="watch__title">Показать по:</div>
+							<ul class="watch__number d-flex align-items-center">
+								<li class="active"><a href="#">12</a></li>
+								<li><a href="#">24</a></li>
+								<li><a href="#">48</a></li>
+							</ul>
+						</div>
+						<div class="view__block d-flex align-items-center">
+							<div class="view__title">Вид:</div>
+							<div class="view__type d-flex">
+								<button class="view__item active" data-view="view1">
+									<svg width="20" height="20">
+										<use xlink:href="/assets/img/icons/icons.svg#view1"></use>
+									</svg>
+								</button>
+								<button class="view__item" data-view="view2">
+									<svg width="20" height="20">
+										<use xlink:href="/assets/img/icons/icons.svg#view2"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xl-3">
+						<div class="filter__wrapper">
+							<form action="/">
+								<div class="filter__row --active">
+									<button type="button" class="filter__row-name">Цена</button>
+									<div class="filter__price-wrapper">
+										<div class="filter__row-inputs">
+											<input type="number" name="minPrice" id="minPrice">
+											<input type="number" name="maxPrice" id="maxPrice">
+										</div>
+										<div class="filter__slider" data-min="4526" data-max="950000"></div>
+									</div>
+								</div>
+								<div class="filter__row">
+									<button type="button" class="filter__row-name">Мощность</button>
+									<ul class="filter__row-list">
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power1">
+											<label for="power1">3000 кВт <span>7</span></label>
+										</li>
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power2">
+											<label for="power2">4000 кВт <span>2</span></label>
+										</li>
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power3">
+											<label for="power3">5000 кВт <span>3</span></label>
+										</li>
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power3">
+											<label for="power3">5000 кВт <span>3</span></label>
+										</li>
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power3">
+											<label for="power3">5000 кВт <span>3</span></label>
+										</li>
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power3">
+											<label for="power3">5000 кВт <span>3</span></label>
+										</li>
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power3">
+											<label for="power3">5000 кВт <span>3</span></label>
+										</li>
+									</ul>
+									<button type="button" class="filter__row-showmore">Показать ещё (4)</button>
+								</div>
+
+								<div class="filter__row">
+									<button type="button" class="filter__row-name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, non.</button>
+									<ul class="filter__row-list">
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power1">
+											<label for="power1">3000 кВт <span>7</span></label>
+										</li>
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power2">
+											<label for="power2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, aspernatur? <span>2</span></label>
+										</li>
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power3">
+											<label for="power3">5000 кВт <span>3</span></label>
+										</li>
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power3">
+											<label for="power3">5000 кВт <span>3</span></label>
+										</li>
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power3">
+											<label for="power3">5000 кВт <span>3</span></label>
+										</li>
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power3">
+											<label for="power3">5000 кВт <span>3</span></label>
+										</li>
+										<li class="filter__row-list--item">
+											<input type="checkbox" name="power" id="power3">
+											<label for="power3">5000 кВт <span>3</span></label>
+										</li>
+									</ul>
+									<button type="button" class="filter__row-showmore">Показать ещё (4)</button>
+								</div>
+
+
+								<div class="filter__row-btn">
+									<button type="button" class="filter__clean">Очистить фильтр</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col">
+						<div class="category__products">
+							<div class="product-grid">
+								@@loop('./partials/components/catalog-card.html', [{'hit': false}, {'hit': true}, {'hit': false}, {'hit': false}, {'hit': false}, {'hit': false}])
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		
+		@@include('./partials/footer.html')
+		<script src="./assets/js/vendor.js"></script>
+		<script src="./assets/js/filter.js"></script>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>

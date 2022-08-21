@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('partials/head.html',{
+		"title" : "Главная",
+		csslink: ['personal']
+	})
+	<body>
+		<link rel="stylesheet" href="/assets/css/cart.css">
+		<link rel="stylesheet" href="/assets/css/personal.css">
+		@@include('./partials/header.html')
+
+
+		<main>
+			<section class="section">
+				<div class="container">
+
+					<div class="section__header">
+						<h1 class="block__title">Личный кабинет</h1>
+					</div>
+
+					<div class="personal">
+						<nav>
+							<div class="nav nav-tabs tabs-personal__nav" id="nav-tab" role="tablist">
+								<button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#personal-tabs-1" type="button" role="tab" aria-controls="nav-home" aria-selected="true">О компании</button>
+								
+								<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#personal-tabs-2" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Доставка</button>
+
+								<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#personal-tabs-3" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Оплата</button>
+
+								<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#personal-tabs-4" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Точки продаж</button>
+
+								<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#personal-tabs-5" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Заказы</button>
+
+								<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#personal-tabs-6" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Биржа</button>
+
+								<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#personal-tabs-7" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Отзывы</button>
+
+								<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#personal-tabs-8" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Автообновление</button>
+
+								<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#personal-tabs-9" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Артикулы</button>
+
+								<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#personal-tabs-10" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Менеджеры</button>
+
+								<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#personal-tabs-11" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Товары</button>
+							</div>
+						</nav>
+						<div class="tab-content tabs-personal__content" id="nav-tabContent">
+							<div class="tab-pane fade show active" id="personal-tabs-1" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+								<div class="dealerAccount-form__wrapper  d-flex flex-wrap">
+
+									<div class="dealerAccount-form__rightCol dealerLKPhotoBlock">
+										<div class="dealerLKPhotoBlock__wrapper">
+								
+								
+											<div class="dealerAccount-form__logoUpload persPhotoSelect to___process">
+												<label>
+													<span>Загрузить логотип</span>
+												</label>
+											</div>
+								
+								
+											<!-- <div class="dealerAccount-form__logoUpload-info">
+												<span>Мин. размеры: 65 x 65&nbsp;px</span>
+												<span>Макс. вес файла: 5 МБ</span>
+												<span>Типы файлов: jpeg, png</span>
+											</div> -->
+								
+											<p class="error__p">Тут может отображаться какая то ошибка</p>
+								
+											<a href="#" target="_blank" class="dealerAccount-form__btn">Посмотреть свою страницу&nbsp;дилера на&nbsp;сайте</a>
+								
+								
+										</div>
+								
+									</div>
+
+									<div class="dealerAccount-form__leftCol">
+								
+										<form class="dealer_personal_data_form" onsubmit="return false">
+								
+											<div class="dealerAccount-form__block">
+								
+												<h4 class="tab__title">Информация о&nbsp;компании</h4>
+								
+												<div class="dealerAccount-form__row">
+								
+													<div class="dealerAccount-form__field  dealerAccount-form__field--w271">
+														<label for="LK_UF_COMPANY_NAME" class="dealerAccount-form__tooltip tooltipstered">Название компании</label>
+														<input type="text" id="LK_UF_COMPANY_NAME" name="UF_COMPANY_NAME" value="ООО Дилер" placeholder="ООО Дилер">
+													</div>
+								
+								
+													<div class="dealerAccount-form__field">
+														<label for="LK_LOGIN">Логин</label>
+														<input type="text" id="LK_LOGIN" name="LOGIN" value="adm"  placeholder="Ваш логин">
+													</div>
+								
+													<div class="dealerAccount-form__field">
+														<label for="LK_EMAIL">Эл. почта</label>
+														<input type="email" id="LK_EMAIL" name="EMAIL" value="lobankovaalyona@mail.ru" placeholder="email@site.ru">
+													</div>
+								
+													<div class="dealerAccount-form__field">
+														<label for="LK_UF_SITE">Сайт</label>
+														<input type="text" id="LK_UF_SITE" name="UF_SITE" value="www.sajdhlasf.ru"  placeholder="site.ru">
+													</div>
+								
+								
+												</div>
+								
+												<div class="dealerAccount-form__row">
+													<div class="dealerAccount-form__field">
+														<span>Телефон</span>
+														<input class="phoneItem" type="tel" name="UF_PHONES[]" value="+7 (123) 456 78 90" maxlength="11" placeholder="80000000000" autocomplete="off">
+													</div>
+								
+													<button class="btn dealerAccount-form__addTel">Добавить телефон</button>
+								
+												</div>
+								
+											</div>
+								
+											<div class="dealerAccount-form__block">
+												<h4 class="tab__title">Информация, имеющая юридическое значение</h4>
+								
+												<div class="dealerAccount-form__row">
+													<div class="dealerAccount-form__field  dealerAccount-form__field--w600">
+														<label for="lk_company-name">Полное название компании</label>
+														<input id="lk_company-name" type="text" name="UF_FULL_COMPANY_NAME" value="ООО Самый лучший дилер">
+													</div>
+												</div>
+								
+								
+												<div class="dealerAccount-form__row">
+													<div class="dealerAccount-form__field">
+														<label for="lk_inn">ИНН</label>
+														<input id="lk_inn" type="text" name="UF_INN" value="1234567890">
+													</div>
+													<div class="dealerAccount-form__field">
+														<label for="lk_ogrn">ОГРН/ОГРНИП</label>
+														<input id="lk_ogrn" type="text" name="UF_OGRN" value="456487987000000">
+													</div>
+												</div>
+								
+											</div>
+								
+								
+								
+											<div class="dealerAccount-form__block contactPersonsBlock">
+								
+												<h4 class="tab__title">Контактные лица</h4>
+												<div class="contactPersonItem" item_id="1555399822">
+													<div class="dealerAccount-form__row">
+														<div class="dealerAccount-form__field  dealerAccount-form__field--w271">
+															<span>Населённый пункт</span>
+															<input class="locator-icons icons" id="dealerContactPerson_1555399822" type="text" placeholder="Начните ввод города" cityname="" autocomplete="off" value="Новосибирск">
+															<input class="loc_input" type="hidden" name="contact_persons[1555399822][loc_id]" value="2614">
+								
+														</div>
+								
+														<span class="account-form__deleteAddress removeContactPerson to___process">Удалить запись</span>
+								
+													</div>
+								
+													<div class="dealerAccount-form__row">
+														<div class="dealerAccount-form__field">
+															<span>Имя</span>
+															<input class="name_input" type="text" name="contact_persons[1555399822][name]" value="Елена1">
+														</div>
+														<div class="dealerAccount-form__field">
+															<span>Фамилия</span>
+															<input class="last_name_input" type="text" name="contact_persons[1555399822][last_name]" value="Иванова">
+														</div>
+														<div class="dealerAccount-form__field">
+															<span>Отчество</span>
+															<input class="second_name_input" type="text" name="contact_persons[1555399822][second_name]" value="">
+														</div>
+													</div>
+								
+													<div class="dealerAccount-form__row">
+								
+														<div class="dealerAccount-form__field">
+															<span>Телефон</span>
+															<input class="phoneItem" type="tel" name="contact_persons[1555399822][phones][]"
+																value="+7 (999) 999 99 99" maxlength="11" placeholder="80000000000" autocomplete="off">
+														</div>
+								
+														<button class="btn dealerAccount-form__addTel">Добавить телефон</button>
+								
+													</div>
+								
+												</div>
+								
+								
+												<div class="contactPersonItem" item_id="1622104701">
+								
+													<div class="dealerAccount-form__row">
+														<div class="dealerAccount-form__field  dealerAccount-form__field--w271">
+															<span>Населённый пункт</span>
+															<input class="locator-icons icons" id="dealerContactPerson_1622104701" type="text" placeholder="Начните ввод города" cityname="" autocomplete="off" value="Белгород">
+															<input class="loc_input" type="hidden" name="contact_persons[1622104701][loc_id]" value="210">
+														</div>
+								
+														<span class="account-form__deleteAddress removeContactPerson to___process">Удалить запись</span>
+								
+													</div>
+								
+													<div class="dealerAccount-form__row">
+														<div class="dealerAccount-form__field">
+															<span>Имя</span>
+															<input class="name_input" type="text" name="contact_persons[1622104701][name]" value="Теста">
+														</div>
+														<div class="dealerAccount-form__field">
+															<span>Фамилия</span>
+															<input class="last_name_input" type="text" name="contact_persons[1622104701][last_name]" value="Тестова">
+														</div>
+														<div class="dealerAccount-form__field">
+															<span>Отчество</span>
+															<input class="second_name_input" type="text" name="contact_persons[1622104701][second_name]" value="">
+														</div>
+													</div>
+								
+													<div class="dealerAccount-form__row">
+								
+														<div class="dealerAccount-form__field">
+															<span>Телефон</span>
+															<input class="phoneItem" type="tel" name="contact_persons[1622104701][phones][]" value="8-913-123-45-77"
+																maxlength="11" placeholder="80000000000" autocomplete="off">
+														</div>
+
+														<button class="btn dealerAccount-form__addTel">Добавить телефон</button>
+								
+													</div>
+								
+												</div>
+												
+												<button class="btn d-block w-100 dealerAccount-form__addPerson">Добавить контактное лицо</button>
+								
+											</div>
+								
+								
+											<div class="dealerAccount-form__block">
+								
+												<h4 class="tab__title">Почтовый адрес</h4>
+								
+												<div class="dealerAccount-form__row">
+													<div class="dealerAccount-form__field  dealerAccount-form__field--w600">
+														<input class="" id="suggest4" type="text" placeholder="Почтовый адрес" name="UF_POST_ADDRESS" value="0">
+													</div>
+												</div>
+								
+								
+												<div class="dealerAccount-form__note">
+													<p>Адреса складов&nbsp;Вы можете указать в&nbsp;разделе <a class="dealerAccount-form__note--addressLink">Адреса точек продаж</a></p>
+												</div>
+											</div>
+								
+											<div class="dealerAccount-form__block">
+												<h4 class="tab__title">Режим работы</h4>
+												<div class="dealerAccount-form__row">
+													<div class="dealerAccount-form__field  dealerAccount-form__field--w583">
+														<div class="account-form__textarea-counter">Оставшиеся символы: <span>300</span></div>
+														<textarea name="UF_REZHIM" maxlength="300" placeholder="Информация будет отображаться на вашей странице на сайте">Пн-Пт с 8 до 21</textarea>
+													</div>
+												</div>
+											</div>
+								
+											<div class="dealerAccount-form__block">
+												<h4 class="tab__title">Дополнительная информация</h4>
+												<div class="dealerAccount-form__row">
+													<div class="dealerAccount-form__field  dealerAccount-form__field--w583">
+														<div class="account-form__textarea-counter">Оставшиеся символы: <span>300</span></div>
+														<textarea name="UF_DOP_INFO" maxlength="300" placeholder="Информация будет отображаться на вашей странице на сайте">Доставляем заказы быстро ываываыва1</textarea>
+													</div>
+												</div>
+											</div>
+								
+								
+											<div class="dealerAccount-form__block">
+								
+												<h4 class="tab__title">Прочие настройки</h4>
+												<p class="error__p">Тут может отображаться какая то ошибка</p>
+												<div class="dealerAccount-form__row">
+													<div class="dealerAccount-form__field">
+														<span>Эл. почта для заказов</span>
+														<input type="text" name="UF_EMAIL_FOR_ORDERS" value="lobankovaalyona@mail.ru,ananta@211.ru">
+													</div>
+												</div>
+								
+											</div>
+								
+								
+											
+								
+											<a class="account-form__button dealerDataSaveButton to___process btn btn--red">Сохранить данные</a>
+										</form>
+
+										<form class="personal_password_form">
+											<h4 class="tab__title">Изменение пароля</h4>
+
+											<p class="error__p">Тут может отображаться какая то ошибка</p>
+										
+											<div class="account-form__wrapper">
+												<div class="account-form__field">
+													<span>Текущий пароль</span>
+													<input type="password" name="CURRENT_PASSWORD" class="is__erros">
+												</div>
+										
+												<div class="account-form__field">
+													<span>Новый пароль</span>
+													<input type="password" name="PASSWORD">
+												</div>
+										
+												<div class="account-form__field">
+													<span>Повтор пароля</span>
+													<input type="password" name="CONFIRM_PASSWORD">
+												</div>
+											</div>
+										
+											<a class="account-form__button personalPasswordSaveButton btn btn--red">Сохранить</a>
+										
+										</form>
+								
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="personal-tabs-2" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+							<div class="tab-pane fade" id="personal-tabs-3" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+
+							<div class="tab-pane fade" id="personal-tabs-4" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+							<div class="tab-pane fade" id="personal-tabs-5" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+							<div class="tab-pane fade" id="personal-tabs-6" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+							<div class="tab-pane fade" id="personal-tabs-7" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+							<div class="tab-pane fade" id="personal-tabs-8" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+
+							<div class="tab-pane fade" id="personal-tabs-9" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+							<div class="tab-pane fade" id="personal-tabs-10" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+							<div class="tab-pane fade" id="personal-tabs-11" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+
+						</div>
+					</div>
+					
+					
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+			</section>
+		</main>
+		
+		
+		@@include('./partials/footer.html')
+		<script src="./assets/js/vendor.js"></script>
+		<script src="./assets/js/filter.js"></script>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
